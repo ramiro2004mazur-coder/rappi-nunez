@@ -1,0 +1,89 @@
+[
+  {
+    "name": "1890 / Bajo Cero vs Ortuzar / Cordoba",
+    "cmq": [
+      "1890",
+      "Bajo Cero"
+    ],
+    "comp": [
+      "Ortuzar",
+      "Cordoba"
+    ],
+    "seg": "Value"
+  },
+  {
+    "name": "Brahma vs Amstel",
+    "cmq": [
+      "Brahma"
+    ],
+    "comp": [
+      "Amstel"
+    ],
+    "seg": "Core"
+  },
+  {
+    "name": "Quilmes vs Schneider",
+    "cmq": [
+      "Quilmes"
+    ],
+    "comp": [
+      "Schneider"
+    ],
+    "seg": "Core"
+  },
+  {
+    "name": "Andes Origen vs Imperial",
+    "cmq": [
+      "Andes Origen",
+      "Andes"
+    ],
+    "comp": [
+      "Imperial"
+    ],
+    "seg": "Core+"
+  },
+  {
+    "name": "Andes vs Miller",
+    "cmq": [
+      "Andes Origen",
+      "Andes"
+    ],
+    "comp": [
+      "Miller"
+    ],
+    "seg": "Core+"
+  },
+  {
+    "name": "Michelob Ultra vs Miller",
+    "cmq": [
+      "Michelob Ultra"
+    ],
+    "comp": [
+      "Miller"
+    ],
+    "seg": "Core+"
+  },
+  {
+    "name": "Budweiser vs Amstel",
+    "cmq": [
+      "Budweiser"
+    ],
+    "comp": [
+      "Amstel"
+    ],
+    "seg": "Core"
+  },
+  {
+    "name": "Stella vs Pampa / Heineken / Grolsch",
+    "cmq": [
+      "Stella Artois",
+      "Stella Artois 0"
+    ],
+    "comp": [
+      "Pampa",
+      "Heineken",
+      "Grolsch"
+    ],
+    "seg": "Premium"
+  }
+]

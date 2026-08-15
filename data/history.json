@@ -1,0 +1,2039 @@
+{
+  "meta": {
+    "tienda": "Nunez",
+    "plataforma": "Rappi Turbo",
+    "ultima_corrida": "2026-08-15T16:18:30.646211+00:00",
+    "sku_count": 104
+  },
+  "dates": [
+    "2026-08-15_AM",
+    "2026-08-15_PM"
+  ],
+  "pivot": [
+    {
+      "id": "michelob-ultra-michelob-ultra-cerveza",
+      "marca": "Michelob Ultra",
+      "sku": "Michelob Ultra Cerveza",
+      "calibre": "275",
+      "grupo": "CMQ",
+      "segmento": "Core+",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4279.0,
+          "ptc": 2995.3,
+          "dinamica": 0.3
+        },
+        "2026-08-15_PM": {
+          "fleje": 4279.0,
+          "ptc": 2995.3,
+          "dinamica": 0.3
+        }
+      }
+    },
+    {
+      "id": "blue-moon-blue-moon-belgian-white-lata-473-ml",
+      "marca": "Blue Moon",
+      "sku": "Blue Moon Belgian White Lata 473 ml",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 5299.0,
+          "ptc": 5299.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 5299.0,
+          "ptc": 5299.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "kunstmann-kunstmann-torobayo-lata-470ml",
+      "marca": "Kunstmann",
+      "sku": "Kunstmann Torobayo Lata 470ml",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Sin clasificar",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 5209.0,
+          "ptc": 5209.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 5209.0,
+          "ptc": 5209.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "blonde-santa-fe-cerveza-rubia",
+      "marca": "Blonde",
+      "sku": "Santa Fe Cerveza Rubia",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Sin clasificar",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3009.0,
+          "ptc": 3009.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 3009.0,
+          "ptc": 3009.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "stella-artois-stella-artois-cerveza-710-ml",
+      "marca": "Stella Artois",
+      "sku": "Stella Artois Cerveza 710 ml",
+      "calibre": "710/730",
+      "grupo": "CMQ",
+      "segmento": "Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 6000.0,
+          "ptc": 3900.0,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 6000.0,
+          "ptc": 3900.0,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "estrella-damm-estrella-damm-cerveza",
+      "marca": "Estrella Damm",
+      "sku": "Estrella Damm Cerveza",
+      "calibre": "600",
+      "grupo": "Competencia",
+      "segmento": "Sin clasificar",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 2639.0,
+          "ptc": 2639.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 2639.0,
+          "ptc": 2639.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "estrella-galicia-estrella-galicia-cerveza-sin-gluten-lata-330ml",
+      "marca": "Estrella Galicia",
+      "sku": "Estrella Galicia Cerveza sin Gluten Lata 330ml",
+      "calibre": "330/355",
+      "grupo": "Competencia",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3619.0,
+          "ptc": 3619.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 3619.0,
+          "ptc": 3619.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "antares-ipa-cerveza-antares-especiales-sin-alcohol",
+      "marca": "Antares",
+      "sku": "Ipa Cerveza Antares Especiales Sin Alcohol",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 6779.0,
+          "ptc": 4745.3,
+          "dinamica": 0.3
+        },
+        "2026-08-15_PM": {
+          "fleje": 6779.0,
+          "ptc": 4745.3,
+          "dinamica": 0.3
+        }
+      }
+    },
+    {
+      "id": "heineken-heineken-cerveza-0-0-lata-330ml",
+      "marca": "Heineken",
+      "sku": "Heineken Cerveza 0.0 Lata 330ml",
+      "calibre": "330/355",
+      "grupo": "Competencia",
+      "segmento": "Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3579.0,
+          "ptc": 3579.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 3579.0,
+          "ptc": 3579.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "kunstmann-cerveza-kunstmann-session-ipa-470ml",
+      "marca": "Kunstmann",
+      "sku": "Cerveza Kunstmann Session Ipa 470ml",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Sin clasificar",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 5029.0,
+          "ptc": 5029.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 5029.0,
+          "ptc": 5029.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "imperial-imperial-golden-lata-710ml",
+      "marca": "Imperial",
+      "sku": "Imperial Golden Lata 710ml",
+      "calibre": "710/730",
+      "grupo": "Competencia",
+      "segmento": "Core+",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 5119.0,
+          "ptc": 5119.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 5119.0,
+          "ptc": 5119.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "heineken-heineken-cerveza-rubia",
+      "marca": "Heineken",
+      "sku": "Heineken Cerveza Rubia",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4579.0,
+          "ptc": 2976.35,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 4579.0,
+          "ptc": 2976.35,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "corona-corona-cerveza-rubia",
+      "marca": "Corona",
+      "sku": "Corona Cerveza Rubia",
+      "calibre": "710/730",
+      "grupo": "CMQ",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 7869.0,
+          "ptc": 5114.85,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 7869.0,
+          "ptc": 5114.85,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "corona-corona-cerveza-tipo-lager",
+      "marca": "Corona",
+      "sku": "Corona Cerveza Tipo Lager",
+      "calibre": "330/355",
+      "grupo": "CMQ",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4989.0,
+          "ptc": 3242.85,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 4989.0,
+          "ptc": 3242.85,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "corona-0-corona-cerveza-cero",
+      "marca": "Corona 0",
+      "sku": "Corona Cerveza Cero",
+      "calibre": "330/355",
+      "grupo": "CMQ",
+      "segmento": "Sin clasificar",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3819.0,
+          "ptc": 2291.4,
+          "dinamica": 0.4
+        },
+        "2026-08-15_PM": {
+          "fleje": 3819.0,
+          "ptc": 2291.4,
+          "dinamica": 0.4
+        }
+      }
+    },
+    {
+      "id": "heineken-heineken-cerveza-rubia-en-lata",
+      "marca": "Heineken",
+      "sku": "Heineken Cerveza Rubia en Lata",
+      "calibre": "710/730",
+      "grupo": "Competencia",
+      "segmento": "Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 6879.0,
+          "ptc": 4127.4,
+          "dinamica": 0.4
+        },
+        "2026-08-15_PM": {
+          "fleje": 6879.0,
+          "ptc": 4127.4,
+          "dinamica": 0.4
+        }
+      }
+    },
+    {
+      "id": "andes-origen-cerveza-andes-origen-ipa-473-cc",
+      "marca": "Andes Origen",
+      "sku": "Cerveza Andes Origen Ipa 473 cc",
+      "calibre": "473",
+      "grupo": "CMQ",
+      "segmento": "Core+",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3789.0,
+          "ptc": 2462.85,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 3789.0,
+          "ptc": 2462.85,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "schneider-schneider-cerveza-lager",
+      "marca": "Schneider",
+      "sku": "Schneider Cerveza Lager",
+      "calibre": "710/730",
+      "grupo": "Competencia",
+      "segmento": "Core",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4369.0,
+          "ptc": 3713.65,
+          "dinamica": 0.15
+        },
+        "2026-08-15_PM": {
+          "fleje": 4369.0,
+          "ptc": 3713.65,
+          "dinamica": 0.15
+        }
+      }
+    },
+    {
+      "id": "heineken-heineken-cerveza-original",
+      "marca": "Heineken",
+      "sku": "Heineken Cerveza Original",
+      "calibre": "330/355",
+      "grupo": "Competencia",
+      "segmento": "Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4849.0,
+          "ptc": 4849.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 4829.0,
+          "ptc": 4829.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "andes-origen-cerveza-andes-origen-rubia-473-cc",
+      "marca": "Andes Origen",
+      "sku": "Cerveza Andes Origen Rubia 473 cc",
+      "calibre": "473",
+      "grupo": "CMQ",
+      "segmento": "Core+",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3689.0,
+          "ptc": 2397.85,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 3689.0,
+          "ptc": 2397.85,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "michelob-ultra-michelob-cerveza-light-ultra",
+      "marca": "Michelob Ultra",
+      "sku": "Michelob Cerveza Light Ultra",
+      "calibre": "473",
+      "grupo": "CMQ",
+      "segmento": "Core+",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3399.0,
+          "ptc": 2379.3,
+          "dinamica": 0.3
+        },
+        "2026-08-15_PM": {
+          "fleje": 3399.0,
+          "ptc": 2379.3,
+          "dinamica": 0.3
+        }
+      }
+    },
+    {
+      "id": "stella-artois-stella-artois-cerveza",
+      "marca": "Stella Artois",
+      "sku": "Stella Artois Cerveza",
+      "calibre": "330/355",
+      "grupo": "CMQ",
+      "segmento": "Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4489.0,
+          "ptc": 2917.85,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 4479.0,
+          "ptc": 2911.35,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "1890-1890-cerveza-rubia",
+      "marca": "1890",
+      "sku": "1890 Cerveza Rubia",
+      "calibre": "473",
+      "grupo": "CMQ",
+      "segmento": "Value",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 2439.0,
+          "ptc": 2195.1,
+          "dinamica": 0.1
+        },
+        "2026-08-15_PM": {
+          "fleje": 2439.0,
+          "ptc": 2195.1,
+          "dinamica": 0.1
+        }
+      }
+    },
+    {
+      "id": "stella-artois-0-cerveza-stella-artois-0-473-cc",
+      "marca": "Stella Artois 0",
+      "sku": "Cerveza Stella Artois 0% 473 cc",
+      "calibre": "473",
+      "grupo": "CMQ",
+      "segmento": "Sin clasificar",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3719.0,
+          "ptc": 2417.35,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 3719.0,
+          "ptc": 2417.35,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "stella-artois-stella-artois-cerveza-rubia",
+      "marca": "Stella Artois",
+      "sku": "Stella Artois Cerveza Rubia",
+      "calibre": "473",
+      "grupo": "CMQ",
+      "segmento": "Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4619.0,
+          "ptc": 3002.35,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 4619.0,
+          "ptc": 3002.35,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "amstel-amstel-cerveza-lager-pura-malta",
+      "marca": "Amstel",
+      "sku": "Amstel Cerveza Lager Pura Malta",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Core",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3199.0,
+          "ptc": 3199.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 3199.0,
+          "ptc": 3199.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "andes-origen-cerveza-andes-origen-roja-473-cc",
+      "marca": "Andes Origen",
+      "sku": "Cerveza Andes Origen Roja 473 cc",
+      "calibre": "473",
+      "grupo": "CMQ",
+      "segmento": "Core+",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3669.0,
+          "ptc": 2384.85,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 3669.0,
+          "ptc": 2384.85,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "patagonia-cerveza-patagonia-amber-lager-730-cc",
+      "marca": "Patagonia",
+      "sku": "Cerveza Patagonia Amber Lager 730 cc",
+      "calibre": "710/730",
+      "grupo": "CMQ",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 7749.0,
+          "ptc": 5036.85,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 7749.0,
+          "ptc": 5036.85,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "patagonia-cerveza-patagonia-amber-lager-473-cc",
+      "marca": "Patagonia",
+      "sku": "Cerveza Patagonia Amber Lager 473 cc",
+      "calibre": "473",
+      "grupo": "CMQ",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 5609.0,
+          "ptc": 3645.85,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 5609.0,
+          "ptc": 3645.85,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "patagonia-cerveza-patagonia-ipa-730-cc",
+      "marca": "Patagonia",
+      "sku": "Cerveza Patagonia Ipa 730 cc",
+      "calibre": "710/730",
+      "grupo": "CMQ",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 7729.0,
+          "ptc": 5023.85,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 7729.0,
+          "ptc": 5023.85,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "rabieta-rabieta-cerveza-red-honey",
+      "marca": "Rabieta",
+      "sku": "Rabieta Cerveza Red Honey",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4099.0,
+          "ptc": 2459.4,
+          "dinamica": 0.4
+        },
+        "2026-08-15_PM": {
+          "fleje": 4099.0,
+          "ptc": 2459.4,
+          "dinamica": 0.4
+        }
+      }
+    },
+    {
+      "id": "imperial-imperial-cerveza-roja-amber-lager-lata",
+      "marca": "Imperial",
+      "sku": "Imperial Cerveza Roja Amber Lager Lata",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Core+",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3769.0,
+          "ptc": 3769.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 3769.0,
+          "ptc": 3769.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "antares-antares-cerveza-artesanal-honey",
+      "marca": "Antares",
+      "sku": "Antares Cerveza Artesanal Honey",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4529.0,
+          "ptc": 3170.3,
+          "dinamica": 0.3
+        },
+        "2026-08-15_PM": {
+          "fleje": 4529.0,
+          "ptc": 3170.3,
+          "dinamica": 0.3
+        }
+      }
+    },
+    {
+      "id": "rabieta-rabieta-cerveza-irish-red-ale",
+      "marca": "Rabieta",
+      "sku": "Rabieta Cerveza Irish Red Ale",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4059.0,
+          "ptc": 3653.1,
+          "dinamica": 0.1
+        },
+        "2026-08-15_PM": {
+          "fleje": 4059.0,
+          "ptc": 3653.1,
+          "dinamica": 0.1
+        }
+      }
+    },
+    {
+      "id": "pampa-pampa-brewing-amber-ale-lata-473ml",
+      "marca": "Pampa",
+      "sku": "Pampa Brewing Amber Ale Lata 473ml",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3219.0,
+          "ptc": 2897.1,
+          "dinamica": 0.1
+        },
+        "2026-08-15_PM": {
+          "fleje": 3219.0,
+          "ptc": 2897.1,
+          "dinamica": 0.1
+        }
+      }
+    },
+    {
+      "id": "salta-salta-cerveza-cautiva-roja",
+      "marca": "Salta",
+      "sku": "Salta Cerveza Cautiva Roja",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Core",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3529.0,
+          "ptc": 3529.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 3529.0,
+          "ptc": 3529.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "imperial-imperial-cerveza-sin-alcohol-roja",
+      "marca": "Imperial",
+      "sku": "Imperial Cerveza Sin Alcohol Roja",
+      "calibre": "330/355",
+      "grupo": "Competencia",
+      "segmento": "Core+",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 1399.0,
+          "ptc": 1399.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 1399.0,
+          "ptc": 1399.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "stella-artois-stella-artois-cerveza-pure-gold",
+      "marca": "Stella Artois",
+      "sku": "Stella Artois Cerveza Pure Gold",
+      "calibre": "330/355",
+      "grupo": "CMQ",
+      "segmento": "Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4949.0,
+          "ptc": 3216.85,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 4949.0,
+          "ptc": 3216.85,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "warsteiner-warsteiner-cerveza-330-ml",
+      "marca": "Warsteiner",
+      "sku": "Warsteiner Cerveza 330 ml",
+      "calibre": "330/355",
+      "grupo": "Competencia",
+      "segmento": "Value",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3509.0,
+          "ptc": 3509.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 3509.0,
+          "ptc": 3509.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "heineken-heineken-cerveza-sin-alcohol",
+      "marca": "Heineken",
+      "sku": "Heineken Cerveza Sin Alcohol",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3759.0,
+          "ptc": 3007.2,
+          "dinamica": 0.2
+        },
+        "2026-08-15_PM": {
+          "fleje": 3759.0,
+          "ptc": 3007.2,
+          "dinamica": 0.2
+        }
+      }
+    },
+    {
+      "id": "miller-cerveza-miller",
+      "marca": "Miller",
+      "sku": "Cerveza Miller",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Core+",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3939.0,
+          "ptc": 2166.45,
+          "dinamica": 0.45
+        },
+        "2026-08-15_PM": {
+          "fleje": 3939.0,
+          "ptc": 2166.45,
+          "dinamica": 0.45
+        }
+      }
+    },
+    {
+      "id": "corona-corona-cerveza",
+      "marca": "Corona",
+      "sku": "Corona Cerveza",
+      "calibre": "473",
+      "grupo": "CMQ",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 5159.0,
+          "ptc": 3353.35,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 5149.0,
+          "ptc": 3346.85,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "patagonia-cerveza-patagonia-24-7-473-cc",
+      "marca": "Patagonia",
+      "sku": "Cerveza Patagonia 24.7 473 cc",
+      "calibre": "473",
+      "grupo": "CMQ",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 5709.0,
+          "ptc": 3710.85,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 5709.0,
+          "ptc": 3710.85,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "imperial-imperial-cerveza-ipa",
+      "marca": "Imperial",
+      "sku": "Imperial Cerveza Ipa",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Core+",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3809.0,
+          "ptc": 3237.65,
+          "dinamica": 0.15
+        },
+        "2026-08-15_PM": {
+          "fleje": 3819.0,
+          "ptc": 3246.15,
+          "dinamica": 0.15
+        }
+      }
+    },
+    {
+      "id": "grolsch-grolsch-cerveza-pilsner",
+      "marca": "Grolsch",
+      "sku": "Grolsch Cerveza Pilsner",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4489.0,
+          "ptc": 4489.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 4489.0,
+          "ptc": 4489.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "quilmes-cerveza-quilmes-clasica-473-cc",
+      "marca": "Quilmes",
+      "sku": "Cerveza Quilmes Clásica 473 cc",
+      "calibre": "473",
+      "grupo": "CMQ",
+      "segmento": "Core",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 2839.0,
+          "ptc": 1845.35,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 2839.0,
+          "ptc": 1845.35,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "schneider-schneider-bebida-refrescante-remix-limon",
+      "marca": "Schneider",
+      "sku": "Schneider Bebida Refrescante Remix Limón",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Core",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3079.0,
+          "ptc": 2155.3,
+          "dinamica": 0.3
+        },
+        "2026-08-15_PM": {
+          "fleje": 3079.0,
+          "ptc": 2155.3,
+          "dinamica": 0.3
+        }
+      }
+    },
+    {
+      "id": "amstel-amstel-cerveza-lager",
+      "marca": "Amstel",
+      "sku": "Amstel Cerveza Lager",
+      "calibre": "710/730",
+      "grupo": "Competencia",
+      "segmento": "Core",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4529.0,
+          "ptc": 4529.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 4529.0,
+          "ptc": 4529.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "patagonia-cerveza-patagonia-vera-ipa-473-cc",
+      "marca": "Patagonia",
+      "sku": "Cerveza Patagonia Vera Ipa 473 cc",
+      "calibre": "473",
+      "grupo": "CMQ",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 5439.0,
+          "ptc": 5439.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "miller-miller-genuine-draft-cerveza",
+      "marca": "Miller",
+      "sku": "Miller Genuine Draft Cerveza",
+      "calibre": "330/355",
+      "grupo": "Competencia",
+      "segmento": "Core+",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4370.72,
+          "ptc": 2403.9,
+          "dinamica": 0.45
+        }
+      }
+    },
+    {
+      "id": "miller-miller-cerveza-genuine-draft-en-lata",
+      "marca": "Miller",
+      "sku": "Miller Cerveza Genuine Draft en Lata",
+      "calibre": "710/730",
+      "grupo": "Competencia",
+      "segmento": "Core+",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 5939.0,
+          "ptc": 3266.45,
+          "dinamica": 0.45
+        },
+        "2026-08-15_PM": {
+          "fleje": 5939.0,
+          "ptc": 3266.45,
+          "dinamica": 0.45
+        }
+      }
+    },
+    {
+      "id": "budweiser-cerveza-budweiser-473-cc",
+      "marca": "Budweiser",
+      "sku": "Cerveza Budweiser 473 cc",
+      "calibre": "473",
+      "grupo": "CMQ",
+      "segmento": "Core",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3289.0,
+          "ptc": 2137.85,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "blue-moon-blue-moon-cerveza-belgian-white",
+      "marca": "Blue Moon",
+      "sku": "Blue Moon Cerveza Belgian White",
+      "calibre": "330/355",
+      "grupo": "Competencia",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 5889.0,
+          "ptc": 5889.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 5889.0,
+          "ptc": 5889.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "imperial-imperial-cerveza-ligera-golden",
+      "marca": "Imperial",
+      "sku": "Imperial Cerveza Ligera Golden",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Core+",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3529.0,
+          "ptc": 3529.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 3529.0,
+          "ptc": 3529.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "miller-miller-cerveza-rubia",
+      "marca": "Miller",
+      "sku": "Miller Cerveza Rubia",
+      "calibre": "600",
+      "grupo": "Competencia",
+      "segmento": "Core+",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 6469.0,
+          "ptc": 3557.95,
+          "dinamica": 0.45
+        },
+        "2026-08-15_PM": {
+          "fleje": 6469.0,
+          "ptc": 3557.95,
+          "dinamica": 0.45
+        }
+      }
+    },
+    {
+      "id": "quilmes-0-cerveza-quilmes-0-473-cc",
+      "marca": "Quilmes 0",
+      "sku": "Cerveza Quilmes 0% 473 cc",
+      "calibre": "473",
+      "grupo": "CMQ",
+      "segmento": "Sin clasificar",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 2359.0,
+          "ptc": 1415.4,
+          "dinamica": 0.4
+        },
+        "2026-08-15_PM": {
+          "fleje": 2359.0,
+          "ptc": 1415.4,
+          "dinamica": 0.4
+        }
+      }
+    },
+    {
+      "id": "andes-cerveza-andes-origen-rubia-710-cc",
+      "marca": "Andes",
+      "sku": "Cerveza Andes Origen Rubia 710 cc",
+      "calibre": "710/730",
+      "grupo": "CMQ",
+      "segmento": "Sin clasificar",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 5089.0,
+          "ptc": 5089.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "patagonia-cerveza-patagonia-lager-del-sur-473-cc",
+      "marca": "Patagonia",
+      "sku": "Cerveza Patagonia Lager Del Sur 473 cc",
+      "calibre": "473",
+      "grupo": "CMQ",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 5439.0,
+          "ptc": 3535.35,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 5439.0,
+          "ptc": 3535.35,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "salta-cautiva-salta-cerveza-session-ipa",
+      "marca": "Salta Cautiva",
+      "sku": "Salta Cerveza Session Ipa",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Sin clasificar",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3609.0,
+          "ptc": 3609.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 3609.0,
+          "ptc": 3609.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "patagonia-cerveza-patagonia-lager-del-sur-730-cc",
+      "marca": "Patagonia",
+      "sku": "Cerveza Patagonia Lager Del Sur 730 cc",
+      "calibre": "710/730",
+      "grupo": "CMQ",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 7739.0,
+          "ptc": 5030.35,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 7739.0,
+          "ptc": 5030.35,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "imperial-imperial-cerveza-extra-lager",
+      "marca": "Imperial",
+      "sku": "Imperial Cerveza Extra Lager",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Core+",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3609.0,
+          "ptc": 3609.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 3609.0,
+          "ptc": 3609.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "andes-origen-cerveza-andes-origen-oro-473-cc",
+      "marca": "Andes Origen",
+      "sku": "Cerveza Andes Origen Oro 473 cc",
+      "calibre": "473",
+      "grupo": "CMQ",
+      "segmento": "Core+",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3499.0,
+          "ptc": 2274.35,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 3499.0,
+          "ptc": 2274.35,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "asahi-asahi-cerveza-dry",
+      "marca": "Asahi",
+      "sku": "Asahi Cerveza Dry",
+      "calibre": "330/355",
+      "grupo": "Competencia",
+      "segmento": "Sin clasificar",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 6109.0,
+          "ptc": 6109.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 6109.0,
+          "ptc": 6109.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "imperial-imperial-apa-cerveza-american-pale-ale-rubia",
+      "marca": "Imperial",
+      "sku": "Imperial Apa Cerveza American Pale Ale Rubia",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Core+",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3759.0,
+          "ptc": 3759.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 3759.0,
+          "ptc": 3759.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "stella-artois-stella-artois-cerveza-premium-lager",
+      "marca": "Stella Artois",
+      "sku": "Stella Artois Cerveza Premium Lager",
+      "calibre": "710/730",
+      "grupo": "CMQ",
+      "segmento": "Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 6849.0,
+          "ptc": 6849.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 6849.0,
+          "ptc": 6849.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "peroni-peroni-cerveza",
+      "marca": "Peroni",
+      "sku": "Peroni Cerveza",
+      "calibre": "330/355",
+      "grupo": "Competencia",
+      "segmento": "Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 5059.0,
+          "ptc": 5059.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 5059.0,
+          "ptc": 5059.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "warsteiner-warsteiner-cerveza-rubia",
+      "marca": "Warsteiner",
+      "sku": "Warsteiner Cerveza Rubia",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Value",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3949.0,
+          "ptc": 3949.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 3949.0,
+          "ptc": 3949.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "imperial-imperial-cerveza-lager-dorada-lata-710ml",
+      "marca": "Imperial",
+      "sku": "Imperial Cerveza Lager Dorada Lata 710ml",
+      "calibre": "710/730",
+      "grupo": "Competencia",
+      "segmento": "Core+",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 5079.0,
+          "ptc": 4317.15,
+          "dinamica": 0.15
+        },
+        "2026-08-15_PM": {
+          "fleje": 5079.0,
+          "ptc": 4317.15,
+          "dinamica": 0.15
+        }
+      }
+    },
+    {
+      "id": "imperial-imperial-cerveza-golden",
+      "marca": "Imperial",
+      "sku": "Imperial Cerveza Golden",
+      "calibre": "330/355",
+      "grupo": "Competencia",
+      "segmento": "Core+",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3969.0,
+          "ptc": 3969.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 3969.0,
+          "ptc": 3969.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "budweiser-cerveza-budweiser-710-cc",
+      "marca": "Budweiser",
+      "sku": "Cerveza Budweiser 710 cc",
+      "calibre": "710/730",
+      "grupo": "CMQ",
+      "segmento": "Core",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4569.0,
+          "ptc": 4569.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "guinness-cerveza-guinness-hop-house",
+      "marca": "Guinness",
+      "sku": "Cerveza Guinness Hop House",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Sin clasificar",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4119.0,
+          "ptc": 2059.5,
+          "dinamica": 0.5
+        },
+        "2026-08-15_PM": {
+          "fleje": 4119.0,
+          "ptc": 2059.5,
+          "dinamica": 0.5
+        }
+      }
+    },
+    {
+      "id": "grolsch-grolsch-cerveza-ipa",
+      "marca": "Grolsch",
+      "sku": "Grolsch Cerveza Ipa",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4809.0,
+          "ptc": 3847.2,
+          "dinamica": 0.2
+        },
+        "2026-08-15_PM": {
+          "fleje": 4809.0,
+          "ptc": 3847.2,
+          "dinamica": 0.2
+        }
+      }
+    },
+    {
+      "id": "pampa-pampa-brewing-cerveza-ipa-lata-473-ml",
+      "marca": "Pampa",
+      "sku": "Pampa Brewing Cerveza IPA Lata 473 ml",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3539.0,
+          "ptc": 2477.3,
+          "dinamica": 0.3
+        }
+      }
+    },
+    {
+      "id": "antares-antares-cerveza-ipa",
+      "marca": "Antares",
+      "sku": "Antares Cerveza Ipa",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4519.0,
+          "ptc": 3163.3,
+          "dinamica": 0.3
+        }
+      }
+    },
+    {
+      "id": "pampa-pampa-brewing-cerveza-honey-lata-473-ml",
+      "marca": "Pampa",
+      "sku": "Pampa Brewing Cerveza Honey Lata 473 ml",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3129.0,
+          "ptc": 1877.4,
+          "dinamica": 0.4
+        },
+        "2026-08-15_PM": {
+          "fleje": 3129.0,
+          "ptc": 1877.4,
+          "dinamica": 0.4
+        }
+      }
+    },
+    {
+      "id": "pampa-pampa-cerveza-dorada-lata-473-ml",
+      "marca": "Pampa",
+      "sku": "Pampa Cerveza Dorada Lata 473 ml",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3199.0,
+          "ptc": 1919.4,
+          "dinamica": 0.4
+        },
+        "2026-08-15_PM": {
+          "fleje": 3199.0,
+          "ptc": 1919.4,
+          "dinamica": 0.4
+        }
+      }
+    },
+    {
+      "id": "quilmes-cerveza-quilmes-bajo-cero",
+      "marca": "Quilmes",
+      "sku": "Cerveza Quilmes Bajo Cero",
+      "calibre": "473",
+      "grupo": "CMQ",
+      "segmento": "Core",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 1869.0,
+          "ptc": 1869.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "rabieta-rabieta-cerveza-american-ipa",
+      "marca": "Rabieta",
+      "sku": "Rabieta Cerveza American Ipa",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4549.0,
+          "ptc": 2956.85,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 4549.0,
+          "ptc": 2956.85,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "salta-salta-cautiva-cerveza-rubia",
+      "marca": "Salta",
+      "sku": "Salta Cautiva Cerveza Rubia",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Core",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3519.0,
+          "ptc": 3519.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 3519.0,
+          "ptc": 3519.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "antares-antares-kolsch-cerveza",
+      "marca": "Antares",
+      "sku": "Antares Kolsch Cerveza",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4609.0,
+          "ptc": 3226.3,
+          "dinamica": 0.3
+        },
+        "2026-08-15_PM": {
+          "fleje": 4609.0,
+          "ptc": 3226.3,
+          "dinamica": 0.3
+        }
+      }
+    },
+    {
+      "id": "quilmes-cerveza-quilmes-clasica-710-cc",
+      "marca": "Quilmes",
+      "sku": "Cerveza Quilmes Clásica 710 cc",
+      "calibre": "710/730",
+      "grupo": "CMQ",
+      "segmento": "Core",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4059.0,
+          "ptc": 2841.3,
+          "dinamica": 0.3
+        }
+      }
+    },
+    {
+      "id": "brahma-brahma-cerveza-chopp",
+      "marca": "Brahma",
+      "sku": "Brahma Cerveza Chopp",
+      "calibre": "710/730",
+      "grupo": "CMQ",
+      "segmento": "Core",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4329.0,
+          "ptc": 3030.3,
+          "dinamica": 0.3
+        },
+        "2026-08-15_PM": {
+          "fleje": 4329.0,
+          "ptc": 3030.3,
+          "dinamica": 0.3
+        }
+      }
+    },
+    {
+      "id": "antares-antares-cerveza-lager",
+      "marca": "Antares",
+      "sku": "Antares Cerveza Lager",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3839.0,
+          "ptc": 2687.3,
+          "dinamica": 0.3
+        },
+        "2026-08-15_PM": {
+          "fleje": 3839.0,
+          "ptc": 2687.3,
+          "dinamica": 0.3
+        }
+      }
+    },
+    {
+      "id": "bitburger-bitburger-cerveza",
+      "marca": "Bitburger",
+      "sku": "Bitburger Cerveza",
+      "calibre": "600",
+      "grupo": "Competencia",
+      "segmento": "Sin clasificar",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4949.0,
+          "ptc": 4949.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 5709.0,
+          "ptc": 5709.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "sol-starberg-cerveza-lager",
+      "marca": "Sol",
+      "sku": "Starberg Cerveza Lager",
+      "calibre": "600",
+      "grupo": "Competencia",
+      "segmento": "Sin clasificar",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 2949.0,
+          "ptc": 2949.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 2949.0,
+          "ptc": 2949.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "pampa-cerveza-pampa-lager-lata-473ml",
+      "marca": "Pampa",
+      "sku": "Cerveza Pampa Lager Lata 473ml",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3009.0,
+          "ptc": 1805.4,
+          "dinamica": 0.4
+        }
+      }
+    },
+    {
+      "id": "brahma-cerveza-brahma-chopp-lata-354mlx1",
+      "marca": "Brahma",
+      "sku": "Cerveza Brahma Chopp Lata 354mlx1",
+      "calibre": "330/355",
+      "grupo": "CMQ",
+      "segmento": "Core",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 1899.0,
+          "ptc": 1709.1,
+          "dinamica": 0.1
+        },
+        "2026-08-15_PM": {
+          "fleje": 1899.0,
+          "ptc": 1709.1,
+          "dinamica": 0.1
+        }
+      }
+    },
+    {
+      "id": "corona-corona-cerveza-0-0",
+      "marca": "Corona",
+      "sku": "Corona Cerveza 0.0",
+      "calibre": "473",
+      "grupo": "CMQ",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3609.0,
+          "ptc": 2165.4,
+          "dinamica": 0.4
+        },
+        "2026-08-15_PM": {
+          "fleje": 3609.0,
+          "ptc": 2165.4,
+          "dinamica": 0.4
+        }
+      }
+    },
+    {
+      "id": "brahma-cerveza-brahma-chopp-473-cc",
+      "marca": "Brahma",
+      "sku": "Cerveza Brahma Chopp 473 cc",
+      "calibre": "473",
+      "grupo": "CMQ",
+      "segmento": "Core",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 2989.0,
+          "ptc": 1942.85,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 2989.0,
+          "ptc": 1942.85,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "patagonia-cerveza-patagonia-bohemian-473-cc",
+      "marca": "Patagonia",
+      "sku": "Cerveza Patagonia Bohemian 473 cc",
+      "calibre": "473",
+      "grupo": "CMQ",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 6799.0,
+          "ptc": 4419.35,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 6799.0,
+          "ptc": 4419.35,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "temple-cerveza-temple-wolf-ipa-473-cc",
+      "marca": "Temple",
+      "sku": "Cerveza Temple Wolf Ipa 473 cc",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 5649.0,
+          "ptc": 3671.85,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 5649.0,
+          "ptc": 3671.85,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "goose-island-cerveza-goose-island-lager-473-cc",
+      "marca": "Goose Island",
+      "sku": "Cerveza Goose Island Lager 473 cc",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Sin clasificar",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4109.0,
+          "ptc": 2670.85,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 4109.0,
+          "ptc": 2670.85,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "heineken-cero-heineken-cerveza-sin-alcohol",
+      "marca": "Heineken Cero",
+      "sku": "Heineken Cerveza sin Alcohol",
+      "calibre": "330/355",
+      "grupo": "Competencia",
+      "segmento": "Sin clasificar",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 2369.0,
+          "ptc": 2369.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 2369.0,
+          "ptc": 2369.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "sol-sol-cerveza-rubia-original",
+      "marca": "Sol",
+      "sku": "Sol Cerveza Rubia Original",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Sin clasificar",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 2549.0,
+          "ptc": 2549.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 2549.0,
+          "ptc": 2549.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "corona-cerveza-corona-410-cc",
+      "marca": "Corona",
+      "sku": "Cerveza Corona 410 cc",
+      "calibre": "473",
+      "grupo": "CMQ",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 6439.0,
+          "ptc": 4185.35,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 6439.0,
+          "ptc": 4185.35,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "antares-antares-cerveza-scotch",
+      "marca": "Antares",
+      "sku": "Antares Cerveza Scotch",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4569.0,
+          "ptc": 3198.3,
+          "dinamica": 0.3
+        },
+        "2026-08-15_PM": {
+          "fleje": 4569.0,
+          "ptc": 3198.3,
+          "dinamica": 0.3
+        }
+      }
+    },
+    {
+      "id": "quilmes-cerveza-quilmes-stout-473-cc",
+      "marca": "Quilmes",
+      "sku": "Cerveza Quilmes Stout 473 cc",
+      "calibre": "473",
+      "grupo": "CMQ",
+      "segmento": "Core",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 2889.0,
+          "ptc": 1877.85,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 2889.0,
+          "ptc": 1877.85,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "imperial-imperial-cerveza-negra-cream-stout-en-lata",
+      "marca": "Imperial",
+      "sku": "Imperial Cerveza Negra Cream Stout en Lata",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Core+",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3789.0,
+          "ptc": 3789.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 3789.0,
+          "ptc": 3789.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "stella-artois-cerveza-stella-artois-noire-473-cc",
+      "marca": "Stella Artois",
+      "sku": "Cerveza Stella Artois Noire 473 cc",
+      "calibre": "473",
+      "grupo": "CMQ",
+      "segmento": "Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4409.0,
+          "ptc": 2865.85,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 4409.0,
+          "ptc": 2865.85,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "andes-origen-andes-origen-cerveza-negra-en-lata",
+      "marca": "Andes Origen",
+      "sku": "Andes Origen Cerveza Negra en Lata",
+      "calibre": "473",
+      "grupo": "CMQ",
+      "segmento": "Core+",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3679.0,
+          "ptc": 2391.35,
+          "dinamica": 0.35
+        },
+        "2026-08-15_PM": {
+          "fleje": 3679.0,
+          "ptc": 2391.35,
+          "dinamica": 0.35
+        }
+      }
+    },
+    {
+      "id": "kostritzer-kostritzer-cerveza-schwarzbier",
+      "marca": "Kostritzer",
+      "sku": "Kostritzer Cerveza Schwarzbier",
+      "calibre": "600",
+      "grupo": "Competencia",
+      "segmento": "Sin clasificar",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 7109.0,
+          "ptc": 5687.2,
+          "dinamica": 0.2
+        },
+        "2026-08-15_PM": {
+          "fleje": 7109.0,
+          "ptc": 5687.2,
+          "dinamica": 0.2
+        }
+      }
+    },
+    {
+      "id": "stella-artois-0-stella-artois-cerveza-0",
+      "marca": "Stella Artois 0",
+      "sku": "Stella Artois Cerveza 0%",
+      "calibre": "330/355",
+      "grupo": "CMQ",
+      "segmento": "Sin clasificar",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 3609.0,
+          "ptc": 2165.4,
+          "dinamica": 0.4
+        },
+        "2026-08-15_PM": {
+          "fleje": 3609.0,
+          "ptc": 2165.4,
+          "dinamica": 0.4
+        }
+      }
+    },
+    {
+      "id": "estrella-galicia-estrella-galicia-cerveza-0-0-tostada-lata-330ml",
+      "marca": "Estrella Galicia",
+      "sku": "Estrella Galicia Cerveza 0.0 Tostada Lata 330ml",
+      "calibre": "330/355",
+      "grupo": "Competencia",
+      "segmento": "Super Premium",
+      "dates": {
+        "2026-08-15_AM": {
+          "fleje": 4059.0,
+          "ptc": 4059.0,
+          "dinamica": 0.0
+        },
+        "2026-08-15_PM": {
+          "fleje": 4059.0,
+          "ptc": 4059.0,
+          "dinamica": 0.0
+        }
+      }
+    },
+    {
+      "id": "schneider-schneider-cerveza-rubia-lager",
+      "marca": "Schneider",
+      "sku": "Schneider Cerveza Rubia Lager",
+      "calibre": "473",
+      "grupo": "Competencia",
+      "segmento": "Core",
+      "dates": {
+        "2026-08-15_PM": {
+          "fleje": 3069.0,
+          "ptc": 3069.0,
+          "dinamica": 0.0
+        }
+      }
+    }
+  ]
+}

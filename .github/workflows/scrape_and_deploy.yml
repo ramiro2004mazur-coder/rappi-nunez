@@ -1,0 +1,94 @@
+name: Scrape Rappi Nunez y publicar dashboard
+
+on:
+  schedule:
+    - cron: '15 13 * * *'   # 10:15 ART -> corte AM
+    - cron: '0 22 * * *'    # 19:00 ART -> corte PM
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: 'Forzar slot (AM/PM). Vacio = autodetectar por hora.'
+        required: false
+        type: choice
+        options: ['', 'AM', 'PM']
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rappi-scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependencias
+        run: pip install -r scraper/requirements.txt
+
+      - name: Instalar navegador (Chromium) para el scraper
+        run: playwright install --with-deps chromium
+
+      - name: Resolver slot segun el cron que disparo la corrida
+        id: resolve
+        run: |
+          if [ -n "${{ github.event.inputs.slot }}" ]; then
+            echo "slot=${{ github.event.inputs.slot }}" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "15 13 * * *" ]; then
+            echo "slot=AM" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "0 22 * * *" ]; then
+            echo "slot=PM" >> "$GITHUB_OUTPUT"
+          else
+            echo "slot=" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Scrapear (no rompe la corrida si falla 1 SKU puntual)
+        id: scrape
+        run: |
+          cd scraper
+          ARGS=""
+          if [ -n "${{ steps.resolve.outputs.slot }}" ]; then
+            ARGS="--slot ${{ steps.resolve.outputs.slot }}"
+          fi
+          python3 scrape.py $ARGS --out-dir ../data/raw
+
+      - name: Ingestar corrida al historico
+        run: |
+          python3 scripts/ingest_run.py \
+            --csv "${{ steps.scrape.outputs.csv_path }}" \
+            --date "${{ steps.scrape.outputs.fecha }}" \
+            --slot "${{ steps.scrape.outputs.slot }}"
+
+      - name: Regenerar data.json del dashboard
+        run: python3 scripts/build_dashboard_data.py
+
+      - name: Commit y push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ docs/data.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios de datos, no se commitea."
+          else
+            git commit -m "data: corte ${{ steps.scrape.outputs.fecha }} ${{ steps.scrape.outputs.slot }}"
+            git push
+          fi
+
+      - name: Subir log de errores como artifact (si hubo)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: logs-${{ steps.scrape.outputs.fecha }}-${{ steps.scrape.outputs.slot }}
+          path: data/logs/
+          if-no-files-found: ignore
+          retention-days: 30

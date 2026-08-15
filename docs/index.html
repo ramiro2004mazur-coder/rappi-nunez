@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rappi · Nunez</title>
+<style>
+:root{--bg:#0b1017;--bg2:#0e141c;--panel:#131b26;--panel2:#18222f;--line:#233043;--ink:#eef4fb;--muted:#8ea0b5;--green:#1fcf8a;--red:#ff6b6b;--yellow:#ffcf5c;--blue:#5aa9ff;--accent:#f5a623;--cmqbg:rgba(90,169,255,.10);--compbg:rgba(245,166,35,.09);--shadow:0 14px 40px rgba(0,0,0,.35)}
+body.light{--bg:#f4f6fa;--bg2:#eef1f6;--panel:#fff;--panel2:#f7f9fc;--line:#dfe4ec;--ink:#1a2430;--muted:#5f6b7a;--green:#0a9d63;--red:#d64545;--yellow:#c98a00;--blue:#2f6fdf;--accent:#e0890f;--cmqbg:rgba(47,111,223,.08);--compbg:rgba(224,137,15,.10);--shadow:0 10px 30px rgba(20,40,80,.10)}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(--ink);font-family:Inter,Segoe UI,system-ui,Arial,sans-serif;transition:background .3s,color .3s}
+.wrap{padding:20px 26px;max-width:1600px;margin:0 auto}
+.top{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:16px;flex-wrap:wrap}
+.brand{display:flex;gap:14px;align-items:center}
+.logo{width:44px;height:44px;border-radius:12px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:0 4px 14px rgba(245,166,35,.4)}
+.brand h1{font-size:26px;margin:0;letter-spacing:.3px}
+.brand small{color:var(--muted);font-size:12.5px}
+.actions{display:flex;gap:8px;flex-wrap:wrap}
+.iconbtn{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:11px 13px;cursor:pointer;font-weight:800}
+.alert{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--accent);color:var(--muted);border-radius:10px;padding:11px 15px;margin-bottom:14px;font-size:13px}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:14px 0}
+.metric{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow)}
+.metric .k{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.metric .v{font-size:24px;font-weight:900;margin-top:6px}
+.tabs{display:flex;gap:8px;margin:14px 0;flex-wrap:wrap}
+.tabs button{background:var(--panel);border:1px solid var(--line);color:var(--muted);border-radius:10px;padding:10px 15px;font-weight:800;cursor:pointer;transition:.15s}
+.tabs button:hover{color:var(--ink)}
+.tabs button.active{background:var(--panel2);color:var(--ink);border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.filterbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:16px 0 6px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:8px 10px;box-shadow:var(--shadow)}
+.search{position:relative;flex:1 1 240px;min-width:200px}
+.search input{width:100%;background:transparent;border:0;color:var(--ink);padding:10px 12px 10px 36px;font-size:14px;outline:none}
+.search input::placeholder{color:var(--muted)}
+.search .ic{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:15px;pointer-events:none}
+.fdiv{width:1px;align-self:stretch;background:var(--line);margin:4px 2px}
+.selminimal{background:transparent;border:0;color:var(--ink);font-size:13px;font-weight:600;padding:9px 8px;border-radius:9px;cursor:pointer;outline:none}
+.selminimal:hover{background:var(--panel2)}
+.toggles{display:flex;gap:4px;flex-wrap:wrap}
+.tg{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:var(--muted);padding:8px 12px;border-radius:999px;cursor:pointer;user-select:none;transition:.15s;border:1px solid transparent}
+.tg input{display:none}
+.tg .dot{width:15px;height:15px;border-radius:5px;border:1.5px solid var(--line);display:inline-block;position:relative;transition:.15s}
+.tg input:checked + .dot{background:var(--accent);border-color:var(--accent)}
+.tg input:checked + .dot::after{content:"";position:absolute;left:4px;top:1px;width:4px;height:8px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.tg:hover{background:var(--panel2);color:var(--ink)}
+.chips{display:flex;gap:7px;flex-wrap:wrap;margin:8px 2px 4px}
+.chip{background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:6px 13px;font-size:12px;cursor:pointer;transition:.15s}
+.chip:hover{color:var(--ink);border-color:var(--muted)}
+.chip.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.tablebox{overflow:auto;max-height:66vh;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow)}
+.timeline{border-collapse:separate;border-spacing:0;width:max-content;min-width:100%;background:var(--panel)}
+.timeline th,.timeline td{border-bottom:1px solid var(--line);padding:9px 12px;font-size:12px;white-space:nowrap;vertical-align:middle}
+.timeline th{position:sticky;top:0;background:var(--panel2);color:var(--muted);z-index:4;text-align:center;font-weight:800}
+.timeline .product{position:sticky;left:0;background:var(--panel);color:var(--ink);z-index:3;min-width:250px;font-weight:800;text-align:left;cursor:pointer}
+.timeline .product:hover{color:var(--blue)}
+.timeline th.product{z-index:6;background:var(--panel2);cursor:default}
+.timeline th.product:hover{color:var(--muted)}
+.timeline tbody tr:hover td{background:var(--panel2)}
+.subsku{display:block;color:var(--muted);font-weight:600;font-size:11px;margin-top:3px;max-width:330px;white-space:normal}
+.pricecell{min-width:118px;text-align:right}
+.fleje{color:var(--muted);text-decoration:line-through;font-weight:700;font-size:11.5px}
+.ptc{color:var(--green);font-weight:900;font-size:13.5px}
+.dyn{color:var(--green);font-weight:800;font-size:11px;margin-left:3px}
+.nodyn .ptc{color:var(--ink)}.nodyn .dyn{color:var(--muted)}
+.missing{color:var(--line);text-align:center}
+.diff.up{color:var(--red);font-weight:900}.diff.down{color:var(--green);font-weight:900}.diff.flat{color:var(--yellow);font-weight:900}
+.slot{font-size:9.5px;font-weight:900;padding:1px 7px;border-radius:6px;display:inline-block;margin-top:3px;letter-spacing:.03em}
+.slot.am{background:rgba(90,169,255,.18);color:var(--blue)}
+.slot.pm{background:rgba(250,0,80,.16);color:var(--accent)}
+.fightGrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:16px}
+.fightCard{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+.fightHead{padding:13px 16px;background:var(--panel2);font-weight:900;border-bottom:1px solid var(--line)}
+.fightHead .seg{font-size:11px;color:var(--muted);margin-top:3px;font-weight:600}
+.fightScroll{overflow-x:auto;overflow-y:hidden}
+.fightTable{width:max-content;min-width:100%;border-collapse:collapse}
+.fightTable th,.fightTable td{border-bottom:1px solid var(--line);padding:9px 10px;font-size:12px;vertical-align:middle;white-space:nowrap}
+.fightTable thead th{position:sticky;top:0;background:var(--panel2);color:var(--muted);text-align:center;font-weight:800}
+.fightTable td.cal{position:sticky;left:0;background:var(--panel);font-weight:900;z-index:2}
+.cmqSide{background:var(--cmqbg)}.compSide{background:var(--compbg)}
+.winner{outline:2px solid var(--green);outline-offset:-2px;border-radius:6px}
+.gapGood{color:var(--green);font-weight:900}.gapBad{color:var(--red);font-weight:900}.gapFlat{color:var(--yellow);font-weight:900}
+.tablebox::-webkit-scrollbar,.fightScroll::-webkit-scrollbar{height:12px;width:12px}
+.tablebox::-webkit-scrollbar-thumb,.fightScroll::-webkit-scrollbar-thumb{background:var(--line);border-radius:8px}
+.tablebox::-webkit-scrollbar-thumb:hover,.fightScroll::-webkit-scrollbar-thumb:hover{background:var(--accent)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;margin-top:14px;box-shadow:var(--shadow)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.note{font-size:12px;color:var(--muted)}
+.chartPanel{display:none}
+.chartPanel.open{display:block}
+.chartHead{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px}
+.chartHead h3{margin:0;font-size:15px}
+.chartHead .sub{color:var(--muted);font-size:12px;margin-top:2px}
+.chartClose{background:var(--panel2);border:1px solid var(--line);color:var(--muted);border-radius:8px;padding:6px 10px;cursor:pointer;font-weight:800;font-size:12px}
+.chartClose:hover{color:var(--ink)}
+.chartLegend{display:flex;gap:14px;margin-top:8px;font-size:11.5px;color:var(--muted)}
+.chartLegend span{display:inline-flex;align-items:center;gap:5px}
+.legdot{width:9px;height:9px;border-radius:50%;display:inline-block}
+@media(max-width:1000px){.filterbar{flex-direction:column;align-items:stretch}.grid2{grid-template-columns:1fr}.fightGrid{grid-template-columns:1fr}.wrap{padding:14px}}
+</style>
+</head>
+<body class="dark">
+<div class="wrap">
+  <div class="top">
+    <div class="brand"><div class="logo">&#127866;</div>
+      <div><h1>Rappi &middot; Nunez</h1><small>Historico de precios &middot; fleje, PTC y dinamica &middot; 2 cortes diarios (AM/PM)</small></div>
+    </div>
+    <div class="actions">
+      <button class="iconbtn" onclick="downloadCSV()">&#8595; CSV</button>
+      <button class="iconbtn" id="themeBtn" onclick="toggleTheme()">&#9790; Tema</button>
+    </div>
+  </div>
+  <div class="alert">Precios publicos de Rappi Turbo, tienda Nunez (Monroe 1616). Regla: 100% OFF = 0%. Packs y combos se excluyen. Cada dia tiene 2 cortes: AM (~10:15) y PM (~19:00).</div>
+  <div class="metrics" id="metrics"></div>
+  <div class="tabs">
+    <button class="active" data-tab="timeline">Evolucion por SKU</button>
+    <button data-tab="luchas">&#129354; Luchas</button>
+    <button data-tab="heatmap">Heatmap dinamica</button>
+    <button data-tab="changes">Cambios</button>
+    <button data-tab="insights">Insights</button>
+  </div>
+  <div class="filterbar">
+    <div class="search"><span class="ic">&#128269;</span><input id="q" placeholder="Buscar cerveza..."/></div>
+    <div class="fdiv"></div>
+    <select id="brand" class="selminimal"><option value="">Todas las marcas</option></select>
+    <select id="size" class="selminimal"><option value="">Todos los tamanos</option></select>
+    <select id="seg" class="selminimal"><option value="">Todos los segmentos</option></select>
+    <div class="fdiv"></div>
+    <div class="toggles">
+      <label class="tg"><input id="onlyBoth" type="checkbox"><span class="dot"></span>comparables</label>
+      <label class="tg"><input id="onlyOffer" type="checkbox"><span class="dot"></span>en oferta</label>
+      <label class="tg"><input id="groupBrand" type="checkbox"><span class="dot"></span>agrupar</label>
+    </div>
+  </div>
+  <div class="chips" id="brandChips"></div>
+  <div class="panel chartPanel" id="chartPanel"></div>
+  <div id="content"><p class="note">Cargando datos...</p></div>
+</div>
+<script>
+let DATA={pivot:[],dates:[],stats:[],fights:[],meta:{}};let tab='timeline';let current=[];
+const fmtMoney=v=>(v==null||v==='')?'-':'$'+Math.round(Number(v)).toLocaleString('es-AR');
+const fmtPct=v=>(v==null||v==='')?'-':Math.round(Number(v)*100)+'%';
+const uniq=a=>[...new Set(a.filter(Boolean))].sort();const el=i=>document.getElementById(i);
+function toggleTheme(){document.body.classList.toggle('light');document.body.classList.toggle('dark');const light=document.body.classList.contains('light');el('themeBtn').innerHTML=(light?'&#9728; ':'&#9790; ')+'Tema';try{localStorage.setItem('rappi_theme',light?'light':'dark');}catch(e){}}
+(function(){try{if(localStorage.getItem('rappi_theme')==='light'){document.body.classList.remove('dark');document.body.classList.add('light');}}catch(e){}})();
+async function cargar(){try{const r=await fetch('./data.json?'+Date.now());DATA=await r.json();buildControls();render();}catch(e){el('content').innerHTML='<div class="panel note">No pude cargar data.json.</div>';}}
+function buildControls(){const brands=uniq(DATA.pivot.map(x=>x.marca)),sizes=uniq(DATA.pivot.map(x=>x.calibre)),segs=uniq(DATA.pivot.map(x=>x.segmento));el('brand').innerHTML='<option value="">Todas las marcas</option>'+brands.map(x=>'<option>'+x+'</option>').join('');el('size').innerHTML='<option value="">Todos los tamanos</option>'+sizes.map(x=>'<option>'+x+'</option>').join('');el('seg').innerHTML='<option value="">Todos los segmentos</option>'+segs.map(x=>'<option>'+x+'</option>').join('');el('brandChips').innerHTML=['CMQ','Competencia','Quilmes','Schneider','Andes Origen','Miller','Stella Artois','Heineken','Patagonia','Corona'].map(x=>'<span class="chip" onclick="chip(\''+x+'\',this)">'+x+'</span>').join('');['q','brand','size','seg','onlyBoth','onlyOffer','groupBrand'].forEach(i=>el(i).oninput=render);document.querySelectorAll('.tabs button').forEach(bt=>bt.onclick=()=>{tab=bt.dataset.tab;document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('active'));bt.classList.add('active');closeChart();render();});}
+function chip(x,node){document.querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));node.classList.add('active');if(x==='CMQ'||x==='Competencia'){el('brand').value='';el('q').value=x.toLowerCase();}else{el('brand').value=x;el('q').value='';}render();}
+const dates=()=>DATA.dates||[];
+function splitSlot(d){const i=d.lastIndexOf('_');return i===-1?[d,'']:[d.slice(0,i),d.slice(i+1)];}
+function fmtSlotHeader(d){const [date,slot]=splitSlot(d);const dd=date.slice(8,10)+'/'+date.slice(5,7);return dd+(slot?'<br><span class="slot '+slot.toLowerCase()+'">'+slot+'</span>':'');}
+function fmtSlotShort(d){const [date,slot]=splitSlot(d);return date.slice(8,10)+'/'+date.slice(5,7)+(slot?' '+slot:'');}
+function rows(){const q=el('q').value.toLowerCase(),b=el('brand').value,s=el('size').value,g=el('seg').value,both=el('onlyBoth').checked,offer=el('onlyOffer').checked,D=dates();return DATA.pivot.filter(r=>(!b||r.marca===b)&&(!s||r.calibre===s)&&(!g||r.segmento===g)&&(!q||(r.sku+' '+r.marca+' '+r.grupo).toLowerCase().includes(q))&&(!both||D.every(d=>r.dates[d]))&&(!offer||D.some(d=>r.dates[d]&&Number(r.dates[d].dinamica)>0)));}
+function metrics(rs){const D=dates(),both=rs.filter(r=>D.every(d=>r.dates[d])).length,offer=rs.filter(r=>D.some(d=>r.dates[d]&&r.dates[d].dinamica>0)).length;el('metrics').innerHTML=card('SKUs totales',DATA.pivot.length)+card('Cortes (AM/PM)',D.length)+card('Mostrando',rs.length)+card('En oferta',offer)+card('Comparables',both)+(DATA.meta&&DATA.meta.generado?card('Actualizado',DATA.meta.generado.slice(5,16)):'');}
+function card(k,v){return '<div class="metric"><div class="k">'+k+'</div><div class="v">'+v+'</div></div>';}
+function priceHtml(x){if(!x)return '<span class="missing">&mdash;</span>';const c=Number(x.dinamica)>0?'':'nodyn';return '<div class="pricecell '+c+'"><div class="fleje">'+fmtMoney(x.fleje)+'</div><span class="ptc">'+fmtMoney(x.ptc)+'</span> <span class="dyn">&minus;'+fmtPct(x.dinamica)+'</span></div>';}
+const cls=v=>v==null?'':v>0?'up':v<0?'down':'flat';
+function flat(r){const o={Marca:r.marca,SKU:r.sku,Calibre:r.calibre,Grupo:r.grupo,Segmento:r.segmento};dates().forEach(d=>{const x=r.dates[d]||{};o[fmtSlotShort(d)+' Fleje']=x.fleje??'';o[fmtSlotShort(d)+' PTC']=x.ptc??'';o[fmtSlotShort(d)+' Dinamica']=x.dinamica??'';});return o;}
+function timeline(){let rs=rows();metrics(rs);if(el('groupBrand').checked)rs.sort((a,b)=>(a.marca+a.sku).localeCompare(b.marca+b.sku));current=rs.map(flat);const D=dates();let h='<div class="tablebox"><table class="timeline"><thead><tr><th class="product">Producto</th>'+D.map(d=>'<th>'+fmtSlotHeader(d)+'</th>').join('')+'<th>&Delta; PTC</th><th>&Delta; Din.</th></tr></thead><tbody>';rs.forEach(r=>{const f=r.dates[D[0]],l=r.dates[D[D.length-1]],vp=(f&&l)?l.ptc-f.ptc:null,vd=(f&&l)?l.dinamica-f.dinamica:null;h+='<tr><td class="product" onclick="openChart(\''+r.id+'\')">'+r.marca+' '+r.calibre+'<span class="subsku">'+r.sku+'</span></td>'+D.map(d=>'<td>'+priceHtml(r.dates[d])+'</td>').join('')+'<td class="diff '+cls(vp)+'">'+(vp==null?'&mdash;':(vp>0?'+':'')+fmtMoney(vp))+'</td><td class="diff '+cls(vd)+'">'+(vd==null?'&mdash;':(vd>0?'+':'')+Math.round(vd*100)+' pp')+'</td></tr>';});return h+'</tbody></table></div>';}
+function heatmap(){let rs=rows();metrics(rs);current=rs.map(flat);const D=dates();let h='<div class="tablebox"><table class="timeline"><thead><tr><th class="product">Producto</th>'+D.map(d=>'<th>'+fmtSlotHeader(d)+'</th>').join('')+'</tr></thead><tbody>';rs.forEach(r=>{h+='<tr><td class="product" onclick="openChart(\''+r.id+'\')">'+r.marca+' '+r.calibre+'<span class="subsku">'+r.sku+'</span></td>'+D.map(d=>{const x=r.dates[d],dy=x?x.dinamica:null,bg=dy==null?'transparent':dy>=.4?'rgba(31,207,138,.35)':dy>=.25?'rgba(31,207,138,.22)':dy>0?'rgba(255,207,92,.20)':'transparent';return '<td style="background:'+bg+';text-align:center;font-weight:900">'+(dy==null?'&mdash;':fmtPct(dy))+'</td>';}).join('')+'</tr>';});return h+'</tbody></table></div>';}
+function changes(){const D=dates();if(D.length<2){metrics(rows());return '<div class="panel note">Necesitas al menos 2 cortes para ver cambios.</div>';}const last=D[D.length-1],prev=D[D.length-2];let rs=rows().filter(r=>r.dates[prev]&&r.dates[last]).map(r=>{const a=r.dates[prev],b=r.dates[last];return{Marca:r.marca,SKU:r.sku,Calibre:r.calibre,Grupo:r.grupo,PTC_prev:a.ptc,PTC_last:b.ptc,Var_PTC:b.ptc-a.ptc,Dyn_prev:a.dinamica,Dyn_last:b.dinamica,Var_Dyn:b.dinamica-a.dinamica};}).sort((a,b)=>Math.abs(b.Var_PTC)-Math.abs(a.Var_PTC));current=rs;metrics(rows());const sameDay=prev.split('_')[0]===last.split('_')[0];return '<div class="panel"><h3>Cambios '+fmtSlotShort(prev)+' vs '+fmtSlotShort(last)+(sameDay?' <span class="note">(mismo dia &mdash; variacion intradia)</span>':'')+'</h3>'+simple(rs,[['Marca'],['SKU'],['Calibre'],['Grupo'],['PTC_prev','PTC anterior','money'],['PTC_last','PTC ultimo','money'],['Var_PTC','&Delta; PTC','money'],['Dyn_prev','Din anterior','pct'],['Dyn_last','Din ultimo','pct'],['Var_Dyn','&Delta; Din','pp']])+'</div>';}
+const inc=(n,list)=>list.some(x=>String(n||'').toLowerCase().includes(String(x).toLowerCase())||String(x).toLowerCase().includes(String(n||'').toLowerCase()));
+function best(list,d){const a=list.filter(r=>r.dates[d]&&r.dates[d].ptc!=null);return a.length?a.sort((x,y)=>x.dates[d].ptc-y.dates[d].ptc)[0]:null;}
+function gap(a,b,d){if(!a||!b)return '&mdash;';const diff=a.dates[d].ptc-b.dates[d].ptc,p=diff/b.dates[d].ptc,c=diff<0?'gapGood':diff>0?'gapBad':'gapFlat';return '<span class="'+c+'">'+(diff>0?'+':'')+fmtMoney(diff)+'<br>'+(p>0?'+':'')+Math.round(p*100)+'%</span>';}
+function luchas(){metrics(rows());const D=dates();let h='<div class="panel" style="padding:12px 14px"><span class="note">CMQ vs competencia por mismo calibre. Cada tarjeta tiene <b>barra para deslizar</b> y ver todos los cortes (AM/PM).</span></div><div class="fightGrid">';current=[];(DATA.fights||[]).forEach(f=>{const all=DATA.pivot.filter(r=>inc(r.marca,f.cmq)||inc(r.marca,f.comp));const sizes=uniq(all.map(r=>r.calibre));h+='<div class="fightCard"><div class="fightHead">'+f.name+'<div class="seg">'+f.seg+'</div></div><div class="fightScroll"><table class="fightTable"><thead><tr><th class="cal">Cal.</th>'+D.map(d=>'<th colspan="3">'+fmtSlotHeader(d)+'</th>').join('')+'</tr><tr><th class="cal"></th>'+D.map(d=>'<th>CMQ</th><th>Comp.</th><th>Gap</th>').join('')+'</tr></thead><tbody>';if(!sizes.length){h+='<tr><td class="note" style="padding:16px">Sin SKUs</td></tr>';}sizes.forEach(s=>{const aL=all.filter(r=>r.calibre===s&&inc(r.marca,f.cmq)),bL=all.filter(r=>r.calibre===s&&inc(r.marca,f.comp));h+='<tr><td class="cal">'+s+'</td>';D.forEach(d=>{const a=best(aL,d),b=best(bL,d),wa=a&&b&&a.dates[d].ptc<b.dates[d].ptc,wb=a&&b&&b.dates[d].ptc<a.dates[d].ptc;h+='<td class="cmqSide '+(wa?'winner':'')+'">'+priceHtml(a?a.dates[d]:null)+'</td><td class="compSide '+(wb?'winner':'')+'">'+priceHtml(b?b.dates[d]:null)+'</td><td>'+gap(a,b,d)+'</td>';current.push({Lucha:f.name,Calibre:s,Corte:fmtSlotShort(d),CMQ:a?a.marca+' | '+a.sku:'',Comp:b?b.marca+' | '+b.sku:'',Gap:(a&&b)?a.dates[d].ptc-b.dates[d].ptc:''});});h+='</tr>';});h+='</tbody></table></div></div>';});return h+'</div>';}
+function insights(){let arr=(DATA.stats||[]).filter(x=>(!el('brand').value||x.marca===el('brand').value)&&(!el('seg').value||x.segmento===el('seg').value)).sort((a,b)=>b.dias_dinamica-a.dias_dinamica||b.max_dinamica-a.max_dinamica);current=arr;metrics(rows());return '<div class="grid2"><div class="panel"><h3>Continuidad de dinamica</h3>'+simple(arr,[['marca','Marca'],['grupo','Grupo'],['segmento','Segmento'],['dias','Cortes'],['dias_dinamica','Cortes con din.'],['max_dinamica','Max','pct'],['avg_dinamica','Prom.','pct'],['avg_ptc','PTC prom.','money']])+'</div><div class="panel"><h3>Como leerlo</h3><p class="note">Cuantos cortes (AM/PM) estuvo prendida la dinamica de cada marca y con que intensidad. Usa <b>Luchas</b> para el mano a mano por calibre y <b>Evolucion por SKU</b> (click en un producto) para el grafico de linea de tiempo.</p></div></div>';}
+function simple(rs,cols){if(!rs.length)return '<div class="panel note">Sin datos.</div>';return '<div class="tablebox"><table class="timeline"><thead><tr>'+cols.map(c=>'<th>'+(c[1]||c[0])+'</th>').join('')+'</tr></thead><tbody>'+rs.map(r=>'<tr>'+cols.map(c=>'<td>'+cell(r[c[0]],c[2])+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>';}
+function cell(v,type){if(type==='money')return fmtMoney(v);if(type==='pct')return fmtPct(v);if(type==='pp')return v==null?'&mdash;':(v>0?'+':'')+Math.round(v*100)+' pp';return v??'&mdash;';}
+function render(){el('content').innerHTML=tab==='timeline'?timeline():tab==='luchas'?luchas():tab==='heatmap'?heatmap():tab==='changes'?changes():insights();}
+function downloadCSV(){if(!current.length)return;const k=Object.keys(current[0]);const csv=[k.join(';')].concat(current.map(r=>k.map(x=>String(r[x]??'').replaceAll(';',',')).join(';'))).join('\n');const blob=new Blob([csv],{type:'text/csv;charset=utf-8;'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='rappi_vista.csv';a.click();}
+
+/* ---- Grafico de evolucion por SKU (linea de tiempo, marca AM/PM) ---- */
+function closeChart(){const p=el('chartPanel');p.classList.remove('open');p.innerHTML='';}
+function openChart(id){const r=DATA.pivot.find(x=>x.id===id);if(!r)return;const D=dates();const pts=D.map(d=>({d,v:r.dates[d]})).filter(p=>p.v&&p.v.ptc!=null);const p=el('chartPanel');if(!pts.length){p.classList.add('open');p.innerHTML='<div class="chartHead"><div><h3>'+r.marca+' '+r.calibre+'</h3><div class="sub">'+r.sku+'</div></div><button class="chartClose" onclick="closeChart()">Cerrar &times;</button></div><p class="note">Sin historico suficiente todavia.</p>';p.scrollIntoView({behavior:'smooth',block:'nearest'});return;}
+  const W=Math.max(560,pts.length*70),H=220,padL=54,padR=18,padT=18,padB=34;
+  const vals=pts.map(p=>p.v.ptc);const min=Math.min(...vals),max=Math.max(...vals);const span=(max-min)||1;
+  const x=i=>padL+(pts.length===1?0:(i*(W-padL-padR)/(pts.length-1)));
+  const y=v=>padT+(H-padT-padB)*(1-(v-min)/span);
+  const linePath=pts.map((pt,i)=>(i===0?'M':'L')+x(i).toFixed(1)+','+y(pt.v.ptc).toFixed(1)).join(' ');
+  const areaPath=linePath+' L'+x(pts.length-1).toFixed(1)+','+(H-padB)+' L'+x(0).toFixed(1)+','+(H-padB)+' Z';
+  const gridY=[0,.25,.5,.75,1].map(t=>padT+(H-padT-padB)*t);
+  let svg='<svg viewBox="0 0 '+W+' '+H+'" width="100%" height="240" preserveAspectRatio="xMinYMid meet" style="overflow:visible">';
+  gridY.forEach(gy=>svg+='<line x1="'+padL+'" y1="'+gy.toFixed(1)+'" x2="'+(W-padR)+'" y2="'+gy.toFixed(1)+'" stroke="var(--line)" stroke-width="1"/>');
+  svg+='<path d="'+areaPath+'" fill="var(--green)" opacity="0.08" stroke="none"/>';
+  svg+='<path d="'+linePath+'" fill="none" stroke="var(--green)" stroke-width="2.5"/>';
+  pts.forEach((pt,i)=>{const slot=splitSlot(pt.d)[1].toLowerCase();const color=slot==='pm'?'var(--accent)':'var(--blue)';const cx=x(i).toFixed(1),cy=y(pt.v.ptc).toFixed(1);
+    svg+='<circle cx="'+cx+'" cy="'+cy+'" r="4.5" fill="'+color+'" stroke="var(--panel)" stroke-width="1.5"/>';
+    svg+='<text x="'+cx+'" y="'+(Number(cy)-10)+'" font-size="10.5" font-weight="800" fill="var(--ink)" text-anchor="middle">'+fmtMoney(pt.v.ptc)+'</text>';
+    svg+='<text x="'+cx+'" y="'+(H-padB+16)+'" font-size="10" fill="var(--muted)" text-anchor="middle">'+fmtSlotShort(pt.d)+'</text>';
+  });
+  svg+='</svg>';
+  const first=pts[0].v.ptc,lastv=pts[pts.length-1].v.ptc,delta=lastv-first,deltaPct=first?(delta/first*100):0;
+  p.classList.add('open');
+  p.innerHTML='<div class="chartHead"><div><h3>'+r.marca+' '+r.calibre+'</h3><div class="sub">'+r.sku+' &middot; '+r.grupo+' / '+r.segmento+'</div></div><button class="chartClose" onclick="closeChart()">Cerrar &times;</button></div>'+
+    '<div style="overflow-x:auto">'+svg+'</div>'+
+    '<div class="chartLegend"><span><span class="legdot" style="background:var(--blue)"></span>AM</span><span><span class="legdot" style="background:var(--accent)"></span>PM</span><span>Variacion total: <b class="'+(delta>0?'gapBad':delta<0?'gapGood':'')+'">'+(delta>0?'+':'')+fmtMoney(delta)+' ('+(deltaPct>0?'+':'')+deltaPct.toFixed(1)+'%)</b></span></div>';
+  p.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+cargar();
+</script>
+</body>
+</html>
