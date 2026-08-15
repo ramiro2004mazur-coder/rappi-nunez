@@ -50,6 +50,34 @@ El JSON de cada producto ya trae fleje/precio/dinamica resueltos:
    que ya corre 2x/dia en la nube sin problema), asi que el cron de este
    workflow queda activo desde el arranque — no hace falta corrida local.
 
+## Historico pre-existente (backfill)
+
+El repo ya arranca con 9 cortes cargados: 7 dias sueltos (05, 06, 09, 10,
+11, 12, 13 de agosto, un corte AM cada uno) mas hoy (15/08, AM y PM
+reales). Los 7 primeros vienen de CSVs sueltos que se habian scrapeado a
+mano antes de armar este repo, importados con
+`scripts/import_legacy_csv.py`. Ese script no es parte del pipeline (no
+lo corre el workflow), es un backfill de una sola vez, pero documentar
+que hace importa porque esos CSV originales tenian dos problemas reales
+que corrigio en el import:
+
+- La columna `precio` en la mayoria de esos archivos no era el precio
+  real sino un precio-por-ml mal capturado (ej. fleje $3749, "precio"
+  $5.16). Se detecto comparando contra la formula real de Rappi
+  (`precio = fleje * (1 - descuento)`, confirmada contra la API en vivo)
+  y se recalculo el precio real a partir de fleje + el % de descuento en
+  vez de confiar en esa columna.
+- Regla ya documentada en el alert del dashboard: **"100% OFF" es un
+  placeholder de Rappi para "sin dinamica activa", no un descuento real**
+  (nunca hay cerveza gratis) → se trata como 0%. Aplica tanto al import
+  del historico viejo como al scraper en vivo (`scraper/scrape.py`), por
+  si Rappi devuelve `discount: 1.0` en alguna corrida futura.
+
+Tambien se descartaron filas basura de scrapeos viejos que habian
+capturado texto de UI como si fuera producto ("Agregar", "Patrocinado",
+"Pronto de vuelta") y se excluyeron packs/combos, igual que en el
+scraper en vivo.
+
 ## Correr manualmente
 
 ```bash

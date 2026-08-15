@@ -131,6 +131,11 @@ def producto_a_fila(p):
     discount = p.get("discount")
     if discount is None:
         discount = round(max(1 - (precio / fleje if fleje else 1), 0.0), 4)
+    if discount >= 1.0:
+        # Regla del dashboard: "100% OFF" es placeholder de Rappi para "sin
+        # dinamica activa", no un descuento real (nunca hay cerveza gratis).
+        discount = 0.0
+        precio = fleje
     descuento = int(round(discount * 100))
 
     return {

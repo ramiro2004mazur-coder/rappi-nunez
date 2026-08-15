@@ -1758,5 +1758,765 @@
     "calibre": "473",
     "grupo": "Competencia",
     "segmento": "Core"
+  },
+  {
+    "id": "estrella-galicia-cerveza-estrella-galicia-lager-473-ml",
+    "marca": "Estrella Galicia",
+    "sku": "Cerveza Estrella Galicia Lager 473 ml",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "antares-antares-cerveza-caravana-session-ipa",
+    "marca": "Antares",
+    "sku": "Antares Cerveza Caravana Session Ipa",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "pampa-pampa-brewing-nitro-cream-stout-473ml",
+    "marca": "Pampa",
+    "sku": "Pampa Brewing Nitro Cream Stout 473ml",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Premium"
+  },
+  {
+    "id": "salta-cautiva-salta-cautiva-cerveza-fresh-lager",
+    "marca": "Salta Cautiva",
+    "sku": "Salta Cautiva Cerveza Fresh Lager",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "quilmes-cerveza-quilmes-ipa-473-cc",
+    "marca": "Quilmes",
+    "sku": "Cerveza Quilmes Ipa 473 cc",
+    "calibre": "473",
+    "grupo": "CMQ",
+    "segmento": "Core"
+  },
+  {
+    "id": "rabieta-rabieta-cerveza-golden-ale",
+    "marca": "Rabieta",
+    "sku": "Rabieta Cerveza Golden Ale",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "antares-antares-cerveza-lager-porron",
+    "marca": "Antares",
+    "sku": "Antares Cerveza Lager Porron",
+    "calibre": "330/355",
+    "grupo": "Competencia",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "estrella-damm-estrella-damm-cerveza-porron",
+    "marca": "Estrella Damm",
+    "sku": "Estrella Damm Cerveza Porron",
+    "calibre": "330/355",
+    "grupo": "Competencia",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "andes-origen-cerveza-fria",
+    "marca": "Andes Origen",
+    "sku": "Cerveza fria",
+    "calibre": "473",
+    "grupo": "CMQ",
+    "segmento": "Core+"
+  },
+  {
+    "id": "santa-fe-santa-fe-cerveza-rubia",
+    "marca": "Santa Fe",
+    "sku": "Santa Fe Cerveza Rubia",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "starberg-starberg-cerveza-lager",
+    "marca": "Starberg",
+    "sku": "Starberg Cerveza Lager",
+    "calibre": "600",
+    "grupo": "Competencia",
+    "segmento": "Revisar"
+  },
+  {
+    "id": "antares-antares-cerveza-especiales-xpa",
+    "marca": "Antares",
+    "sku": "Antares Cerveza Especiales Xpa",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "imperial-imperial-cerveza-sin-alcohol-golden",
+    "marca": "Imperial",
+    "sku": "Imperial Cerveza Sin Alcohol Golden",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Core+"
+  },
+  {
+    "id": "salta-cautiva-salta-cautiva-cerveza-rubia",
+    "marca": "Salta Cautiva",
+    "sku": "Salta Cautiva Cerveza Rubia",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "corona-corona-cerveza-cero",
+    "marca": "Corona",
+    "sku": "Corona Cerveza Cero",
+    "calibre": "S/C",
+    "grupo": "CMQ",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "stella-artois-cerveza-stella-artois-0-473-cc",
+    "marca": "Stella Artois",
+    "sku": "Cerveza Stella Artois 0% 473 cc",
+    "calibre": "473",
+    "grupo": "CMQ",
+    "segmento": "Premium"
+  },
+  {
+    "id": "stella-artois-stella-artois-cerveza-0",
+    "marca": "Stella Artois",
+    "sku": "Stella Artois Cerveza 0%",
+    "calibre": "S/C",
+    "grupo": "CMQ",
+    "segmento": "Premium"
+  },
+  {
+    "id": "andes-origen-andes-origen-cerveza-rubia",
+    "marca": "Andes Origen",
+    "sku": "Andes Origen Cerveza Rubia",
+    "calibre": "S/C",
+    "grupo": "CMQ",
+    "segmento": "Core+"
+  },
+  {
+    "id": "quilmes-cerveza-quilmes-0-473-cc",
+    "marca": "Quilmes",
+    "sku": "Cerveza Quilmes 0% 473 cc",
+    "calibre": "473",
+    "grupo": "CMQ",
+    "segmento": "Core"
+  },
+  {
+    "id": "rabieta-rabieta-cerveza-helles-munich",
+    "marca": "Rabieta",
+    "sku": "Rabieta Cerveza Helles Munich",
+    "calibre": "S/C",
+    "grupo": "Competencia",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "heineken-heineken-cerveza-rubia-1-x-473-ml",
+    "marca": "Heineken",
+    "sku": "Heineken Cerveza Rubia 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Premium"
+  },
+  {
+    "id": "miller-miller-genuine-draft-cerveza-1-x-330-ml",
+    "marca": "Miller",
+    "sku": "Miller Genuine Draft Cerveza 1 X 330 mL",
+    "calibre": "330/355",
+    "grupo": "Competencia",
+    "segmento": "Core+"
+  },
+  {
+    "id": "pampa-cerveza-pampa-lager-lata-473ml-1-x-473-ml",
+    "marca": "Pampa",
+    "sku": "Cerveza Pampa Lager Lata 473ml 1 x 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Premium"
+  },
+  {
+    "id": "1890-1890-cerveza-rubia-1-x-473-ml",
+    "marca": "1890",
+    "sku": "1890 Cerveza Rubia 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "CMQ",
+    "segmento": "Value"
+  },
+  {
+    "id": "quilmes-cerveza-quilmes-clasica-710-cc-1-x-710-ml",
+    "marca": "Quilmes",
+    "sku": "Cerveza Quilmes Clásica 710 cc 1 X 710 mL",
+    "calibre": "710/730",
+    "grupo": "CMQ",
+    "segmento": "Core"
+  },
+  {
+    "id": "corona-corona-cerveza-cero-1-x-330-ml",
+    "marca": "Corona",
+    "sku": "Corona Cerveza Cero 1 X 330 mL",
+    "calibre": "330/355",
+    "grupo": "CMQ",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "antares-antares-cerveza-ipa-1-x-473-ml",
+    "marca": "Antares",
+    "sku": "Antares Cerveza Ipa 1 x 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "michelob-ultra-michelob-ultra-cerveza-1-x-275-ml",
+    "marca": "Michelob Ultra",
+    "sku": "Michelob Ultra Cerveza 1 x 275 mL",
+    "calibre": "275",
+    "grupo": "CMQ",
+    "segmento": "Core+"
+  },
+  {
+    "id": "quilmes-cerveza-quilmes-0-473-cc-1-x-473-ml",
+    "marca": "Quilmes",
+    "sku": "Cerveza Quilmes 0% 473 cc 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "CMQ",
+    "segmento": "Core"
+  },
+  {
+    "id": "stella-artois-stella-artois-cerveza-premium-lager-1-x-710-ml",
+    "marca": "Stella Artois",
+    "sku": "Stella Artois Cerveza Premium Lager 1 x 710 mL",
+    "calibre": "710/730",
+    "grupo": "CMQ",
+    "segmento": "Premium"
+  },
+  {
+    "id": "andes-origen-cerveza-andes-origen-oro-473-cc-1-x-473-ml",
+    "marca": "Andes Origen",
+    "sku": "Cerveza Andes Origen Oro 473 cc 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "CMQ",
+    "segmento": "Core+"
+  },
+  {
+    "id": "rabieta-rabieta-cerveza-helles-munich-1-x-473-ml",
+    "marca": "Rabieta",
+    "sku": "Rabieta Cerveza Helles Munich 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "stella-artois-stella-artois-cerveza-1-x-330-ml",
+    "marca": "Stella Artois",
+    "sku": "Stella Artois Cerveza 1 x 330 mL",
+    "calibre": "330/355",
+    "grupo": "CMQ",
+    "segmento": "Premium"
+  },
+  {
+    "id": "peroni-peroni-cerveza-1-x-330-ml",
+    "marca": "Peroni",
+    "sku": "Peroni Cerveza 1 X 330 mL",
+    "calibre": "330/355",
+    "grupo": "Competencia",
+    "segmento": "Premium"
+  },
+  {
+    "id": "amstel-amstel-cerveza-lager-pura-malta-1-x-473-ml",
+    "marca": "Amstel",
+    "sku": "Amstel Cerveza Lager Pura Malta 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Core"
+  },
+  {
+    "id": "heineken-heineken-cerveza-original-1-x-330-ml",
+    "marca": "Heineken",
+    "sku": "Heineken Cerveza Original 1 X 330 mL",
+    "calibre": "330/355",
+    "grupo": "Competencia",
+    "segmento": "Premium"
+  },
+  {
+    "id": "patagonia-cerveza-patagonia-lager-del-sur-730-cc-1-x-730-ml",
+    "marca": "Patagonia",
+    "sku": "Cerveza Patagonia Lager Del Sur 730 cc 1 X 730 mL",
+    "calibre": "710/730",
+    "grupo": "CMQ",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "pampa-pampa-brewing-cerveza-honey-lata-473-ml-1-x-473-ml",
+    "marca": "Pampa",
+    "sku": "Pampa Brewing Cerveza Honey Lata 473 ml 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Premium"
+  },
+  {
+    "id": "brahma-cerveza-brahma-chopp-lata-354mlx1-1-x-354-ml",
+    "marca": "Brahma",
+    "sku": "Cerveza Brahma Chopp Lata 354mlx1 1 X 354 mL",
+    "calibre": "330/355",
+    "grupo": "CMQ",
+    "segmento": "Core"
+  },
+  {
+    "id": "estrella-galicia-estrella-galicia-cerveza-0-0-tostada-lata-330ml-1-x-330-ml",
+    "marca": "Estrella Galicia",
+    "sku": "Estrella Galicia Cerveza 0.0 Tostada Lata 330ml 1 x 330 mL",
+    "calibre": "330/355",
+    "grupo": "Competencia",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "santa-fe-santa-fe-cerveza-rubia-1-x-473-ml",
+    "marca": "Santa Fe",
+    "sku": "Santa Fe Cerveza Rubia 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "patagonia-cerveza-patagonia-vera-ipa-473-cc-1-x-473-ml",
+    "marca": "Patagonia",
+    "sku": "Cerveza Patagonia Vera Ipa 473 cc 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "CMQ",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "stella-artois-cerveza-stella-artois-0-473-cc-1-x-473-ml",
+    "marca": "Stella Artois",
+    "sku": "Cerveza Stella Artois 0% 473 cc 1 x 473 mL",
+    "calibre": "473",
+    "grupo": "CMQ",
+    "segmento": "Premium"
+  },
+  {
+    "id": "miller-miller-cerveza-rubia-1-x-600-ml",
+    "marca": "Miller",
+    "sku": "Miller Cerveza Rubia 1 X 600 mL",
+    "calibre": "600",
+    "grupo": "Competencia",
+    "segmento": "Core+"
+  },
+  {
+    "id": "antares-ipa-cerveza-antares-especiales-sin-alcohol-1-x-473-ml",
+    "marca": "Antares",
+    "sku": "Ipa Cerveza Antares Especiales Sin Alcohol 1 x 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "imperial-imperial-cerveza-negra-cream-stout-en-lata-1-x-473-ml",
+    "marca": "Imperial",
+    "sku": "Imperial Cerveza Negra Cream Stout en Lata 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Core+"
+  },
+  {
+    "id": "warsteiner-warsteiner-cerveza-rubia-1-x-473-ml",
+    "marca": "Warsteiner",
+    "sku": "Warsteiner Cerveza Rubia 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Value"
+  },
+  {
+    "id": "salta-salta-cerveza-cautiva-roja-1-x-473-ml",
+    "marca": "Salta",
+    "sku": "Salta Cerveza Cautiva Roja 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Core"
+  },
+  {
+    "id": "antares-antares-cerveza-scotch-1-x-473-ml",
+    "marca": "Antares",
+    "sku": "Antares Cerveza Scotch 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "grolsch-grolsch-cerveza-pilsner-1-x-473-ml",
+    "marca": "Grolsch",
+    "sku": "Grolsch Cerveza Pilsner 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Premium"
+  },
+  {
+    "id": "stella-artois-cerveza-stella-artois-noire-473-cc-1-x-473-ml",
+    "marca": "Stella Artois",
+    "sku": "Cerveza Stella Artois Noire 473 cc 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "CMQ",
+    "segmento": "Premium"
+  },
+  {
+    "id": "andes-origen-andes-origen-cerveza-negra-en-lata-1-x-473-ml",
+    "marca": "Andes Origen",
+    "sku": "Andes Origen Cerveza Negra en Lata 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "CMQ",
+    "segmento": "Core+"
+  },
+  {
+    "id": "patagonia-cerveza-patagonia-amber-lager-473-cc-1-x-473-ml",
+    "marca": "Patagonia",
+    "sku": "Cerveza Patagonia Amber Lager 473 cc 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "CMQ",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "patagonia-cerveza-patagonia-amber-lager-730-cc-1-x-730-ml",
+    "marca": "Patagonia",
+    "sku": "Cerveza Patagonia Amber Lager 730 cc 1 X 730 mL",
+    "calibre": "710/730",
+    "grupo": "CMQ",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "imperial-imperial-cerveza-lager-dorada-lata-710ml-1-x-710-ml",
+    "marca": "Imperial",
+    "sku": "Imperial Cerveza Lager Dorada Lata 710ml 1 X 710 mL",
+    "calibre": "710/730",
+    "grupo": "Competencia",
+    "segmento": "Core+"
+  },
+  {
+    "id": "imperial-imperial-cerveza-extra-lager-1-x-473-ml",
+    "marca": "Imperial",
+    "sku": "Imperial Cerveza Extra Lager 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Core+"
+  },
+  {
+    "id": "rabieta-rabieta-cerveza-red-honey-1-x-473-ml",
+    "marca": "Rabieta",
+    "sku": "Rabieta Cerveza Red Honey 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "pampa-pampa-brewing-amber-ale-lata-473ml-1-x-473-ml",
+    "marca": "Pampa",
+    "sku": "Pampa Brewing Amber Ale Lata 473ml 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Premium"
+  },
+  {
+    "id": "kunstmann-kunstmann-torobayo-lata-470ml-1-x-470-ml",
+    "marca": "Kunstmann",
+    "sku": "Kunstmann Torobayo Lata 470ml 1 X 470 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "quilmes-cerveza-quilmes-ipa-473-cc-1-x-473-ml",
+    "marca": "Quilmes",
+    "sku": "Cerveza Quilmes Ipa 473 cc 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "CMQ",
+    "segmento": "Core"
+  },
+  {
+    "id": "imperial-imperial-cerveza-ipa-1-x-473-ml",
+    "marca": "Imperial",
+    "sku": "Imperial Cerveza Ipa 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Core+"
+  },
+  {
+    "id": "patagonia-cerveza-patagonia-lager-del-sur-473-cc-1-x-473-ml",
+    "marca": "Patagonia",
+    "sku": "Cerveza Patagonia Lager Del Sur 473 cc 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "CMQ",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "antares-antares-cerveza-caravana-session-ipa-1-x-473-ml",
+    "marca": "Antares",
+    "sku": "Antares Cerveza Caravana Session Ipa 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "stella-artois-stella-artois-cerveza-0-1-x-330-ml",
+    "marca": "Stella Artois",
+    "sku": "Stella Artois Cerveza 0% 1 X 330 mL",
+    "calibre": "330/355",
+    "grupo": "CMQ",
+    "segmento": "Premium"
+  },
+  {
+    "id": "antares-antares-cerveza-lager-1-x-473-ml",
+    "marca": "Antares",
+    "sku": "Antares Cerveza Lager 1 x 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "imperial-imperial-cerveza-ligera-golden-1-x-473-ml",
+    "marca": "Imperial",
+    "sku": "Imperial Cerveza Ligera Golden 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Core+"
+  },
+  {
+    "id": "salta-cautiva-salta-cautiva-cerveza-rubia-1-x-473-ml",
+    "marca": "Salta Cautiva",
+    "sku": "Salta Cautiva Cerveza Rubia 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "rabieta-rabieta-cerveza-irish-red-ale-1-x-473-ml",
+    "marca": "Rabieta",
+    "sku": "Rabieta Cerveza Irish Red Ale 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "antares-antares-kolsch-cerveza-1-x-473-ml",
+    "marca": "Antares",
+    "sku": "Antares Kolsch Cerveza 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "bitburger-bitburger-cerveza-1-x-330-ml",
+    "marca": "Bitburger",
+    "sku": "Bitburger Cerveza 1 X 330 mL",
+    "calibre": "330/355",
+    "grupo": "Competencia",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "miller-miller-cerveza-genuine-draft-en-lata-1-x-710-ml",
+    "marca": "Miller",
+    "sku": "Miller Cerveza Genuine Draft en Lata 1 X 710 mL",
+    "calibre": "710/730",
+    "grupo": "Competencia",
+    "segmento": "Core+"
+  },
+  {
+    "id": "grolsch-grolsch-cerveza-ipa-1-x-473-ml",
+    "marca": "Grolsch",
+    "sku": "Grolsch Cerveza Ipa 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Premium"
+  },
+  {
+    "id": "rabieta-rabieta-cerveza-golden-ale-1-x-473-ml",
+    "marca": "Rabieta",
+    "sku": "Rabieta Cerveza Golden Ale 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "salta-salta-cerveza-session-ipa-1-x-473-ml",
+    "marca": "Salta",
+    "sku": "Salta Cerveza Session Ipa 1 x 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Core"
+  },
+  {
+    "id": "blue-moon-blue-moon-belgian-white-lata-473-ml-1-x-473-ml",
+    "marca": "Blue Moon",
+    "sku": "Blue Moon Belgian White Lata 473 ml 1 x 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "bitburger-bitburger-cerveza-1-x-500-ml",
+    "marca": "Bitburger",
+    "sku": "Bitburger Cerveza 1 X 500 mL",
+    "calibre": "600",
+    "grupo": "Competencia",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "kostritzer-kostritzer-cerveza-schwarzbier-1-x-500-ml",
+    "marca": "Kostritzer",
+    "sku": "Kostritzer Cerveza Schwarzbier 1 X 500 mL",
+    "calibre": "600",
+    "grupo": "Competencia",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "kunstmann-cerveza-kunstmann-session-ipa-470ml-1-x-470-ml",
+    "marca": "Kunstmann",
+    "sku": "Cerveza Kunstmann Session Ipa 470ml 1 X 470 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "warsteiner-warsteiner-cerveza-330-ml-1-x-330-ml",
+    "marca": "Warsteiner",
+    "sku": "Warsteiner Cerveza 330 ml 1 x 330 mL",
+    "calibre": "330/355",
+    "grupo": "Competencia",
+    "segmento": "Value"
+  },
+  {
+    "id": "estrella-galicia-estrella-galicia-cerveza-sin-gluten-lata-330ml-1-x-330-ml",
+    "marca": "Estrella Galicia",
+    "sku": "Estrella Galicia Cerveza sin Gluten Lata 330ml 1 x 330 mL",
+    "calibre": "330/355",
+    "grupo": "Competencia",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "stella-artois-stella-artois-cerveza-pure-gold-1-x-330-ml",
+    "marca": "Stella Artois",
+    "sku": "Stella Artois Cerveza Pure Gold 1 x 330 mL",
+    "calibre": "330/355",
+    "grupo": "CMQ",
+    "segmento": "Premium"
+  },
+  {
+    "id": "heineken-heineken-cerveza-0-0-lata-330ml-1-x-330-ml",
+    "marca": "Heineken",
+    "sku": "Heineken Cerveza 0.0 Lata 330ml 1 X 330 mL",
+    "calibre": "330/355",
+    "grupo": "Competencia",
+    "segmento": "Premium"
+  },
+  {
+    "id": "schneider-schneider-cerveza-lager-1-x-710-ml",
+    "marca": "Schneider",
+    "sku": "Schneider Cerveza Lager 1 X 710 mL",
+    "calibre": "710/730",
+    "grupo": "Competencia",
+    "segmento": "Core"
+  },
+  {
+    "id": "schneider-schneider-bebida-refrescante-remix-limon-1-x-473-ml",
+    "marca": "Schneider",
+    "sku": "Schneider Bebida Refrescante Remix Limón 1 x 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Core"
+  },
+  {
+    "id": "stella-artois-stella-artois-cerveza-pure-gold-1-x-473-ml",
+    "marca": "Stella Artois",
+    "sku": "Stella Artois Cerveza Pure Gold 1 x 473 mL",
+    "calibre": "473",
+    "grupo": "CMQ",
+    "segmento": "Premium"
+  },
+  {
+    "id": "pampa-pampa-brewing-cerveza-ipa-lata-473-ml-1-x-473-ml",
+    "marca": "Pampa",
+    "sku": "Pampa Brewing Cerveza IPA Lata 473 ml 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Premium"
+  },
+  {
+    "id": "heineken-heineken-cerveza-sin-alcohol-1-x-473-ml",
+    "marca": "Heineken",
+    "sku": "Heineken Cerveza Sin Alcohol 1 x 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Premium"
+  },
+  {
+    "id": "pampa-pampa-brewing-nitro-cream-stout-473ml-1-x-473-ml",
+    "marca": "Pampa",
+    "sku": "Pampa Brewing Nitro Cream Stout 473ml 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Premium"
+  },
+  {
+    "id": "antares-antares-cerveza-artesanal-honey-1-x-473-ml",
+    "marca": "Antares",
+    "sku": "Antares Cerveza Artesanal Honey 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "imperial-imperial-cerveza-roja-amber-lager-lata-1-x-473-ml",
+    "marca": "Imperial",
+    "sku": "Imperial Cerveza Roja Amber Lager Lata 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Core+"
+  },
+  {
+    "id": "imperial-imperial-apa-cerveza-american-pale-ale-rubia-1-x-473-ml",
+    "marca": "Imperial",
+    "sku": "Imperial Apa Cerveza American Pale Ale Rubia 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Core+"
+  },
+  {
+    "id": "rabieta-rabieta-cerveza-american-ipa-1-x-473-ml",
+    "marca": "Rabieta",
+    "sku": "Rabieta Cerveza American Ipa 1 X 473 mL",
+    "calibre": "473",
+    "grupo": "Competencia",
+    "segmento": "Super Premium"
+  },
+  {
+    "id": "stella-artois-stella-artois-cerveza-710-ml-1-x-710-ml",
+    "marca": "Stella Artois",
+    "sku": "Stella Artois Cerveza 710 ml 1 x 710 mL",
+    "calibre": "710/730",
+    "grupo": "CMQ",
+    "segmento": "Premium"
+  },
+  {
+    "id": "estrella-damm-estrella-damm-cerveza-1-x-500-ml",
+    "marca": "Estrella Damm",
+    "sku": "Estrella Damm Cerveza 1 X 500 mL",
+    "calibre": "600",
+    "grupo": "Competencia",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "starberg-starberg-cerveza-lager-1-x-500-ml",
+    "marca": "Starberg",
+    "sku": "Starberg Cerveza Lager 1 X 500 mL",
+    "calibre": "600",
+    "grupo": "Competencia",
+    "segmento": "Revisar"
   }
 ]
