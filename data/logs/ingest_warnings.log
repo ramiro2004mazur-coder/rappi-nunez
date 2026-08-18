@@ -93,3 +93,4 @@
 2026-08-12_AM.csv: SKU nuevo sin catalogo -> 'Stella Artois | Stella Artois Cerveza 710 ml 1 x 710 mL' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-08-12_AM.csv: SKU nuevo sin catalogo -> 'Estrella Damm | Estrella Damm Cerveza 1 X 500 mL' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-08-13_AM.csv: SKU nuevo sin catalogo -> 'Starberg | Starberg Cerveza Lager 1 X 500 mL' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-08-18_AM.csv: SKU nuevo sin catalogo -> 'Guinnes | Guinness Cerveza Extra Stout' (agregado como 'Sin clasificar', revisar data/catalog.json)

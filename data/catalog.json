@@ -2518,5 +2518,13 @@
     "calibre": "600",
     "grupo": "Competencia",
     "segmento": "Revisar"
+  },
+  {
+    "id": "guinnes-guinness-cerveza-extra-stout",
+    "marca": "Guinnes",
+    "sku": "Guinness Cerveza Extra Stout",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
   }
 ]
