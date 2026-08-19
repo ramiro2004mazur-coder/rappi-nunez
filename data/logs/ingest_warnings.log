@@ -94,3 +94,4 @@
 2026-08-12_AM.csv: SKU nuevo sin catalogo -> 'Estrella Damm | Estrella Damm Cerveza 1 X 500 mL' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-08-13_AM.csv: SKU nuevo sin catalogo -> 'Starberg | Starberg Cerveza Lager 1 X 500 mL' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-08-18_AM.csv: SKU nuevo sin catalogo -> 'Guinnes | Guinness Cerveza Extra Stout' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-08-19.csv: SKU nuevo sin catalogo -> 'Corona | Corona Cerveza Tipo Lager 330 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
