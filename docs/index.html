@@ -62,24 +62,9 @@ body{margin:0;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(
 .nodyn .ptc{color:var(--ink)}.nodyn .dyn{color:var(--muted)}
 .missing{color:var(--line);text-align:center}
 .diff.up{color:var(--red);font-weight:900}.diff.down{color:var(--green);font-weight:900}.diff.flat{color:var(--yellow);font-weight:900}
-.slot{font-size:9.5px;font-weight:900;padding:1px 7px;border-radius:6px;display:inline-block;margin-top:3px;letter-spacing:.03em}
-.slot.am{background:rgba(90,169,255,.18);color:var(--blue)}
-.slot.pm{background:rgba(250,0,80,.16);color:var(--accent)}
-.fightGrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:16px}
-.fightCard{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
-.fightHead{padding:13px 16px;background:var(--panel2);font-weight:900;border-bottom:1px solid var(--line)}
-.fightHead .seg{font-size:11px;color:var(--muted);margin-top:3px;font-weight:600}
-.fightScroll{overflow-x:auto;overflow-y:hidden}
-.fightTable{width:max-content;min-width:100%;border-collapse:collapse}
-.fightTable th,.fightTable td{border-bottom:1px solid var(--line);padding:9px 10px;font-size:12px;vertical-align:middle;white-space:nowrap}
-.fightTable thead th{position:sticky;top:0;background:var(--panel2);color:var(--muted);text-align:center;font-weight:800}
-.fightTable td.cal{position:sticky;left:0;background:var(--panel);font-weight:900;z-index:2}
-.cmqSide{background:var(--cmqbg)}.compSide{background:var(--compbg)}
-.winner{outline:2px solid var(--green);outline-offset:-2px;border-radius:6px}
-.gapGood{color:var(--green);font-weight:900}.gapBad{color:var(--red);font-weight:900}.gapFlat{color:var(--yellow);font-weight:900}
-.tablebox::-webkit-scrollbar,.fightScroll::-webkit-scrollbar{height:12px;width:12px}
-.tablebox::-webkit-scrollbar-thumb,.fightScroll::-webkit-scrollbar-thumb{background:var(--line);border-radius:8px}
-.tablebox::-webkit-scrollbar-thumb:hover,.fightScroll::-webkit-scrollbar-thumb:hover{background:var(--accent)}
+.tablebox::-webkit-scrollbar{height:12px;width:12px}
+.tablebox::-webkit-scrollbar-thumb{background:var(--line);border-radius:8px}
+.tablebox::-webkit-scrollbar-thumb:hover{background:var(--accent)}
 .panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;margin-top:14px;box-shadow:var(--shadow)}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.note{font-size:12px;color:var(--muted)}
 .chartPanel{display:none}
@@ -89,28 +74,46 @@ body{margin:0;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(
 .chartHead .sub{color:var(--muted);font-size:12px;margin-top:2px}
 .chartClose{background:var(--panel2);border:1px solid var(--line);color:var(--muted);border-radius:8px;padding:6px 10px;cursor:pointer;font-weight:800;font-size:12px}
 .chartClose:hover{color:var(--ink)}
-.chartLegend{display:flex;gap:14px;margin-top:8px;font-size:11.5px;color:var(--muted)}
+.chartLegend{display:flex;gap:14px;margin-top:8px;font-size:11.5px;color:var(--muted);flex-wrap:wrap}
 .chartLegend span{display:inline-flex;align-items:center;gap:5px}
-.legdot{width:9px;height:9px;border-radius:50%;display:inline-block}
-@media(max-width:1000px){.filterbar{flex-direction:column;align-items:stretch}.grid2{grid-template-columns:1fr}.fightGrid{grid-template-columns:1fr}.wrap{padding:14px}}
+.legdot{width:9px;height:9px;border-radius:50%;display:inline-block;flex:none}
+.compareResults{display:flex;flex-direction:column;gap:4px;margin:4px 2px 10px}
+.cresult{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:13px;cursor:pointer}
+.cresult:hover{border-color:var(--accent);color:var(--ink)}
+.cchips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 2px 4px}
+.cchip{display:inline-flex;align-items:center;gap:6px;background:var(--panel2);border:1px solid var(--line);border-radius:999px;padding:6px 6px 6px 14px;font-size:12.5px;font-weight:700}
+.cchip button{background:none;border:0;color:var(--muted);font-size:16px;cursor:pointer;line-height:1;padding:0 6px}
+.cchip button:hover{color:var(--red)}
+.compareCards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin:14px 0 4px}
+.ccard{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px;box-shadow:var(--shadow)}
+.ccard.cheapest{border-color:var(--green)}
+.cbadge{position:absolute;top:12px;right:40px;background:var(--green);color:#04241a;font-size:9.5px;font-weight:900;padding:3px 8px;border-radius:999px;letter-spacing:.02em}
+.cx{position:absolute;top:8px;right:8px;background:none;border:0;color:var(--muted);font-size:17px;cursor:pointer;padding:4px 6px;line-height:1}
+.cx:hover{color:var(--red)}
+.ctitle{font-weight:900;font-size:14px;padding-right:22px}
+.csub{color:var(--muted);font-size:11px;margin-top:2px;padding-right:22px}
+.cprice{margin-top:10px;font-size:17px;font-weight:900;color:var(--ink)}
+.cprice .dyn{font-size:11px;margin-left:4px}
+.spark{width:100%;height:34px;margin-top:10px;display:block}
+@media(max-width:1000px){.filterbar{flex-direction:column;align-items:stretch}.grid2{grid-template-columns:1fr}.wrap{padding:14px}}
 </style>
 </head>
 <body class="dark">
 <div class="wrap">
   <div class="top">
     <div class="brand"><div class="logo">&#127866;</div>
-      <div><h1>Rappi &middot; Nunez</h1><small>Historico de precios &middot; fleje, PTC y dinamica &middot; 2 cortes diarios (AM/PM)</small></div>
+      <div><h1>Rappi &middot; Nunez</h1><small>Historico de precios &middot; fleje, PTC y dinamica &middot; 1 lectura diaria</small></div>
     </div>
     <div class="actions">
       <button class="iconbtn" onclick="downloadCSV()">&#8595; CSV</button>
       <button class="iconbtn" id="themeBtn" onclick="toggleTheme()">&#9790; Tema</button>
     </div>
   </div>
-  <div class="alert">Precios publicos de Rappi Turbo, tienda Nunez (Monroe 1616). Regla: 100% OFF = 0%. Packs y combos se excluyen. Cada dia tiene 2 cortes: AM (~10:15) y PM (~19:00).</div>
+  <div class="alert">Precios publicos de Rappi Turbo, tienda Nunez (Monroe 1616). Regla: 100% OFF = 0%. Packs y combos se excluyen. 1 lectura diaria (~10:15 ART).</div>
   <div class="metrics" id="metrics"></div>
   <div class="tabs">
     <button class="active" data-tab="timeline">Evolucion por SKU</button>
-    <button data-tab="luchas">&#129354; Luchas</button>
+    <button data-tab="comparar">&#9876; Comparar</button>
     <button data-tab="heatmap">Heatmap dinamica</button>
     <button data-tab="changes">Cambios</button>
     <button data-tab="insights">Insights</button>
@@ -133,39 +136,48 @@ body{margin:0;background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(
   <div id="content"><p class="note">Cargando datos...</p></div>
 </div>
 <script>
-let DATA={pivot:[],dates:[],stats:[],fights:[],meta:{}};let tab='timeline';let current=[];
+let DATA={pivot:[],dates:[],stats:[],fights:[],meta:{}};let tab='timeline';let current=[];let compareIds=new Set();
 const fmtMoney=v=>(v==null||v==='')?'-':'$'+Math.round(Number(v)).toLocaleString('es-AR');
 const fmtPct=v=>(v==null||v==='')?'-':Math.round(Number(v)*100)+'%';
+const fmtDate=d=>d.slice(8,10)+'/'+d.slice(5,7);
 const uniq=a=>[...new Set(a.filter(Boolean))].sort();const el=i=>document.getElementById(i);
 function toggleTheme(){document.body.classList.toggle('light');document.body.classList.toggle('dark');const light=document.body.classList.contains('light');el('themeBtn').innerHTML=(light?'&#9728; ':'&#9790; ')+'Tema';try{localStorage.setItem('rappi_theme',light?'light':'dark');}catch(e){}}
 (function(){try{if(localStorage.getItem('rappi_theme')==='light'){document.body.classList.remove('dark');document.body.classList.add('light');}}catch(e){}})();
 async function cargar(){try{const r=await fetch('./data.json?'+Date.now());DATA=await r.json();buildControls();render();}catch(e){el('content').innerHTML='<div class="panel note">No pude cargar data.json.</div>';}}
 function buildControls(){const brands=uniq(DATA.pivot.map(x=>x.marca)),sizes=uniq(DATA.pivot.map(x=>x.calibre)),segs=uniq(DATA.pivot.map(x=>x.segmento));el('brand').innerHTML='<option value="">Todas las marcas</option>'+brands.map(x=>'<option>'+x+'</option>').join('');el('size').innerHTML='<option value="">Todos los tamanos</option>'+sizes.map(x=>'<option>'+x+'</option>').join('');el('seg').innerHTML='<option value="">Todos los segmentos</option>'+segs.map(x=>'<option>'+x+'</option>').join('');el('brandChips').innerHTML=['CMQ','Competencia','Quilmes','Schneider','Andes Origen','Miller','Stella Artois','Heineken','Patagonia','Corona'].map(x=>'<span class="chip" onclick="chip(\''+x+'\',this)">'+x+'</span>').join('');['q','brand','size','seg','onlyBoth','onlyOffer','groupBrand'].forEach(i=>el(i).oninput=render);document.querySelectorAll('.tabs button').forEach(bt=>bt.onclick=()=>{tab=bt.dataset.tab;document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('active'));bt.classList.add('active');closeChart();render();});}
-function chip(x,node){document.querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));node.classList.add('active');if(x==='CMQ'||x==='Competencia'){el('brand').value='';el('q').value=x.toLowerCase();}else{el('brand').value=x;el('q').value='';}render();}
+function chip(x,node){document.querySelectorAll('#brandChips .chip').forEach(c=>c.classList.remove('active'));node.classList.add('active');if(x==='CMQ'||x==='Competencia'){el('brand').value='';el('q').value=x.toLowerCase();}else{el('brand').value=x;el('q').value='';}render();}
 const dates=()=>DATA.dates||[];
-function splitSlot(d){const i=d.lastIndexOf('_');return i===-1?[d,'']:[d.slice(0,i),d.slice(i+1)];}
-function fmtSlotHeader(d){const [date,slot]=splitSlot(d);const dd=date.slice(8,10)+'/'+date.slice(5,7);return dd+(slot?'<br><span class="slot '+slot.toLowerCase()+'">'+slot+'</span>':'');}
-function fmtSlotShort(d){const [date,slot]=splitSlot(d);return date.slice(8,10)+'/'+date.slice(5,7)+(slot?' '+slot:'');}
 function rows(){const q=el('q').value.toLowerCase(),b=el('brand').value,s=el('size').value,g=el('seg').value,both=el('onlyBoth').checked,offer=el('onlyOffer').checked,D=dates();return DATA.pivot.filter(r=>(!b||r.marca===b)&&(!s||r.calibre===s)&&(!g||r.segmento===g)&&(!q||(r.sku+' '+r.marca+' '+r.grupo).toLowerCase().includes(q))&&(!both||D.every(d=>r.dates[d]))&&(!offer||D.some(d=>r.dates[d]&&Number(r.dates[d].dinamica)>0)));}
-function metrics(rs){const D=dates(),both=rs.filter(r=>D.every(d=>r.dates[d])).length,offer=rs.filter(r=>D.some(d=>r.dates[d]&&r.dates[d].dinamica>0)).length;el('metrics').innerHTML=card('SKUs totales',DATA.pivot.length)+card('Cortes (AM/PM)',D.length)+card('Mostrando',rs.length)+card('En oferta',offer)+card('Comparables',both)+(DATA.meta&&DATA.meta.generado?card('Actualizado',DATA.meta.generado.slice(5,16)):'');}
+function metrics(rs){const D=dates(),both=rs.filter(r=>D.every(d=>r.dates[d])).length,offer=rs.filter(r=>D.some(d=>r.dates[d]&&r.dates[d].dinamica>0)).length;el('metrics').innerHTML=card('SKUs totales',DATA.pivot.length)+card('Dias',D.length)+card('Mostrando',rs.length)+card('En oferta',offer)+card('Comparables',both)+(DATA.meta&&DATA.meta.generado?card('Actualizado',DATA.meta.generado.slice(5,16)):'');}
 function card(k,v){return '<div class="metric"><div class="k">'+k+'</div><div class="v">'+v+'</div></div>';}
 function priceHtml(x){if(!x)return '<span class="missing">&mdash;</span>';const c=Number(x.dinamica)>0?'':'nodyn';return '<div class="pricecell '+c+'"><div class="fleje">'+fmtMoney(x.fleje)+'</div><span class="ptc">'+fmtMoney(x.ptc)+'</span> <span class="dyn">&minus;'+fmtPct(x.dinamica)+'</span></div>';}
 const cls=v=>v==null?'':v>0?'up':v<0?'down':'flat';
-function flat(r){const o={Marca:r.marca,SKU:r.sku,Calibre:r.calibre,Grupo:r.grupo,Segmento:r.segmento};dates().forEach(d=>{const x=r.dates[d]||{};o[fmtSlotShort(d)+' Fleje']=x.fleje??'';o[fmtSlotShort(d)+' PTC']=x.ptc??'';o[fmtSlotShort(d)+' Dinamica']=x.dinamica??'';});return o;}
-function timeline(){let rs=rows();metrics(rs);if(el('groupBrand').checked)rs.sort((a,b)=>(a.marca+a.sku).localeCompare(b.marca+b.sku));current=rs.map(flat);const D=dates();let h='<div class="tablebox"><table class="timeline"><thead><tr><th class="product">Producto</th>'+D.map(d=>'<th>'+fmtSlotHeader(d)+'</th>').join('')+'<th>&Delta; PTC</th><th>&Delta; Din.</th></tr></thead><tbody>';rs.forEach(r=>{const f=r.dates[D[0]],l=r.dates[D[D.length-1]],vp=(f&&l)?l.ptc-f.ptc:null,vd=(f&&l)?l.dinamica-f.dinamica:null;h+='<tr><td class="product" onclick="openChart(\''+r.id+'\')">'+r.marca+' '+r.calibre+'<span class="subsku">'+r.sku+'</span></td>'+D.map(d=>'<td>'+priceHtml(r.dates[d])+'</td>').join('')+'<td class="diff '+cls(vp)+'">'+(vp==null?'&mdash;':(vp>0?'+':'')+fmtMoney(vp))+'</td><td class="diff '+cls(vd)+'">'+(vd==null?'&mdash;':(vd>0?'+':'')+Math.round(vd*100)+' pp')+'</td></tr>';});return h+'</tbody></table></div>';}
-function heatmap(){let rs=rows();metrics(rs);current=rs.map(flat);const D=dates();let h='<div class="tablebox"><table class="timeline"><thead><tr><th class="product">Producto</th>'+D.map(d=>'<th>'+fmtSlotHeader(d)+'</th>').join('')+'</tr></thead><tbody>';rs.forEach(r=>{h+='<tr><td class="product" onclick="openChart(\''+r.id+'\')">'+r.marca+' '+r.calibre+'<span class="subsku">'+r.sku+'</span></td>'+D.map(d=>{const x=r.dates[d],dy=x?x.dinamica:null,bg=dy==null?'transparent':dy>=.4?'rgba(31,207,138,.35)':dy>=.25?'rgba(31,207,138,.22)':dy>0?'rgba(255,207,92,.20)':'transparent';return '<td style="background:'+bg+';text-align:center;font-weight:900">'+(dy==null?'&mdash;':fmtPct(dy))+'</td>';}).join('')+'</tr>';});return h+'</tbody></table></div>';}
-function changes(){const D=dates();if(D.length<2){metrics(rows());return '<div class="panel note">Necesitas al menos 2 cortes para ver cambios.</div>';}const last=D[D.length-1],prev=D[D.length-2];let rs=rows().filter(r=>r.dates[prev]&&r.dates[last]).map(r=>{const a=r.dates[prev],b=r.dates[last];return{Marca:r.marca,SKU:r.sku,Calibre:r.calibre,Grupo:r.grupo,PTC_prev:a.ptc,PTC_last:b.ptc,Var_PTC:b.ptc-a.ptc,Dyn_prev:a.dinamica,Dyn_last:b.dinamica,Var_Dyn:b.dinamica-a.dinamica};}).sort((a,b)=>Math.abs(b.Var_PTC)-Math.abs(a.Var_PTC));current=rs;metrics(rows());const sameDay=prev.split('_')[0]===last.split('_')[0];return '<div class="panel"><h3>Cambios '+fmtSlotShort(prev)+' vs '+fmtSlotShort(last)+(sameDay?' <span class="note">(mismo dia &mdash; variacion intradia)</span>':'')+'</h3>'+simple(rs,[['Marca'],['SKU'],['Calibre'],['Grupo'],['PTC_prev','PTC anterior','money'],['PTC_last','PTC ultimo','money'],['Var_PTC','&Delta; PTC','money'],['Dyn_prev','Din anterior','pct'],['Dyn_last','Din ultimo','pct'],['Var_Dyn','&Delta; Din','pp']])+'</div>';}
+function flat(r){const o={Marca:r.marca,SKU:r.sku,Calibre:r.calibre,Grupo:r.grupo,Segmento:r.segmento};dates().forEach(d=>{const x=r.dates[d]||{};o[fmtDate(d)+' Fleje']=x.fleje??'';o[fmtDate(d)+' PTC']=x.ptc??'';o[fmtDate(d)+' Dinamica']=x.dinamica??'';});return o;}
+function timeline(){let rs=rows();metrics(rs);if(el('groupBrand').checked)rs.sort((a,b)=>(a.marca+a.sku).localeCompare(b.marca+b.sku));current=rs.map(flat);const D=dates();let h='<div class="tablebox"><table class="timeline"><thead><tr><th class="product">Producto</th>'+D.map(d=>'<th>'+fmtDate(d)+'</th>').join('')+'<th>&Delta; PTC</th><th>&Delta; Din.</th></tr></thead><tbody>';rs.forEach(r=>{const f=r.dates[D[0]],l=r.dates[D[D.length-1]],vp=(f&&l)?l.ptc-f.ptc:null,vd=(f&&l)?l.dinamica-f.dinamica:null;h+='<tr><td class="product" onclick="openChart(\''+r.id+'\')">'+r.marca+' '+r.calibre+'<span class="subsku">'+r.sku+'</span></td>'+D.map(d=>'<td>'+priceHtml(r.dates[d])+'</td>').join('')+'<td class="diff '+cls(vp)+'">'+(vp==null?'&mdash;':(vp>0?'+':'')+fmtMoney(vp))+'</td><td class="diff '+cls(vd)+'">'+(vd==null?'&mdash;':(vd>0?'+':'')+Math.round(vd*100)+' pp')+'</td></tr>';});return h+'</tbody></table></div>';}
+function heatmap(){let rs=rows();metrics(rs);current=rs.map(flat);const D=dates();let h='<div class="tablebox"><table class="timeline"><thead><tr><th class="product">Producto</th>'+D.map(d=>'<th>'+fmtDate(d)+'</th>').join('')+'</tr></thead><tbody>';rs.forEach(r=>{h+='<tr><td class="product" onclick="openChart(\''+r.id+'\')">'+r.marca+' '+r.calibre+'<span class="subsku">'+r.sku+'</span></td>'+D.map(d=>{const x=r.dates[d],dy=x?x.dinamica:null,bg=dy==null?'transparent':dy>=.4?'rgba(31,207,138,.35)':dy>=.25?'rgba(31,207,138,.22)':dy>0?'rgba(255,207,92,.20)':'transparent';return '<td style="background:'+bg+';text-align:center;font-weight:900">'+(dy==null?'&mdash;':fmtPct(dy))+'</td>';}).join('')+'</tr>';});return h+'</tbody></table></div>';}
+function changes(){const D=dates();if(D.length<2){metrics(rows());return '<div class="panel note">Necesitas al menos 2 dias para ver cambios.</div>';}const last=D[D.length-1],prev=D[D.length-2];let rs=rows().filter(r=>r.dates[prev]&&r.dates[last]).map(r=>{const a=r.dates[prev],b=r.dates[last];return{Marca:r.marca,SKU:r.sku,Calibre:r.calibre,Grupo:r.grupo,PTC_prev:a.ptc,PTC_last:b.ptc,Var_PTC:b.ptc-a.ptc,Dyn_prev:a.dinamica,Dyn_last:b.dinamica,Var_Dyn:b.dinamica-a.dinamica};}).sort((a,b)=>Math.abs(b.Var_PTC)-Math.abs(a.Var_PTC));current=rs;metrics(rows());return '<div class="panel"><h3>Cambios '+fmtDate(prev)+' vs '+fmtDate(last)+'</h3>'+simple(rs,[['Marca'],['SKU'],['Calibre'],['Grupo'],['PTC_prev','PTC anterior','money'],['PTC_last','PTC ultimo','money'],['Var_PTC','&Delta; PTC','money'],['Dyn_prev','Din anterior','pct'],['Dyn_last','Din ultimo','pct'],['Var_Dyn','&Delta; Din','pp']])+'</div>';}
 const inc=(n,list)=>list.some(x=>String(n||'').toLowerCase().includes(String(x).toLowerCase())||String(x).toLowerCase().includes(String(n||'').toLowerCase()));
 function best(list,d){const a=list.filter(r=>r.dates[d]&&r.dates[d].ptc!=null);return a.length?a.sort((x,y)=>x.dates[d].ptc-y.dates[d].ptc)[0]:null;}
-function gap(a,b,d){if(!a||!b)return '&mdash;';const diff=a.dates[d].ptc-b.dates[d].ptc,p=diff/b.dates[d].ptc,c=diff<0?'gapGood':diff>0?'gapBad':'gapFlat';return '<span class="'+c+'">'+(diff>0?'+':'')+fmtMoney(diff)+'<br>'+(p>0?'+':'')+Math.round(p*100)+'%</span>';}
-function luchas(){metrics(rows());const D=dates();let h='<div class="panel" style="padding:12px 14px"><span class="note">CMQ vs competencia por mismo calibre. Cada tarjeta tiene <b>barra para deslizar</b> y ver todos los cortes (AM/PM).</span></div><div class="fightGrid">';current=[];(DATA.fights||[]).forEach(f=>{const all=DATA.pivot.filter(r=>inc(r.marca,f.cmq)||inc(r.marca,f.comp));const sizes=uniq(all.map(r=>r.calibre));h+='<div class="fightCard"><div class="fightHead">'+f.name+'<div class="seg">'+f.seg+'</div></div><div class="fightScroll"><table class="fightTable"><thead><tr><th class="cal">Cal.</th>'+D.map(d=>'<th colspan="3">'+fmtSlotHeader(d)+'</th>').join('')+'</tr><tr><th class="cal"></th>'+D.map(d=>'<th>CMQ</th><th>Comp.</th><th>Gap</th>').join('')+'</tr></thead><tbody>';if(!sizes.length){h+='<tr><td class="note" style="padding:16px">Sin SKUs</td></tr>';}sizes.forEach(s=>{const aL=all.filter(r=>r.calibre===s&&inc(r.marca,f.cmq)),bL=all.filter(r=>r.calibre===s&&inc(r.marca,f.comp));h+='<tr><td class="cal">'+s+'</td>';D.forEach(d=>{const a=best(aL,d),b=best(bL,d),wa=a&&b&&a.dates[d].ptc<b.dates[d].ptc,wb=a&&b&&b.dates[d].ptc<a.dates[d].ptc;h+='<td class="cmqSide '+(wa?'winner':'')+'">'+priceHtml(a?a.dates[d]:null)+'</td><td class="compSide '+(wb?'winner':'')+'">'+priceHtml(b?b.dates[d]:null)+'</td><td>'+gap(a,b,d)+'</td>';current.push({Lucha:f.name,Calibre:s,Corte:fmtSlotShort(d),CMQ:a?a.marca+' | '+a.sku:'',Comp:b?b.marca+' | '+b.sku:'',Gap:(a&&b)?a.dates[d].ptc-b.dates[d].ptc:''});});h+='</tr>';});h+='</tbody></table></div></div>';});return h+'</div>';}
-function insights(){let arr=(DATA.stats||[]).filter(x=>(!el('brand').value||x.marca===el('brand').value)&&(!el('seg').value||x.segmento===el('seg').value)).sort((a,b)=>b.dias_dinamica-a.dias_dinamica||b.max_dinamica-a.max_dinamica);current=arr;metrics(rows());return '<div class="grid2"><div class="panel"><h3>Continuidad de dinamica</h3>'+simple(arr,[['marca','Marca'],['grupo','Grupo'],['segmento','Segmento'],['dias','Cortes'],['dias_dinamica','Cortes con din.'],['max_dinamica','Max','pct'],['avg_dinamica','Prom.','pct'],['avg_ptc','PTC prom.','money']])+'</div><div class="panel"><h3>Como leerlo</h3><p class="note">Cuantos cortes (AM/PM) estuvo prendida la dinamica de cada marca y con que intensidad. Usa <b>Luchas</b> para el mano a mano por calibre y <b>Evolucion por SKU</b> (click en un producto) para el grafico de linea de tiempo.</p></div></div>';}
+function insights(){let arr=(DATA.stats||[]).filter(x=>(!el('brand').value||x.marca===el('brand').value)&&(!el('seg').value||x.segmento===el('seg').value)).sort((a,b)=>b.dias_dinamica-a.dias_dinamica||b.max_dinamica-a.max_dinamica);current=arr;metrics(rows());return '<div class="grid2"><div class="panel"><h3>Continuidad de dinamica</h3>'+simple(arr,[['marca','Marca'],['grupo','Grupo'],['segmento','Segmento'],['dias','Dias'],['dias_dinamica','Dias con din.'],['max_dinamica','Max','pct'],['avg_dinamica','Prom.','pct'],['avg_ptc','PTC prom.','money']])+'</div><div class="panel"><h3>Como leerlo</h3><p class="note">Cuantos dias estuvo prendida la dinamica de cada marca y con que intensidad. Usa <b>Comparar</b> para el mano a mano libre entre cualquier SKU (con accesos rapidos CMQ vs competencia) y su grafico de evolucion superpuesta.</p></div></div>';}
 function simple(rs,cols){if(!rs.length)return '<div class="panel note">Sin datos.</div>';return '<div class="tablebox"><table class="timeline"><thead><tr>'+cols.map(c=>'<th>'+(c[1]||c[0])+'</th>').join('')+'</tr></thead><tbody>'+rs.map(r=>'<tr>'+cols.map(c=>'<td>'+cell(r[c[0]],c[2])+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>';}
 function cell(v,type){if(type==='money')return fmtMoney(v);if(type==='pct')return fmtPct(v);if(type==='pp')return v==null?'&mdash;':(v>0?'+':'')+Math.round(v*100)+' pp';return v??'&mdash;';}
-function render(){el('content').innerHTML=tab==='timeline'?timeline():tab==='luchas'?luchas():tab==='heatmap'?heatmap():tab==='changes'?changes():insights();}
+
+/* ---- Comparar: SKUs libres (cualquier marca) + accesos rapidos CMQ vs competencia ---- */
+const PALETTE=['#5aa9ff','#f5a623','#1fcf8a','#ff6b6b','#a78bfa','#0891b2','#f06292','#8d6e63'];
+function loadFight(i){const f=(DATA.fights||[])[i];if(!f)return;const D=dates();if(!D.length)return;const last=D[D.length-1];const all=DATA.pivot.filter(r=>inc(r.marca,f.cmq)||inc(r.marca,f.comp));const sizes=uniq(all.map(r=>r.calibre));const ids=[];sizes.forEach(s=>{const aL=all.filter(r=>r.calibre===s&&inc(r.marca,f.cmq)),bL=all.filter(r=>r.calibre===s&&inc(r.marca,f.comp));const a=best(aL,last),b=best(bL,last);if(a)ids.push(a.id);if(b)ids.push(b.id);});compareIds=new Set(ids);render();}
+function addCompare(id){compareIds.add(id);if(el('cq'))el('cq').value='';render();}
+function removeCompare(id){compareIds.delete(id);render();}
+function compareSearchResults(){const box=el('compareResults');if(!box)return;const q=(el('cq')?el('cq').value:'').toLowerCase().trim();if(!q){box.innerHTML='';return;}const m=DATA.pivot.filter(r=>!compareIds.has(r.id)&&(r.marca+' '+r.sku).toLowerCase().includes(q)).slice(0,8);box.innerHTML=m.length?m.map(r=>'<div class="cresult" onclick="addCompare(\''+r.id+'\')">'+r.marca+' '+r.calibre+' <span class="note">'+r.sku+'</span></div>').join(''):'<div class="cresult note">Sin resultados</div>';}
+function sparkline(vals){if(vals.length<2)return '<div class="note" style="margin-top:8px">Sin historico suficiente</div>';const W=200,H=40,pad=4;const min=Math.min(...vals),max=Math.max(...vals),span=(max-min)||1;const x=i=>pad+i*(W-2*pad)/(vals.length-1);const y=v=>pad+(H-2*pad)*(1-(v-min)/span);const path=vals.map((v,i)=>(i===0?'M':'L')+x(i).toFixed(1)+','+y(v).toFixed(1)).join(' ');const up=vals[vals.length-1]>vals[0];const color=up?'var(--red)':'var(--green)';return '<svg class="spark" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="none"><path d="'+path+'" fill="none" stroke="'+color+'" stroke-width="2"/></svg>';}
+function compareCards(ids){const D=dates();if(!D.length)return '';const last=D[D.length-1];const rowsSel=ids.map(id=>DATA.pivot.find(r=>r.id===id)).filter(Boolean);const lastVals=rowsSel.map(r=>r.dates[last]?r.dates[last].ptc:null).filter(v=>v!=null);const min=lastVals.length?Math.min(...lastVals):null;return '<div class="compareCards">'+rowsSel.map(r=>{const v=r.dates[last];const isMin=v&&min!=null&&v.ptc===min&&rowsSel.length>1;const pts=D.map(d=>r.dates[d]?r.dates[d].ptc:null).filter(x=>x!=null);return '<div class="ccard'+(isMin?' cheapest':'')+'"><button class="cx" onclick="removeCompare(\''+r.id+'\')" title="Quitar">&times;</button>'+(isMin?'<span class="cbadge">Mas barato</span>':'')+'<div class="ctitle">'+r.marca+' '+r.calibre+'</div><div class="csub">'+r.sku+'</div>'+(v?'<div class="cprice">'+fmtMoney(v.ptc)+' <span class="dyn">&minus;'+fmtPct(v.dinamica)+'</span></div>':'<div class="note" style="margin-top:10px">Sin dato en la ultima lectura</div>')+sparkline(pts)+'</div>';}).join('')+'</div>';}
+function multiLineChart(ids){const D=dates();const rowsSel=ids.map(id=>DATA.pivot.find(r=>r.id===id)).filter(Boolean);const allVals=rowsSel.flatMap(r=>D.map(d=>r.dates[d]?r.dates[d].ptc:null)).filter(v=>v!=null);if(!allVals.length)return '<p class="note">Sin historico para graficar todavia.</p>';const W=Math.max(600,D.length*70),H=280,padL=58,padR=18,padT=18,padB=34;const min=Math.min(...allVals),max=Math.max(...allVals),span=(max-min)||1;const x=i=>padL+(D.length===1?0:(i*(W-padL-padR)/(D.length-1)));const y=v=>padT+(H-padT-padB)*(1-(v-min)/span);const gridY=[0,.25,.5,.75,1].map(t=>padT+(H-padT-padB)*t);let svg='<svg viewBox="0 0 '+W+' '+H+'" width="100%" height="300" preserveAspectRatio="xMinYMid meet" style="overflow:visible">';gridY.forEach(gy=>svg+='<line x1="'+padL+'" y1="'+gy.toFixed(1)+'" x2="'+(W-padR)+'" y2="'+gy.toFixed(1)+'" stroke="var(--line)" stroke-width="1"/>');D.forEach((d,i)=>svg+='<text x="'+x(i).toFixed(1)+'" y="'+(H-padB+16)+'" font-size="10" fill="var(--muted)" text-anchor="middle">'+fmtDate(d)+'</text>');rowsSel.forEach((r,ri)=>{const color=PALETTE[ri%PALETTE.length];const pts=[];D.forEach((d,i)=>{const v=r.dates[d];if(v&&v.ptc!=null)pts.push({i,v:v.ptc});});if(pts.length){const path=pts.map((p,k)=>(k===0?'M':'L')+x(p.i).toFixed(1)+','+y(p.v).toFixed(1)).join(' ');svg+='<path d="'+path+'" fill="none" stroke="'+color+'" stroke-width="2.5"/>';pts.forEach(p=>svg+='<circle cx="'+x(p.i).toFixed(1)+'" cy="'+y(p.v).toFixed(1)+'" r="4" fill="'+color+'" stroke="var(--panel)" stroke-width="1.5"/>');}});svg+='</svg>';const legend=rowsSel.map((r,ri)=>'<span><span class="legdot" style="background:'+PALETTE[ri%PALETTE.length]+'"></span>'+r.marca+' '+r.calibre+'</span>').join('');return '<div style="overflow-x:auto">'+svg+'</div><div class="chartLegend">'+legend+'</div>';}
+function compareTable(ids){const D=dates();const rowsSel=ids.map(id=>DATA.pivot.find(r=>r.id===id)).filter(Boolean);current=rowsSel.map(flat);let h='<div class="tablebox"><table class="timeline"><thead><tr><th class="product">Producto</th>'+D.map(d=>'<th>'+fmtDate(d)+'</th>').join('')+'</tr></thead><tbody>';rowsSel.forEach(r=>{h+='<tr><td class="product">'+r.marca+' '+r.calibre+'<span class="subsku">'+r.sku+'</span></td>'+D.map(d=>'<td>'+priceHtml(r.dates[d])+'</td>').join('')+'</tr>';});return h+'</tbody></table></div>';}
+function comparar(){metrics(rows());const ids=[...compareIds];let h='<div class="panel" style="padding:12px 14px"><span class="note">Elegi cualquier SKU (de cualquier marca) para comparar su evolucion de precio. Los accesos rapidos cargan un enfrentamiento CMQ vs competencia ya armado.</span></div>';h+='<div class="chips">'+(DATA.fights||[]).map((f,i)=>'<span class="chip" onclick="loadFight('+i+')">&#9876; '+f.name+'</span>').join('')+'</div>';h+='<div class="filterbar" style="margin-top:10px"><div class="search"><span class="ic">&#128269;</span><input id="cq" placeholder="Agregar SKU al comparador..." oninput="compareSearchResults()"/></div></div>';h+='<div id="compareResults" class="compareResults"></div>';h+='<div class="cchips">'+ids.map(id=>{const r=DATA.pivot.find(x=>x.id===id);return r?'<span class="cchip">'+r.marca+' '+r.calibre+'<button onclick="removeCompare(\''+id+'\')">&times;</button></span>':'';}).join('')+'</div>';if(!ids.length){current=[];return h+'<div class="panel note" style="margin-top:4px">Todavia no elegiste ningun SKU. Busca arriba o toca un acceso rapido.</div>';}h+=compareCards(ids);h+='<div class="panel" style="margin-top:14px"><h3>Evolucion superpuesta</h3>'+multiLineChart(ids)+'</div>';h+='<div style="margin-top:14px">'+compareTable(ids)+'</div>';return h;}
+
+function render(){el('content').innerHTML=tab==='timeline'?timeline():tab==='comparar'?comparar():tab==='heatmap'?heatmap():tab==='changes'?changes():insights();}
 function downloadCSV(){if(!current.length)return;const k=Object.keys(current[0]);const csv=[k.join(';')].concat(current.map(r=>k.map(x=>String(r[x]??'').replaceAll(';',',')).join(';'))).join('\n');const blob=new Blob([csv],{type:'text/csv;charset=utf-8;'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='rappi_vista.csv';a.click();}
 
-/* ---- Grafico de evolucion por SKU (linea de tiempo, marca AM/PM) ---- */
+/* ---- Grafico de evolucion de 1 SKU (click en un producto en Evolucion/Heatmap) ---- */
 function closeChart(){const p=el('chartPanel');p.classList.remove('open');p.innerHTML='';}
 function openChart(id){const r=DATA.pivot.find(x=>x.id===id);if(!r)return;const D=dates();const pts=D.map(d=>({d,v:r.dates[d]})).filter(p=>p.v&&p.v.ptc!=null);const p=el('chartPanel');if(!pts.length){p.classList.add('open');p.innerHTML='<div class="chartHead"><div><h3>'+r.marca+' '+r.calibre+'</h3><div class="sub">'+r.sku+'</div></div><button class="chartClose" onclick="closeChart()">Cerrar &times;</button></div><p class="note">Sin historico suficiente todavia.</p>';p.scrollIntoView({behavior:'smooth',block:'nearest'});return;}
   const W=Math.max(560,pts.length*70),H=220,padL=54,padR=18,padT=18,padB=34;
@@ -179,17 +191,17 @@ function openChart(id){const r=DATA.pivot.find(x=>x.id===id);if(!r)return;const 
   gridY.forEach(gy=>svg+='<line x1="'+padL+'" y1="'+gy.toFixed(1)+'" x2="'+(W-padR)+'" y2="'+gy.toFixed(1)+'" stroke="var(--line)" stroke-width="1"/>');
   svg+='<path d="'+areaPath+'" fill="var(--green)" opacity="0.08" stroke="none"/>';
   svg+='<path d="'+linePath+'" fill="none" stroke="var(--green)" stroke-width="2.5"/>';
-  pts.forEach((pt,i)=>{const slot=splitSlot(pt.d)[1].toLowerCase();const color=slot==='pm'?'var(--accent)':'var(--blue)';const cx=x(i).toFixed(1),cy=y(pt.v.ptc).toFixed(1);
-    svg+='<circle cx="'+cx+'" cy="'+cy+'" r="4.5" fill="'+color+'" stroke="var(--panel)" stroke-width="1.5"/>';
+  pts.forEach((pt,i)=>{const cx=x(i).toFixed(1),cy=y(pt.v.ptc).toFixed(1);
+    svg+='<circle cx="'+cx+'" cy="'+cy+'" r="4.5" fill="var(--blue)" stroke="var(--panel)" stroke-width="1.5"/>';
     svg+='<text x="'+cx+'" y="'+(Number(cy)-10)+'" font-size="10.5" font-weight="800" fill="var(--ink)" text-anchor="middle">'+fmtMoney(pt.v.ptc)+'</text>';
-    svg+='<text x="'+cx+'" y="'+(H-padB+16)+'" font-size="10" fill="var(--muted)" text-anchor="middle">'+fmtSlotShort(pt.d)+'</text>';
+    svg+='<text x="'+cx+'" y="'+(H-padB+16)+'" font-size="10" fill="var(--muted)" text-anchor="middle">'+fmtDate(pt.d)+'</text>';
   });
   svg+='</svg>';
   const first=pts[0].v.ptc,lastv=pts[pts.length-1].v.ptc,delta=lastv-first,deltaPct=first?(delta/first*100):0;
   p.classList.add('open');
   p.innerHTML='<div class="chartHead"><div><h3>'+r.marca+' '+r.calibre+'</h3><div class="sub">'+r.sku+' &middot; '+r.grupo+' / '+r.segmento+'</div></div><button class="chartClose" onclick="closeChart()">Cerrar &times;</button></div>'+
     '<div style="overflow-x:auto">'+svg+'</div>'+
-    '<div class="chartLegend"><span><span class="legdot" style="background:var(--blue)"></span>AM</span><span><span class="legdot" style="background:var(--accent)"></span>PM</span><span>Variacion total: <b class="'+(delta>0?'gapBad':delta<0?'gapGood':'')+'">'+(delta>0?'+':'')+fmtMoney(delta)+' ('+(deltaPct>0?'+':'')+deltaPct.toFixed(1)+'%)</b></span></div>';
+    '<div class="chartLegend"><span>Variacion total: <b class="'+(delta>0?'gapBad':delta<0?'gapGood':'')+'" style="color:'+(delta>0?'var(--red)':delta<0?'var(--green)':'var(--yellow)')+'">'+(delta>0?'+':'')+fmtMoney(delta)+' ('+(deltaPct>0?'+':'')+deltaPct.toFixed(1)+'%)</b></span></div>';
   p.scrollIntoView({behavior:'smooth',block:'nearest'});
 }
 cargar();

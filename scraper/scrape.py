@@ -26,10 +26,13 @@ Si un producto individual falla al parsearse, se loguea y se sigue (no
 corta la corrida). Si la tienda entera no devuelve productos, se sale con
 codigo de error (eso si debe frenar la corrida de CI).
 
+Corre 1 vez por dia (10:15 ART). Antes corria 2 veces (AM/PM) para ver
+variacion intradia, pero se confirmo que la dinamica no cambia segun la
+hora del dia, asi que se simplifico a una sola lectura.
+
 Uso:
-    python scraper/scrape.py --slot AM
-    python scraper/scrape.py --slot PM --out-dir ../data/raw
-    python scraper/scrape.py                       # autodetecta AM/PM por hora ART
+    python scraper/scrape.py
+    python scraper/scrape.py --fecha 2026-08-20 --out-dir ../data/raw
 """
 import argparse
 import csv
@@ -246,16 +249,9 @@ def scrape_store(page, store_id, category_slug=CATEGORY_SLUG):
     return list(all_products.values())
 
 
-def resolver_slot(explicit_slot):
-    if explicit_slot:
-        return explicit_slot
-    hora = datetime.now(TZ).hour
-    return "AM" if hora < 15 else "PM"
-
-
-def guardar_csv(rows, out_dir, fecha, slot):
+def guardar_csv(rows, out_dir, fecha):
     out_dir.mkdir(parents=True, exist_ok=True)
-    destino = out_dir / f"{fecha}_{slot}.csv"
+    destino = out_dir / f"{fecha}.csv"
     with destino.open("w", encoding="utf-8-sig", newline="") as f:
         w = csv.DictWriter(f, fieldnames=CSV_FIELDS, delimiter=";")
         w.writeheader()
@@ -266,8 +262,6 @@ def guardar_csv(rows, out_dir, fecha, slot):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--slot", choices=["AM", "PM"], default=None,
-                     help="si no se pasa, se autodetecta por hora en America/Argentina/Buenos_Aires")
     ap.add_argument("--out-dir", type=Path, default=DEFAULT_OUT_DIR)
     ap.add_argument("--fecha", default=None, help="YYYY-MM-DD (default: hoy en ART)")
     ap.add_argument("--store-id", type=int, default=STORE_ID)
@@ -275,11 +269,10 @@ def main():
 
     ahora = datetime.now(TZ)
     fecha = args.fecha or ahora.strftime("%Y-%m-%d")
-    slot = resolver_slot(args.slot)
 
     print("=" * 55)
     print("  Scraper Rappi Turbo - Nunez (Monroe)")
-    print(f"  Store: {args.store_id}  |  Zona: {ZONA}  |  Slot: {fecha}_{slot}")
+    print(f"  Store: {args.store_id}  |  Zona: {ZONA}  |  Fecha: {fecha}")
     print("=" * 55)
 
     products = None
@@ -321,7 +314,7 @@ def main():
         print("\n[ERROR] Ningun producto se pudo parsear.")
         sys.exit(1)
 
-    destino = guardar_csv(rows, args.out_dir, fecha, slot)
+    destino = guardar_csv(rows, args.out_dir, fecha)
     con_desc = sum(1 for r in rows if r["descuento"] and r["descuento"] > 0)
 
     print(f"\n[OK] {len(rows)} cervezas guardadas ({con_desc} con descuento, "
@@ -337,7 +330,6 @@ def main():
         with open(gha_out, "a", encoding="utf-8") as f:
             f.write(f"csv_path={destino.resolve()}\n")
             f.write(f"fecha={fecha}\n")
-            f.write(f"slot={slot}\n")
 
 
 if __name__ == "__main__":

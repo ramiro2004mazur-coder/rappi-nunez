@@ -1,13 +1,14 @@
 """
-Mergea un CSV crudo de una corrida del scraper (data/raw/YYYY-MM-DD_AM.csv o
-_PM.csv) dentro de data/history.json. Se corre despues de cada scrapeo.
+Mergea un CSV crudo de una corrida del scraper (data/raw/YYYY-MM-DD.csv)
+dentro de data/history.json. Se corre despues de cada scrapeo (1 vez por
+dia; el historico previo a AM/PM se migro con scripts/migrate_am_pm.py).
 
 Nunca revienta por una fila individual mala: la loguea en
 data/logs/ingest_warnings.log y sigue con las demas (requisito de manejo
 de errores del pipeline).
 
 Uso:
-    python3 scripts/ingest_run.py --csv data/raw/2026-08-14_AM.csv --date 2026-08-14 --slot AM
+    python3 scripts/ingest_run.py --csv data/raw/2026-08-20.csv --date 2026-08-20
 """
 
 import argparse
@@ -33,7 +34,6 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--csv", required=True)
     ap.add_argument("--date", required=True, help="YYYY-MM-DD")
-    ap.add_argument("--slot", required=True, choices=["AM", "PM"])
     args = ap.parse_args()
 
     csv_path = Path(args.csv)
@@ -49,7 +49,7 @@ def main():
     )
     pivot_by_key = {catalog_key(p["marca"], p["sku"]): p for p in history["pivot"]}
 
-    slot_key = f"{args.date}_{args.slot}"
+    date_key = args.date
 
     errores = 0
     nuevos = 0
@@ -99,7 +99,7 @@ def main():
                 precio = float(precio_raw)
                 fleje = float(row.get("fleje") or precio)
                 dinamica = round(max(1 - precio / fleje, 0.0), 4) if fleje else 0.0
-                entry["dates"][slot_key] = {
+                entry["dates"][date_key] = {
                     "fleje": fleje,
                     "ptc": precio,
                     "dinamica": dinamica,
@@ -123,7 +123,7 @@ def main():
     save_json(HISTORY_PATH, history)
     save_json(CATALOG_PATH, list(catalog.values()))
 
-    print(f"[OK] {slot_key}: {ok} filas ok, {nuevos} SKUs nuevos, {errores} filas con error")
+    print(f"[OK] {date_key}: {ok} filas ok, {nuevos} SKUs nuevos, {errores} filas con error")
     if errores:
         print("     ver data/logs/ingest_warnings.log")
 
