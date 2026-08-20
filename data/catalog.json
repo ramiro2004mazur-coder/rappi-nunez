@@ -2534,5 +2534,13 @@
     "calibre": "330/355",
     "grupo": "Sin clasificar",
     "segmento": "Sin clasificar"
+  },
+  {
+    "id": "pilsener-konign-konig-cerveza-lata",
+    "marca": "Pilsener Konign",
+    "sku": "Konig Cerveza Lata",
+    "calibre": "600",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
   }
 ]
