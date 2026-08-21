@@ -552,6 +552,11 @@
           "fleje": 3009.0,
           "ptc": 1504.5,
           "dinamica": 0.5
+        },
+        "2026-08-21": {
+          "fleje": 3009.0,
+          "ptc": 1805.4,
+          "dinamica": 0.4
         }
       }
     },
@@ -639,6 +644,11 @@
           "dinamica": 0.25
         },
         "2026-08-20": {
+          "fleje": 3289.0,
+          "ptc": 2466.75,
+          "dinamica": 0.25
+        },
+        "2026-08-21": {
           "fleje": 3289.0,
           "ptc": 2466.75,
           "dinamica": 0.25
@@ -887,6 +897,11 @@
           "fleje": 4599.0,
           "ptc": 3449.25,
           "dinamica": 0.25
+        },
+        "2026-08-21": {
+          "fleje": 4589.0,
+          "ptc": 3441.75,
+          "dinamica": 0.25
         }
       }
     },
@@ -967,6 +982,11 @@
           "fleje": 5079.0,
           "ptc": 3809.25,
           "dinamica": 0.25
+        },
+        "2026-08-21": {
+          "fleje": 5089.0,
+          "ptc": 3816.75,
+          "dinamica": 0.25
         }
       }
     },
@@ -1024,6 +1044,11 @@
           "dinamica": 0.1
         },
         "2026-08-20": {
+          "fleje": 4059.0,
+          "ptc": 3653.1,
+          "dinamica": 0.1
+        },
+        "2026-08-21": {
           "fleje": 4059.0,
           "ptc": 3653.1,
           "dinamica": 0.1
@@ -1144,6 +1169,11 @@
           "dinamica": 0.25
         },
         "2026-08-20": {
+          "fleje": 2989.0,
+          "ptc": 2241.75,
+          "dinamica": 0.25
+        },
+        "2026-08-21": {
           "fleje": 2989.0,
           "ptc": 2241.75,
           "dinamica": 0.25
@@ -2112,6 +2142,11 @@
           "fleje": 5449.0,
           "ptc": 4086.75,
           "dinamica": 0.25
+        },
+        "2026-08-21": {
+          "fleje": 5449.0,
+          "ptc": 4086.75,
+          "dinamica": 0.25
         }
       }
     },
@@ -2334,6 +2369,11 @@
           "dinamica": 0.0
         },
         "2026-08-20": {
+          "fleje": 1909.0,
+          "ptc": 1909.0,
+          "dinamica": 0.0
+        },
+        "2026-08-21": {
           "fleje": 1909.0,
           "ptc": 1909.0,
           "dinamica": 0.0
@@ -3297,6 +3337,11 @@
           "fleje": 3189.0,
           "ptc": 1913.4,
           "dinamica": 0.4
+        },
+        "2026-08-21": {
+          "fleje": 3189.0,
+          "ptc": 2710.65,
+          "dinamica": 0.15
         }
       }
     },
@@ -7517,6 +7562,11 @@
           "fleje": 1829.0,
           "ptc": 1829.0,
           "dinamica": 0.0
+        },
+        "2026-08-21": {
+          "fleje": 1829.0,
+          "ptc": 1829.0,
+          "dinamica": 0.0
         }
       }
     },
@@ -8000,8 +8050,8 @@
       "dias": 14,
       "dias_dinamica": 14,
       "max_dinamica": 0.5,
-      "avg_dinamica": 0.317741935483871,
-      "avg_ptc": 2204.293548387097
+      "avg_dinamica": 0.31640625,
+      "avg_ptc": 2205.97265625
     },
     {
       "marca": "Michelob Ultra",
@@ -8017,11 +8067,11 @@
       "marca": "Budweiser",
       "grupo": "CMQ",
       "segmento": "Core",
-      "dias": 8,
-      "dias_dinamica": 7,
+      "dias": 9,
+      "dias_dinamica": 8,
       "max_dinamica": 0.35,
-      "avg_dinamica": 0.21785714285714283,
-      "avg_ptc": 3168.253571428572
+      "avg_dinamica": 0.221875,
+      "avg_ptc": 3141.503125
     },
     {
       "marca": "Schneider",
@@ -8047,11 +8097,11 @@
       "marca": "Andes",
       "grupo": "CMQ",
       "segmento": "Sin clasificar",
-      "dias": 7,
-      "dias_dinamica": 4,
+      "dias": 8,
+      "dias_dinamica": 5,
       "max_dinamica": 0.35,
-      "avg_dinamica": 0.15714285714285717,
-      "avg_ptc": 4285.157142857142
+      "avg_dinamica": 0.16875,
+      "avg_ptc": 4226.60625
     },
     {
       "marca": "Quilmes",
@@ -8060,8 +8110,8 @@
       "dias": 14,
       "dias_dinamica": 14,
       "max_dinamica": 0.4,
-      "avg_dinamica": 0.19431818181818183,
-      "avg_ptc": 2416.830681818182
+      "avg_dinamica": 0.18804347826086956,
+      "avg_ptc": 2430.927173913043
     },
     {
       "marca": "Antares",
@@ -8080,8 +8130,8 @@
       "dias": 14,
       "dias_dinamica": 14,
       "max_dinamica": 0.35,
-      "avg_dinamica": 0.1621212121212121,
-      "avg_ptc": 2571.8590909090913
+      "avg_dinamica": 0.16,
+      "avg_ptc": 2543.4885714285715
     },
     {
       "marca": "Stella Artois",
@@ -8130,8 +8180,8 @@
       "dias": 14,
       "dias_dinamica": 14,
       "max_dinamica": 0.95,
-      "avg_dinamica": 0.2857142857142857,
-      "avg_ptc": 4686.736263736264
+      "avg_dinamica": 0.28532608695652173,
+      "avg_ptc": 4680.214673913043
     },
     {
       "marca": "Stella Artois 0",
@@ -8454,9 +8504,9 @@
     }
   ],
   "meta": {
-    "generado": "2026-08-21 13:02:17",
+    "generado": "2026-08-21 14:01:46",
     "sku_rows": 202,
-    "registros_validos": 1177,
+    "registros_validos": 1187,
     "dias": 14,
     "plataforma": "Rappi Turbo",
     "tienda": "Nunez"
