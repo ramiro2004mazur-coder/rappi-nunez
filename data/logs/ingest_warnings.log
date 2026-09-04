@@ -100,3 +100,4 @@
 2026-09-02.csv: fila descartada (fila sin marca/descripcion/precio): {'zona': 'Nunez', 'marca': '', 'descripcion': 'Cerveza Lager Estrella Del Sur Lata', 'calibre': '500 ml', 'fleje': '1769', 'precio': '1769', 'descuento': '0'}
 2026-09-03.csv: fila descartada (fila sin marca/descripcion/precio): {'zona': 'Nunez', 'marca': '', 'descripcion': 'Cerveza Lager Estrella Del Sur Lata', 'calibre': '500 ml', 'fleje': '1459', 'precio': '1459', 'descuento': '0'}
 2026-09-03.csv: fila descartada (fila sin marca/descripcion/precio): {'zona': 'Nunez', 'marca': '', 'descripcion': 'Cerveza Lager Estrella Del Sur Lata', 'calibre': '500 ml', 'fleje': '1459', 'precio': '1459', 'descuento': '0'}
+2026-09-04.csv: fila descartada (fila sin marca/descripcion/precio): {'zona': 'Nunez', 'marca': '', 'descripcion': 'Cerveza Lager Estrella Del Sur Lata', 'calibre': '500 ml', 'fleje': '1459', 'precio': '1459', 'descuento': '0'}
