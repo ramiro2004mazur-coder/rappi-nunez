@@ -2542,5 +2542,13 @@
     "calibre": "600",
     "grupo": "Sin clasificar",
     "segmento": "Sin clasificar"
+  },
+  {
+    "id": "brahma-cerveza-brahma-710-ml",
+    "marca": "Brahma",
+    "sku": "Cerveza Brahma 710 mL",
+    "calibre": "710/730",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
   }
 ]

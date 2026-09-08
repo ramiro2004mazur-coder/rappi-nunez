@@ -101,3 +101,5 @@
 2026-09-03.csv: fila descartada (fila sin marca/descripcion/precio): {'zona': 'Nunez', 'marca': '', 'descripcion': 'Cerveza Lager Estrella Del Sur Lata', 'calibre': '500 ml', 'fleje': '1459', 'precio': '1459', 'descuento': '0'}
 2026-09-03.csv: fila descartada (fila sin marca/descripcion/precio): {'zona': 'Nunez', 'marca': '', 'descripcion': 'Cerveza Lager Estrella Del Sur Lata', 'calibre': '500 ml', 'fleje': '1459', 'precio': '1459', 'descuento': '0'}
 2026-09-04.csv: fila descartada (fila sin marca/descripcion/precio): {'zona': 'Nunez', 'marca': '', 'descripcion': 'Cerveza Lager Estrella Del Sur Lata', 'calibre': '500 ml', 'fleje': '1459', 'precio': '1459', 'descuento': '0'}
+2026-09-08.csv: SKU nuevo sin catalogo -> 'Brahma | Cerveza Brahma 710 mL' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-09-08.csv: fila descartada (fila sin marca/descripcion/precio): {'zona': 'Nunez', 'marca': '', 'descripcion': 'Cerveza Lager Estrella Del Sur Lata', 'calibre': '500 ml', 'fleje': '1459', 'precio': '1313.1', 'descuento': '10'}
