@@ -109,3 +109,5 @@
 2026-09-10.csv: fila descartada (fila sin marca/descripcion/precio): {'zona': 'Nunez', 'marca': '', 'descripcion': 'Stones Cerveza Lemon', 'calibre': '473 ml', 'fleje': '2889', 'precio': '2889', 'descuento': '0'}
 2026-09-10.csv: fila descartada (fila sin marca/descripcion/precio): {'zona': 'Nunez', 'marca': '', 'descripcion': 'Stones Cerveza Maracuyá', 'calibre': '473 ml', 'fleje': '2889', 'precio': '2889', 'descuento': '0'}
 2026-09-10.csv: fila descartada (fila sin marca/descripcion/precio): {'zona': 'Nunez', 'marca': '', 'descripcion': 'Cerveza Lager Estrella Del Sur Lata', 'calibre': '500 ml', 'fleje': '1459', 'precio': '1313.1', 'descuento': '10'}
+2026-09-12.csv: fila descartada (fila sin marca/descripcion/precio): {'zona': 'Nunez', 'marca': '', 'descripcion': 'Stones Cerveza Maracuyá', 'calibre': '473 ml', 'fleje': '2889', 'precio': '2889', 'descuento': '0'}
+2026-09-12.csv: fila descartada (fila sin marca/descripcion/precio): {'zona': 'Nunez', 'marca': '', 'descripcion': 'Stones Cerveza Lemon', 'calibre': '473 ml', 'fleje': '2889', 'precio': '2889', 'descuento': '0'}
