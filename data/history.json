@@ -2,7 +2,7 @@
   "meta": {
     "tienda": "Nunez",
     "plataforma": "Rappi Turbo",
-    "ultima_corrida": "2026-09-13T23:39:42.307178+00:00",
+    "ultima_corrida": "2026-09-13T23:43:12.778879+00:00",
     "sku_count": 203
   },
   "dates": [
@@ -14114,6 +14114,11 @@
           "dinamica": 0.0
         },
         "2026-09-08": {
+          "fleje": 3509.0,
+          "ptc": 3509.0,
+          "dinamica": 0.0
+        },
+        "2026-09-13": {
           "fleje": 3509.0,
           "ptc": 3509.0,
           "dinamica": 0.0

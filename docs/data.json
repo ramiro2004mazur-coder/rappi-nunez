@@ -14072,6 +14072,11 @@
           "fleje": 3509.0,
           "ptc": 3509.0,
           "dinamica": 0.0
+        },
+        "2026-09-13": {
+          "fleje": 3509.0,
+          "ptc": 3509.0,
+          "dinamica": 0.0
         }
       }
     },
@@ -18493,8 +18498,8 @@
       "dias": 34,
       "dias_dinamica": 3,
       "max_dinamica": 0.25,
-      "avg_dinamica": 0.013392857142857142,
-      "avg_ptc": 3694.504464285714
+      "avg_dinamica": 0.013157894736842105,
+      "avg_ptc": 3691.25
     },
     {
       "marca": "Asahi",
@@ -18727,9 +18732,9 @@
     }
   ],
   "meta": {
-    "generado": "2026-09-13 20:39:57",
+    "generado": "2026-09-13 20:43:12",
     "sku_rows": 203,
-    "registros_validos": 3223,
+    "registros_validos": 3224,
     "dias": 37,
     "plataforma": "Rappi Turbo",
     "tienda": "Nunez"
