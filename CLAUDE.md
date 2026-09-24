@@ -121,6 +121,17 @@ GitHub Actions (`.github/workflows/scrape_and_deploy.yml`):
 - El push a `main` dispara el redeploy de GitHub Pages (`docs/` como
   raíz publicada).
 
+### Cobertura del scraper (desde 2026-09-23)
+
+Rappi cambio como pagina el catalogo: la mayor parte carga con "Ver mas" en la
+pagina principal de la categoria (contexto `sub_aisles`), no solo en las
+subcategorias (`aisle_detail`). Un scraper que solo escuchaba `aisle_detail`
+traia ~44 SKUs de ~100 (corte parcial del 23/09). Ahora `scrape.py` acepta los
+dos contextos (NO `store_home`, que es casi todo no-cerveza), hace hasta 3
+pasadas acumulando, y compara contra el maximo de los ultimos CSV: si queda
+<80% (`--min-cobertura`) sale con codigo 2, el workflow falla y NO se publica
+un corte parcial (la lista de SKUs faltantes queda en el log).
+
 ## 5. Reglas importantes
 
 - **No modificar la lógica de parseo de precios** (`scraper/scrape.py`:

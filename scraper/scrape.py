@@ -52,6 +52,13 @@ ZONA = "Nunez"
 CATEGORY_SLUG = "cervezas"
 MAX_VER_MAS_CLICKS = 25     # tope de seguridad por subcategoria
 REQUEST_DELAY = 1.2         # pausa entre acciones, para no forzar el sitio
+MAX_PASADAS = 3             # pasadas de scrapeo (contexto nuevo cada una), se acumulan productos
+OBJETIVO_COBERTURA = 0.97   # se corta de reintentar al llegar a este % del maximo reciente
+MIN_COBERTURA = 0.80        # por debajo de esto la corrida FALLA (no se publica un corte parcial)
+# Contextos de las respuestas dynamic/context/content que traen cerveza. "store_home"
+# son carruseles de la home (casi no hay cerveza): se excluye a proposito.
+CAPTURE_CONTEXTS = ("aisle_detail", "sub_aisles")
+CONTEXT_RE = re.compile(r'"context"\s*:\s*"(\w+)"')
 TZ = ZoneInfo("America/Argentina/Buenos_Aires")
 
 DEFAULT_OUT_DIR = Path(__file__).resolve().parent.parent / "data" / "raw"
@@ -79,6 +86,7 @@ NAME_BRAND_PATTERNS = [
     ("Asahi", r"asahi"), ("1890", r"\b1890\b"), ("Temple", r"\btemple\b"),
     ("Goose Island", r"goose\s*island"), ("Starberg", r"starberg"),
     ("Santa Fe", r"santa\s*fe"), ("Sol", r"\bsol\b"),
+    ("Stones", r"\bstones\b"), ("Estrella del Sur", r"estrella\s*del\s*sur"),
 ]
 
 
@@ -152,101 +160,150 @@ def producto_a_fila(p):
     }
 
 
-def scrape_store(page, store_id, category_slug=CATEGORY_SLUG):
-    url = f"{BASE}/tiendas/{store_id}-turbo-express/{category_slug}"
-    page.goto(url, wait_until="networkidle", timeout=45000)
-
-    next_data = page.evaluate(
-        "() => JSON.parse(document.getElementById('__NEXT_DATA__').textContent)"
-    )
-    pageProps = next_data["props"]["pageProps"]
-    fallback = pageProps.get("fallback", {})
-    fbkey = next(iter(fallback), None)
-
-    all_products = {}
-    subcats = []
-    if fbkey:
-        sar = fallback[fbkey].get("sub_aisles_response", {}).get("data", {})
-        for h in sar.get("headers", []):
-            for c in h.get("resource", {}).get("categories", []):
-                subcats.append({"id": c["id"], "name": c["name"]})
-        for comp in sar.get("components", []):
-            for p in comp.get("resource", {}).get("products", []):
-                all_products[p["product_id"]] = p
-
-    print(f"[store {store_id}] {len(subcats)} subcategorias: {', '.join(s['name'] for s in subcats)}")
-
-    for sub in subcats:
-        slug = slugify(sub["name"])
-        sub_url = f"{url}/{slug}"
-        before = len(all_products)
-
-        def handle_response(response, _bucket=all_products):
-            if "dynamic/context/content" not in response.url:
+def _make_handler(bucket):
+    def handle_response(response):
+        if "dynamic/context/content" not in response.url:
+            return
+        try:
+            m = CONTEXT_RE.search(response.request.post_data or "")
+            if not m or m.group(1) not in CAPTURE_CONTEXTS:
                 return
+            data = response.json()
+            for comp in data.get("data", {}).get("components", []):
+                for p in comp.get("resource", {}).get("products", []):
+                    bucket[p["product_id"]] = p
+        except Exception:
+            pass
+    return handle_response
+
+
+def expandir_ver_mas(page):
+    """Clickea 'Ver mas' hasta agotar la lista. Tolera 1 click sin crecimiento
+    (respuesta lenta) antes de darse por vencido. Devuelve la cantidad de clicks."""
+    clicks = fallos = 0
+    for _ in range(MAX_VER_MAS_CLICKS):
+        antes = page.locator('a[href^="/p/"]').count()
+        clicked = page.evaluate(
+            """() => {
+                const btn = Array.from(document.querySelectorAll('button, a'))
+                    .find(el => /ver\\s*m[a\u00e1]s/i.test(el.textContent || ''));
+                if (!btn) return false;
+                btn.click();
+                return true;
+            }"""
+        )
+        if not clicked:
+            break
+        clicks += 1
+        crecio = False
+        for _ in range(20):
+            page.wait_for_timeout(500)
+            if page.locator('a[href^="/p/"]').count() > antes:
+                crecio = True
+                break
+        if crecio:
+            fallos = 0
+        else:
+            fallos += 1
+            if fallos >= 2:
+                break
+    return clicks
+
+
+def scrape_store(page, store_id, category_slug=CATEGORY_SLUG, all_products=None):
+    """Una pasada completa. Acumula en all_products (compartido entre pasadas)."""
+    all_products = {} if all_products is None else all_products
+    url = f"{BASE}/tiendas/{store_id}-turbo-express/{category_slug}"
+    handler = _make_handler(all_products)
+    page.on("response", handler)
+    try:
+        page.goto(url, wait_until="networkidle", timeout=45000)
+
+        next_data = page.evaluate(
+            "() => JSON.parse(document.getElementById('__NEXT_DATA__').textContent)"
+        )
+        pageProps = next_data["props"]["pageProps"]
+        fallback = pageProps.get("fallback", {})
+        fbkey = next(iter(fallback), None)
+
+        subcats = []
+        if fbkey:
+            sar = fallback[fbkey].get("sub_aisles_response", {}).get("data", {})
+            for h in sar.get("headers", []):
+                for c in h.get("resource", {}).get("categories", []):
+                    subcats.append({"id": c["id"], "name": c["name"]})
+            for comp in sar.get("components", []):
+                for p in comp.get("resource", {}).get("products", []):
+                    all_products[p["product_id"]] = p
+
+        print(f"[store {store_id}] {len(subcats)} subcategorias: {', '.join(s['name'] for s in subcats)}")
+
+        # La pagina principal de la categoria tambien pagina con "Ver mas"
+        # (contexto sub_aisles): ahi carga la mayor parte del catalogo.
+        before = len(all_products)
+        clicks = expandir_ver_mas(page)
+        print(f"    - (categoria completa): +{len(all_products) - before} productos ({clicks} click(s) en 'Ver mas')")
+
+        for sub in subcats:
+            sub_url = f"{url}/{slugify(sub['name'])}"
+            before = len(all_products)
             try:
-                req_body = response.request.post_data or ""
-                if '"aisle_detail"' not in req_body:
-                    return
-                data = response.json()
-                for comp in data.get("data", {}).get("components", []):
-                    for p in comp.get("resource", {}).get("products", []):
-                        _bucket[p["product_id"]] = p
+                page.goto(sub_url, wait_until="networkidle", timeout=45000)
+            except Exception as e:
+                print(f"    [!] no se pudo cargar subcategoria '{sub['name']}': {e}")
+                continue
+
+            try:
+                sub_next_data = page.evaluate(
+                    "() => JSON.parse(document.getElementById('__NEXT_DATA__').textContent)"
+                )
+                sub_fallback = sub_next_data["props"]["pageProps"].get("fallback", {})
+                sub_fbkey = next(iter(sub_fallback), None)
+                if sub_fbkey:
+                    ad = sub_fallback[sub_fbkey].get("aisle_detail_response", {}).get("data", {})
+                    for comp in ad.get("components", []):
+                        for p in comp.get("resource", {}).get("products", []):
+                            all_products[p["product_id"]] = p
             except Exception:
                 pass
 
-        page.on("response", handle_response)
+            clicks = expandir_ver_mas(page)
+            print(f"    - {sub['name']}: +{len(all_products) - before} productos ({clicks} click(s) en 'Ver mas')")
+            time.sleep(REQUEST_DELAY)
+    finally:
         try:
-            page.goto(sub_url, wait_until="networkidle", timeout=45000)
-        except Exception as e:
-            print(f"    [!] no se pudo cargar subcategoria '{sub['name']}': {e}")
-            page.remove_listener("response", handle_response)
-            continue
-
-        try:
-            sub_next_data = page.evaluate(
-                "() => JSON.parse(document.getElementById('__NEXT_DATA__').textContent)"
-            )
-            sub_fallback = sub_next_data["props"]["pageProps"].get("fallback", {})
-            sub_fbkey = next(iter(sub_fallback), None)
-            if sub_fbkey:
-                ad = sub_fallback[sub_fbkey].get("aisle_detail_response", {}).get("data", {})
-                for comp in ad.get("components", []):
-                    for p in comp.get("resource", {}).get("products", []):
-                        all_products[p["product_id"]] = p
+            page.remove_listener("response", handler)
         except Exception:
             pass
-
-        clicks = 0
-        for _ in range(MAX_VER_MAS_CLICKS):
-            count_before = page.locator('a[href^="/p/"]').count()
-            clicked = page.evaluate(
-                """() => {
-                    const btn = Array.from(document.querySelectorAll('button, a'))
-                        .find(el => /ver\\s*m[aá]s/i.test(el.textContent || ''));
-                    if (!btn) return false;
-                    btn.click();
-                    return true;
-                }"""
-            )
-            if not clicked:
-                break
-            clicks += 1
-            grew = False
-            for _ in range(16):
-                page.wait_for_timeout(500)
-                if page.locator('a[href^="/p/"]').count() > count_before:
-                    grew = True
-                    break
-            if not grew:
-                break
-
-        page.remove_listener("response", handle_response)
-        gained = len(all_products) - before
-        print(f"    - {sub['name']}: {gained} productos ({clicks} click(s) en 'Ver mas')")
-        time.sleep(REQUEST_DELAY)
-
     return list(all_products.values())
+
+
+def contar_cervezas(products):
+    n = 0
+    for p_ in products:
+        try:
+            if producto_a_fila(p_) is not None:
+                n += 1
+        except Exception:
+            pass
+    return n
+
+
+def referencia_previa(out_dir, fecha):
+    """(max de filas, nombres) entre los ultimos 7 CSV previos: sirve de vara de
+    cobertura. Se usa el maximo (no el ultimo) para que un dia parcial no baje la vara."""
+    mejor = (0, set())
+    for f in sorted(Path(out_dir).glob("????-??-??.csv"))[-8:]:
+        if f.stem >= fecha:
+            continue
+        try:
+            with f.open(encoding="utf-8-sig", newline="") as fh:
+                nombres = {r["descripcion"].strip().lower() for r in csv.DictReader(fh, delimiter=";")}
+        except Exception:
+            continue
+        if len(nombres) > mejor[0]:
+            mejor = (len(nombres), nombres)
+    return mejor
 
 
 def guardar_csv(rows, out_dir, fecha):
@@ -265,6 +322,8 @@ def main():
     ap.add_argument("--out-dir", type=Path, default=DEFAULT_OUT_DIR)
     ap.add_argument("--fecha", default=None, help="YYYY-MM-DD (default: hoy en ART)")
     ap.add_argument("--store-id", type=int, default=STORE_ID)
+    ap.add_argument("--min-cobertura", type=float, default=MIN_COBERTURA,
+                    help="fraccion minima de SKUs vs el maximo reciente; 0 desactiva el chequeo")
     args = ap.parse_args()
 
     ahora = datetime.now(TZ)
@@ -275,28 +334,29 @@ def main():
     print(f"  Store: {args.store_id}  |  Zona: {ZONA}  |  Fecha: {fecha}")
     print("=" * 55)
 
-    products = None
     errores_run = []
+    ref_n, ref_names = referencia_previa(args.out_dir, fecha)
+    all_products = {}
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        context = browser.new_context(locale="es-AR")
-        page = context.new_page()
-
-        for attempt in range(1, 4):
+        for pasada in range(1, MAX_PASADAS + 1):
+            context = browser.new_context(locale="es-AR")  # contexto nuevo = device id nuevo
+            page = context.new_page()
             try:
-                products = scrape_store(page, args.store_id, CATEGORY_SLUG)
-                break
+                scrape_store(page, args.store_id, CATEGORY_SLUG, all_products)
             except Exception as e:
-                print(f"[!] Error scrapeando la tienda (intento {attempt}/3): {e}")
-                try:
-                    page.close()
-                except Exception:
-                    pass
-                time.sleep(4 * attempt)
-                page = context.new_page()
-
+                print(f"[!] Error en la pasada {pasada}/{MAX_PASADAS}: {e}")
+            finally:
+                context.close()
+            n = contar_cervezas(all_products.values())
+            print(f"[pasada {pasada}/{MAX_PASADAS}] {n} cervezas acumuladas "
+                  f"(referencia: {ref_n or 'n/d'})")
+            if n and (not ref_n or n >= ref_n * OBJETIVO_COBERTURA):
+                break
+            time.sleep(4 * pasada)
         browser.close()
 
+    products = list(all_products.values())
     if not products:
         print("\n[ERROR] No se obtuvieron productos. Revisa el store_id o la conectividad.")
         sys.exit(1)
@@ -315,6 +375,13 @@ def main():
         sys.exit(1)
 
     destino = guardar_csv(rows, args.out_dir, fecha)
+    if ref_n and len(rows) < ref_n * args.min_cobertura:
+        hoy = {r["descripcion"].strip().lower() for r in rows}
+        faltan = sorted(ref_names - hoy)
+        print(f"\n[ERROR] Cobertura insuficiente: {len(rows)} de {ref_n} SKUs de referencia "
+              f"({len(rows) / ref_n:.0%} < {args.min_cobertura:.0%}). No se publica el corte.")
+        print(f"        Faltan {len(faltan)}: {', '.join(faltan[:25])}{' ...' if len(faltan) > 25 else ''}")
+        sys.exit(2)
     con_desc = sum(1 for r in rows if r["descuento"] and r["descuento"] > 0)
 
     print(f"\n[OK] {len(rows)} cervezas guardadas ({con_desc} con descuento, "
