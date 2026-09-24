@@ -2550,5 +2550,21 @@
     "calibre": "710/730",
     "grupo": "Sin clasificar",
     "segmento": "Sin clasificar"
+  },
+  {
+    "id": "estrella-del-sur-cerveza-lager-estrella-del-sur-lata",
+    "marca": "Estrella del Sur",
+    "sku": "Cerveza Lager Estrella Del Sur Lata",
+    "calibre": "600",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "stones-stones-cerveza-maracuya",
+    "marca": "Stones",
+    "sku": "Stones Cerveza Maracuyá",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
   }
 ]
