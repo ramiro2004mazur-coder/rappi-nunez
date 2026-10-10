@@ -2574,5 +2574,29 @@
     "calibre": "473",
     "grupo": "Sin clasificar",
     "segmento": "Sin clasificar"
+  },
+  {
+    "id": "flying-fish-cerveza-flying-fish-lata",
+    "marca": "Flying Fish",
+    "sku": "Cerveza Flying Fish Lata",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "brahma-cerveza-brahma-ft-limon-lata",
+    "marca": "Brahma",
+    "sku": "Cerveza Brahma Ft Limon Lata",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "brahma-cerveza-brahma-ft-pomelo-lata",
+    "marca": "Brahma",
+    "sku": "Cerveza Brahma Ft Pomelo Lata",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
   }
 ]
