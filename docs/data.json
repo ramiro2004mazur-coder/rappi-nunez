@@ -322,6 +322,11 @@
           "fleje": 3999.0,
           "ptc": 2999.25,
           "dinamica": 0.25
+        },
+        "2026-10-12": {
+          "fleje": 3999.0,
+          "ptc": 2999.25,
+          "dinamica": 0.25
         }
       }
     },
@@ -609,6 +614,11 @@
           "dinamica": 0.35
         },
         "2026-10-11": {
+          "fleje": 3789.0,
+          "ptc": 2841.75,
+          "dinamica": 0.25
+        },
+        "2026-10-12": {
           "fleje": 3789.0,
           "ptc": 2841.75,
           "dinamica": 0.25
@@ -922,6 +932,11 @@
           "fleje": 7745.0,
           "ptc": 5808.75,
           "dinamica": 0.25
+        },
+        "2026-10-12": {
+          "fleje": 7745.0,
+          "ptc": 5808.75,
+          "dinamica": 0.25
         }
       }
     },
@@ -1214,6 +1229,11 @@
           "dinamica": 0.45
         },
         "2026-10-11": {
+          "fleje": 4029.0,
+          "ptc": 2215.95,
+          "dinamica": 0.45
+        },
+        "2026-10-12": {
           "fleje": 4029.0,
           "ptc": 2215.95,
           "dinamica": 0.45
@@ -1537,6 +1557,11 @@
           "fleje": 6819.0,
           "ptc": 6819.0,
           "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 6819.0,
+          "ptc": 5796.15,
+          "dinamica": 0.15
         }
       }
     },
@@ -1834,6 +1859,11 @@
           "dinamica": 0.0
         },
         "2026-10-11": {
+          "fleje": 3549.0,
+          "ptc": 3549.0,
+          "dinamica": 0.0
+        },
+        "2026-10-12": {
           "fleje": 3549.0,
           "ptc": 3549.0,
           "dinamica": 0.0
@@ -2332,6 +2362,11 @@
           "fleje": 3969.0,
           "ptc": 3969.0,
           "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 3969.0,
+          "ptc": 3969.0,
+          "dinamica": 0.0
         }
       }
     },
@@ -2584,6 +2619,11 @@
           "dinamica": 0.5
         },
         "2026-10-11": {
+          "fleje": 3009.0,
+          "ptc": 1805.4,
+          "dinamica": 0.4
+        },
+        "2026-10-12": {
           "fleje": 3009.0,
           "ptc": 1805.4,
           "dinamica": 0.4
@@ -2887,6 +2927,11 @@
           "fleje": 3459.0,
           "ptc": 2767.2,
           "dinamica": 0.2
+        },
+        "2026-10-12": {
+          "fleje": 3469.0,
+          "ptc": 2775.2,
+          "dinamica": 0.2
         }
       }
     },
@@ -3109,6 +3154,11 @@
           "dinamica": 0.3
         },
         "2026-10-11": {
+          "fleje": 3259.0,
+          "ptc": 2607.2,
+          "dinamica": 0.2
+        },
+        "2026-10-12": {
           "fleje": 3259.0,
           "ptc": 2607.2,
           "dinamica": 0.2
@@ -3424,6 +3474,11 @@
           "dinamica": 0.0
         },
         "2026-10-11": {
+          "fleje": 4309.0,
+          "ptc": 4309.0,
+          "dinamica": 0.0
+        },
+        "2026-10-12": {
           "fleje": 4309.0,
           "ptc": 4309.0,
           "dinamica": 0.0
@@ -3807,6 +3862,11 @@
           "fleje": 2519.0,
           "ptc": 2519.0,
           "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 2519.0,
+          "ptc": 2519.0,
+          "dinamica": 0.0
         }
       }
     },
@@ -4039,6 +4099,11 @@
           "dinamica": 0.35
         },
         "2026-10-11": {
+          "fleje": 4699.0,
+          "ptc": 3054.35,
+          "dinamica": 0.35
+        },
+        "2026-10-12": {
           "fleje": 4699.0,
           "ptc": 3054.35,
           "dinamica": 0.35
@@ -4327,6 +4392,11 @@
           "fleje": 4009.0,
           "ptc": 3006.75,
           "dinamica": 0.25
+        },
+        "2026-10-12": {
+          "fleje": 4019.0,
+          "ptc": 3014.25,
+          "dinamica": 0.25
         }
       }
     },
@@ -4547,6 +4617,11 @@
           "fleje": 5269.0,
           "ptc": 2634.5,
           "dinamica": 0.5
+        },
+        "2026-10-12": {
+          "fleje": 5269.0,
+          "ptc": 3424.85,
+          "dinamica": 0.35
         }
       }
     },
@@ -4739,6 +4814,11 @@
           "dinamica": 0.3
         },
         "2026-10-09": {
+          "fleje": 4199.0,
+          "ptc": 2939.3,
+          "dinamica": 0.3
+        },
+        "2026-10-12": {
           "fleje": 4199.0,
           "ptc": 2939.3,
           "dinamica": 0.3
@@ -5002,6 +5082,11 @@
           "fleje": 4414.54,
           "ptc": 2428.0,
           "dinamica": 0.45
+        },
+        "2026-10-12": {
+          "fleje": 4412.24,
+          "ptc": 4412.24,
+          "dinamica": 0.0
         }
       }
     },
@@ -5149,6 +5234,11 @@
           "dinamica": 0.3
         },
         "2026-10-11": {
+          "fleje": 4739.0,
+          "ptc": 3317.3,
+          "dinamica": 0.3
+        },
+        "2026-10-12": {
           "fleje": 4739.0,
           "ptc": 3317.3,
           "dinamica": 0.3
@@ -5389,6 +5479,11 @@
           "dinamica": 0.35
         },
         "2026-10-11": {
+          "fleje": 3109.0,
+          "ptc": 2331.75,
+          "dinamica": 0.25
+        },
+        "2026-10-12": {
           "fleje": 3109.0,
           "ptc": 2331.75,
           "dinamica": 0.25
@@ -5646,6 +5741,11 @@
         "2026-10-11": {
           "fleje": 3819.0,
           "ptc": 2864.25,
+          "dinamica": 0.25
+        },
+        "2026-10-12": {
+          "fleje": 3829.0,
+          "ptc": 2871.75,
           "dinamica": 0.25
         }
       }
@@ -5942,6 +6042,11 @@
           "fleje": 2949.0,
           "ptc": 2359.2,
           "dinamica": 0.2
+        },
+        "2026-10-12": {
+          "fleje": 2949.0,
+          "ptc": 2359.2,
+          "dinamica": 0.2
         }
       }
     },
@@ -6234,6 +6339,11 @@
           "dinamica": 0.35
         },
         "2026-10-11": {
+          "fleje": 6769.0,
+          "ptc": 4399.85,
+          "dinamica": 0.35
+        },
+        "2026-10-12": {
           "fleje": 6769.0,
           "ptc": 4399.85,
           "dinamica": 0.35
@@ -6772,6 +6882,11 @@
           "fleje": 4629.0,
           "ptc": 3471.75,
           "dinamica": 0.25
+        },
+        "2026-10-12": {
+          "fleje": 4629.0,
+          "ptc": 3471.75,
+          "dinamica": 0.25
         }
       }
     },
@@ -7077,6 +7192,11 @@
           "fleje": 2359.0,
           "ptc": 1415.4,
           "dinamica": 0.4
+        },
+        "2026-10-12": {
+          "fleje": 2359.0,
+          "ptc": 1651.3,
+          "dinamica": 0.3
         }
       }
     },
@@ -7382,6 +7502,11 @@
           "fleje": 3099.0,
           "ptc": 3099.0,
           "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 3099.0,
+          "ptc": 2324.25,
+          "dinamica": 0.25
         }
       }
     },
@@ -7641,6 +7766,11 @@
         "2026-10-11": {
           "fleje": 3149.0,
           "ptc": 1889.4,
+          "dinamica": 0.4
+        },
+        "2026-10-12": {
+          "fleje": 3189.0,
+          "ptc": 1913.4,
           "dinamica": 0.4
         }
       }
@@ -7936,6 +8066,11 @@
         "2026-10-11": {
           "fleje": 8129.0,
           "ptc": 6096.75,
+          "dinamica": 0.25
+        },
+        "2026-10-12": {
+          "fleje": 8119.0,
+          "ptc": 6089.25,
           "dinamica": 0.25
         }
       }
@@ -8247,6 +8382,11 @@
           "fleje": 7989.0,
           "ptc": 5991.75,
           "dinamica": 0.25
+        },
+        "2026-10-12": {
+          "fleje": 7989.0,
+          "ptc": 5991.75,
+          "dinamica": 0.25
         }
       }
     },
@@ -8532,6 +8672,11 @@
           "fleje": 4449.0,
           "ptc": 4449.0,
           "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 4449.0,
+          "ptc": 3781.65,
+          "dinamica": 0.15
         }
       }
     },
@@ -8952,6 +9097,11 @@
           "fleje": 4879.0,
           "ptc": 4879.0,
           "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 4829.0,
+          "ptc": 3621.75,
+          "dinamica": 0.25
         }
       }
     },
@@ -9247,6 +9397,11 @@
           "fleje": 4789.0,
           "ptc": 3352.3,
           "dinamica": 0.3
+        },
+        "2026-10-12": {
+          "fleje": 4809.0,
+          "ptc": 3366.3,
+          "dinamica": 0.3
         }
       }
     },
@@ -9532,6 +9687,11 @@
           "fleje": 5649.0,
           "ptc": 3671.85,
           "dinamica": 0.35
+        },
+        "2026-10-12": {
+          "fleje": 5649.0,
+          "ptc": 4236.75,
+          "dinamica": 0.25
         }
       }
     },
@@ -9789,6 +9949,11 @@
           "dinamica": 0.35
         },
         "2026-10-11": {
+          "fleje": 5619.0,
+          "ptc": 4214.25,
+          "dinamica": 0.25
+        },
+        "2026-10-12": {
           "fleje": 5619.0,
           "ptc": 4214.25,
           "dinamica": 0.25
@@ -10082,6 +10247,11 @@
           "fleje": 6529.0,
           "ptc": 3590.95,
           "dinamica": 0.45
+        },
+        "2026-10-12": {
+          "fleje": 6529.0,
+          "ptc": 6529.0,
+          "dinamica": 0.0
         }
       }
     },
@@ -10351,6 +10521,11 @@
         "2026-10-11": {
           "fleje": 3559.0,
           "ptc": 2135.4,
+          "dinamica": 0.4
+        },
+        "2026-10-12": {
+          "fleje": 3569.0,
+          "ptc": 2141.4,
           "dinamica": 0.4
         }
       }
@@ -10657,6 +10832,11 @@
           "fleje": 3709.0,
           "ptc": 2781.75,
           "dinamica": 0.25
+        },
+        "2026-10-12": {
+          "fleje": 3709.0,
+          "ptc": 2781.75,
+          "dinamica": 0.25
         }
       }
     },
@@ -10887,6 +11067,11 @@
           "fleje": 2209.0,
           "ptc": 2209.0,
           "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 2199.0,
+          "ptc": 2199.0,
+          "dinamica": 0.0
         }
       }
     },
@@ -11114,6 +11299,11 @@
           "dinamica": 0.0
         },
         "2026-10-11": {
+          "fleje": 3809.0,
+          "ptc": 3809.0,
+          "dinamica": 0.0
+        },
+        "2026-10-12": {
           "fleje": 3809.0,
           "ptc": 3809.0,
           "dinamica": 0.0
@@ -11407,6 +11597,11 @@
           "fleje": 4079.0,
           "ptc": 3059.25,
           "dinamica": 0.25
+        },
+        "2026-10-12": {
+          "fleje": 4079.0,
+          "ptc": 3059.25,
+          "dinamica": 0.25
         }
       }
     },
@@ -11667,6 +11862,11 @@
           "fleje": 5389.0,
           "ptc": 3502.85,
           "dinamica": 0.35
+        },
+        "2026-10-12": {
+          "fleje": 5409.0,
+          "ptc": 4056.75,
+          "dinamica": 0.25
         }
       }
     },
@@ -11957,6 +12157,11 @@
           "fleje": 3829.0,
           "ptc": 2680.3,
           "dinamica": 0.3
+        },
+        "2026-10-12": {
+          "fleje": 3829.0,
+          "ptc": 3829.0,
+          "dinamica": 0.0
         }
       }
     },
@@ -12251,6 +12456,11 @@
         "2026-10-11": {
           "fleje": 4269.0,
           "ptc": 2134.5,
+          "dinamica": 0.5
+        },
+        "2026-10-12": {
+          "fleje": 4279.0,
+          "ptc": 2139.5,
           "dinamica": 0.5
         }
       }
@@ -12562,6 +12772,11 @@
           "fleje": 5129.0,
           "ptc": 5129.0,
           "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 5149.0,
+          "ptc": 5149.0,
+          "dinamica": 0.0
         }
       }
     },
@@ -12596,6 +12811,11 @@
         "2026-08-21": {
           "fleje": 4649.0,
           "ptc": 3254.3,
+          "dinamica": 0.3
+        },
+        "2026-10-12": {
+          "fleje": 4759.0,
+          "ptc": 3331.3,
           "dinamica": 0.3
         }
       }
@@ -12839,6 +13059,11 @@
           "dinamica": 0.3
         },
         "2026-10-11": {
+          "fleje": 4039.0,
+          "ptc": 2827.3,
+          "dinamica": 0.3
+        },
+        "2026-10-12": {
           "fleje": 4039.0,
           "ptc": 2827.3,
           "dinamica": 0.3
@@ -13099,6 +13324,11 @@
           "dinamica": 0.15
         },
         "2026-10-11": {
+          "fleje": 3499.0,
+          "ptc": 2099.4,
+          "dinamica": 0.4
+        },
+        "2026-10-12": {
           "fleje": 3499.0,
           "ptc": 2099.4,
           "dinamica": 0.4
@@ -13409,6 +13639,11 @@
           "dinamica": 0.35
         },
         "2026-10-11": {
+          "fleje": 4559.0,
+          "ptc": 3419.25,
+          "dinamica": 0.25
+        },
+        "2026-10-12": {
           "fleje": 4559.0,
           "ptc": 3419.25,
           "dinamica": 0.25
@@ -13727,6 +13962,11 @@
           "fleje": 3539.0,
           "ptc": 3539.0,
           "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 3539.0,
+          "ptc": 2831.2,
+          "dinamica": 0.2
         }
       }
     },
@@ -14061,6 +14301,11 @@
         "2026-10-11": {
           "fleje": 8069.0,
           "ptc": 6051.75,
+          "dinamica": 0.25
+        },
+        "2026-10-12": {
+          "fleje": 8059.0,
+          "ptc": 6044.25,
           "dinamica": 0.25
         }
       }
@@ -14657,6 +14902,11 @@
           "fleje": 3759.0,
           "ptc": 3759.0,
           "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 3729.0,
+          "ptc": 3729.0,
+          "dinamica": 0.0
         }
       }
     },
@@ -14939,6 +15189,11 @@
           "dinamica": 0.0
         },
         "2026-10-11": {
+          "fleje": 3859.0,
+          "ptc": 3859.0,
+          "dinamica": 0.0
+        },
+        "2026-10-12": {
           "fleje": 3859.0,
           "ptc": 3859.0,
           "dinamica": 0.0
@@ -15226,6 +15481,11 @@
         "2026-10-11": {
           "fleje": 3249.0,
           "ptc": 1949.4,
+          "dinamica": 0.4
+        },
+        "2026-10-12": {
+          "fleje": 3259.0,
+          "ptc": 1955.4,
           "dinamica": 0.4
         }
       }
@@ -15552,6 +15812,11 @@
           "fleje": 3729.0,
           "ptc": 2237.4,
           "dinamica": 0.4
+        },
+        "2026-10-12": {
+          "fleje": 3729.0,
+          "ptc": 2610.3,
+          "dinamica": 0.3
         }
       }
     },
@@ -15837,6 +16102,11 @@
           "fleje": 3579.0,
           "ptc": 3579.0,
           "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 3549.0,
+          "ptc": 3549.0,
+          "dinamica": 0.0
         }
       }
     },
@@ -16051,6 +16321,11 @@
         "2026-10-11": {
           "fleje": 4819.0,
           "ptc": 3373.3,
+          "dinamica": 0.3
+        },
+        "2026-10-12": {
+          "fleje": 4809.0,
+          "ptc": 3366.3,
           "dinamica": 0.3
         }
       }
@@ -16352,6 +16627,11 @@
           "fleje": 3839.0,
           "ptc": 3839.0,
           "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 3839.0,
+          "ptc": 3839.0,
+          "dinamica": 0.0
         }
       }
     },
@@ -16632,6 +16912,11 @@
           "fleje": 3569.0,
           "ptc": 2319.85,
           "dinamica": 0.35
+        },
+        "2026-10-12": {
+          "fleje": 3569.0,
+          "ptc": 3569.0,
+          "dinamica": 0.0
         }
       }
     },
@@ -16919,6 +17204,11 @@
           "dinamica": 0.3
         },
         "2026-10-11": {
+          "fleje": 4739.0,
+          "ptc": 3317.3,
+          "dinamica": 0.3
+        },
+        "2026-10-12": {
           "fleje": 4739.0,
           "ptc": 3317.3,
           "dinamica": 0.3
@@ -17222,6 +17512,11 @@
           "fleje": 4759.0,
           "ptc": 2855.4,
           "dinamica": 0.4
+        },
+        "2026-10-12": {
+          "fleje": 4769.0,
+          "ptc": 4769.0,
+          "dinamica": 0.0
         }
       }
     },
@@ -17472,6 +17767,11 @@
           "fleje": 5869.0,
           "ptc": 5869.0,
           "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 5869.0,
+          "ptc": 5869.0,
+          "dinamica": 0.0
         }
       }
     },
@@ -17696,6 +17996,11 @@
         "2026-10-11": {
           "fleje": 4739.0,
           "ptc": 4739.0,
+          "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 4729.0,
+          "ptc": 4729.0,
           "dinamica": 0.0
         }
       }
@@ -17926,6 +18231,11 @@
         "2026-10-11": {
           "fleje": 4219.0,
           "ptc": 4219.0,
+          "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 4059.0,
+          "ptc": 4059.0,
           "dinamica": 0.0
         }
       }
@@ -18172,6 +18482,11 @@
           "fleje": 3559.0,
           "ptc": 2313.35,
           "dinamica": 0.35
+        },
+        "2026-10-12": {
+          "fleje": 3569.0,
+          "ptc": 3569.0,
+          "dinamica": 0.0
         }
       }
     },
@@ -18464,6 +18779,11 @@
           "dinamica": 0.0
         },
         "2026-10-11": {
+          "fleje": 5299.0,
+          "ptc": 5299.0,
+          "dinamica": 0.0
+        },
+        "2026-10-12": {
           "fleje": 5299.0,
           "ptc": 5299.0,
           "dinamica": 0.0
@@ -19027,6 +19347,11 @@
           "fleje": 4149.0,
           "ptc": 2489.4,
           "dinamica": 0.4
+        },
+        "2026-10-12": {
+          "fleje": 4199.0,
+          "ptc": 2519.4,
+          "dinamica": 0.4
         }
       }
     },
@@ -19347,6 +19672,11 @@
           "fleje": 4559.0,
           "ptc": 4559.0,
           "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 4559.0,
+          "ptc": 3647.2,
+          "dinamica": 0.2
         }
       }
     },
@@ -19644,6 +19974,11 @@
           "dinamica": 0.4
         },
         "2026-10-11": {
+          "fleje": 3949.0,
+          "ptc": 2764.3,
+          "dinamica": 0.3
+        },
+        "2026-10-12": {
           "fleje": 3949.0,
           "ptc": 2764.3,
           "dinamica": 0.3
@@ -20167,6 +20502,11 @@
           "fleje": 6029.0,
           "ptc": 4823.2,
           "dinamica": 0.2
+        },
+        "2026-10-12": {
+          "fleje": 6109.0,
+          "ptc": 5192.65,
+          "dinamica": 0.15
         }
       }
     },
@@ -20732,6 +21072,11 @@
           "fleje": 3609.0,
           "ptc": 2165.4,
           "dinamica": 0.4
+        },
+        "2026-10-12": {
+          "fleje": 3609.0,
+          "ptc": 2526.3,
+          "dinamica": 0.3
         }
       }
     },
@@ -21007,6 +21352,11 @@
           "fleje": 2639.0,
           "ptc": 2639.0,
           "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 2639.0,
+          "ptc": 2639.0,
+          "dinamica": 0.0
         }
       }
     },
@@ -21244,6 +21594,11 @@
           "dinamica": 0.0
         },
         "2026-10-11": {
+          "fleje": 5179.0,
+          "ptc": 5179.0,
+          "dinamica": 0.0
+        },
+        "2026-10-12": {
           "fleje": 5179.0,
           "ptc": 5179.0,
           "dinamica": 0.0
@@ -21552,6 +21907,11 @@
           "fleje": 5179.0,
           "ptc": 5179.0,
           "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 5189.0,
+          "ptc": 5189.0,
+          "dinamica": 0.0
         }
       }
     },
@@ -21849,6 +22209,11 @@
           "dinamica": 0.3
         },
         "2026-10-11": {
+          "fleje": 5829.0,
+          "ptc": 5829.0,
+          "dinamica": 0.0
+        },
+        "2026-10-12": {
           "fleje": 5829.0,
           "ptc": 5829.0,
           "dinamica": 0.0
@@ -22247,6 +22612,11 @@
           "fleje": 3709.0,
           "ptc": 3709.0,
           "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 3709.0,
+          "ptc": 3709.0,
+          "dinamica": 0.0
         }
       }
     },
@@ -22469,6 +22839,11 @@
           "dinamica": 0.2
         },
         "2026-10-11": {
+          "fleje": 3189.0,
+          "ptc": 2551.2,
+          "dinamica": 0.2
+        },
+        "2026-10-12": {
           "fleje": 3189.0,
           "ptc": 2551.2,
           "dinamica": 0.2
@@ -22797,6 +23172,11 @@
           "fleje": 5639.0,
           "ptc": 4229.25,
           "dinamica": 0.25
+        },
+        "2026-10-12": {
+          "fleje": 5639.0,
+          "ptc": 4229.25,
+          "dinamica": 0.25
         }
       }
     },
@@ -23102,6 +23482,11 @@
           "fleje": 3409.0,
           "ptc": 2215.85,
           "dinamica": 0.35
+        },
+        "2026-10-12": {
+          "fleje": 3409.0,
+          "ptc": 2215.85,
+          "dinamica": 0.35
         }
       }
     },
@@ -23386,6 +23771,11 @@
         "2026-10-11": {
           "fleje": 2999.0,
           "ptc": 2999.0,
+          "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 3009.0,
+          "ptc": 3009.0,
           "dinamica": 0.0
         }
       }
@@ -23687,6 +24077,11 @@
           "fleje": 3079.0,
           "ptc": 3079.0,
           "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 3079.0,
+          "ptc": 3079.0,
+          "dinamica": 0.0
         }
       }
     },
@@ -23909,6 +24304,11 @@
           "dinamica": 0.5
         },
         "2026-10-11": {
+          "fleje": 4279.0,
+          "ptc": 2567.4,
+          "dinamica": 0.4
+        },
+        "2026-10-12": {
           "fleje": 4279.0,
           "ptc": 2567.4,
           "dinamica": 0.4
@@ -24367,6 +24767,11 @@
           "fleje": 6779.0,
           "ptc": 4745.3,
           "dinamica": 0.3
+        },
+        "2026-10-12": {
+          "fleje": 6779.0,
+          "ptc": 4745.3,
+          "dinamica": 0.3
         }
       }
     },
@@ -24809,6 +25214,11 @@
           "dinamica": 0.0
         },
         "2026-10-11": {
+          "fleje": 5029.0,
+          "ptc": 5029.0,
+          "dinamica": 0.0
+        },
+        "2026-10-12": {
           "fleje": 5029.0,
           "ptc": 5029.0,
           "dinamica": 0.0
@@ -26822,6 +27232,11 @@
           "fleje": 2959.0,
           "ptc": 2071.3,
           "dinamica": 0.3
+        },
+        "2026-10-12": {
+          "fleje": 2789.0,
+          "ptc": 1952.3,
+          "dinamica": 0.3
         }
       }
     },
@@ -27109,6 +27524,11 @@
           "dinamica": 0.35
         },
         "2026-10-11": {
+          "fleje": 4559.0,
+          "ptc": 3419.25,
+          "dinamica": 0.25
+        },
+        "2026-10-12": {
           "fleje": 4559.0,
           "ptc": 3419.25,
           "dinamica": 0.25
@@ -27407,6 +27827,11 @@
           "fleje": 1399.0,
           "ptc": 1399.0,
           "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 1399.0,
+          "ptc": 1399.0,
+          "dinamica": 0.0
         }
       }
     },
@@ -27677,6 +28102,11 @@
           "fleje": 2949.0,
           "ptc": 1916.85,
           "dinamica": 0.35
+        },
+        "2026-10-12": {
+          "fleje": 2949.0,
+          "ptc": 2211.75,
+          "dinamica": 0.25
         }
       }
     },
@@ -27847,6 +28277,11 @@
           "fleje": 5269.0,
           "ptc": 4742.1,
           "dinamica": 0.1
+        },
+        "2026-10-12": {
+          "fleje": 5269.0,
+          "ptc": 4478.65,
+          "dinamica": 0.15
         }
       }
     },
@@ -28079,6 +28514,11 @@
           "dinamica": 0.0
         },
         "2026-10-11": {
+          "fleje": 1839.0,
+          "ptc": 1839.0,
+          "dinamica": 0.0
+        },
+        "2026-10-12": {
           "fleje": 1839.0,
           "ptc": 1839.0,
           "dinamica": 0.0
@@ -28322,6 +28762,11 @@
           "fleje": 2579.0,
           "ptc": 2321.1,
           "dinamica": 0.1
+        },
+        "2026-10-12": {
+          "fleje": 2579.0,
+          "ptc": 2192.15,
+          "dinamica": 0.15
         }
       }
     },
@@ -28599,6 +29044,11 @@
           "dinamica": 0.35
         },
         "2026-10-11": {
+          "fleje": 6799.0,
+          "ptc": 5099.25,
+          "dinamica": 0.25
+        },
+        "2026-10-12": {
           "fleje": 6799.0,
           "ptc": 5099.25,
           "dinamica": 0.25
@@ -28882,6 +29332,11 @@
           "fleje": 5629.0,
           "ptc": 4221.75,
           "dinamica": 0.25
+        },
+        "2026-10-12": {
+          "fleje": 5629.0,
+          "ptc": 4221.75,
+          "dinamica": 0.25
         }
       }
     },
@@ -29159,6 +29614,11 @@
           "dinamica": 0.0
         },
         "2026-10-11": {
+          "fleje": 4329.0,
+          "ptc": 4329.0,
+          "dinamica": 0.0
+        },
+        "2026-10-12": {
           "fleje": 4329.0,
           "ptc": 4329.0,
           "dinamica": 0.0
@@ -29457,6 +29917,11 @@
           "fleje": 2369.0,
           "ptc": 2369.0,
           "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 2369.0,
+          "ptc": 2369.0,
+          "dinamica": 0.0
         }
       }
     },
@@ -29734,6 +30199,11 @@
           "dinamica": 0.0
         },
         "2026-10-11": {
+          "fleje": 2549.0,
+          "ptc": 2549.0,
+          "dinamica": 0.0
+        },
+        "2026-10-12": {
           "fleje": 2549.0,
           "ptc": 2549.0,
           "dinamica": 0.0
@@ -30017,6 +30487,11 @@
           "fleje": 6439.0,
           "ptc": 6439.0,
           "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 6439.0,
+          "ptc": 6439.0,
+          "dinamica": 0.0
         }
       }
     },
@@ -30229,6 +30704,11 @@
           "dinamica": 0.15
         },
         "2026-10-11": {
+          "fleje": 4679.0,
+          "ptc": 2807.4,
+          "dinamica": 0.4
+        },
+        "2026-10-12": {
           "fleje": 4679.0,
           "ptc": 2807.4,
           "dinamica": 0.4
@@ -30502,6 +30982,11 @@
           "fleje": 5159.0,
           "ptc": 3869.25,
           "dinamica": 0.25
+        },
+        "2026-10-12": {
+          "fleje": 5149.0,
+          "ptc": 3861.75,
+          "dinamica": 0.25
         }
       }
     },
@@ -30689,6 +31174,11 @@
           "dinamica": 0.3
         },
         "2026-10-11": {
+          "fleje": 5129.0,
+          "ptc": 5129.0,
+          "dinamica": 0.0
+        },
+        "2026-10-12": {
           "fleje": 5129.0,
           "ptc": 5129.0,
           "dinamica": 0.0
@@ -30917,6 +31407,11 @@
           "fleje": 1459.0,
           "ptc": 1459.0,
           "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 1459.0,
+          "ptc": 1459.0,
+          "dinamica": 0.0
         }
       }
     },
@@ -31012,6 +31507,11 @@
           "fleje": 2889.0,
           "ptc": 2889.0,
           "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 2889.0,
+          "ptc": 2889.0,
+          "dinamica": 0.0
         }
       }
     },
@@ -31097,6 +31597,11 @@
           "fleje": 2889.0,
           "ptc": 2889.0,
           "dinamica": 0.0
+        },
+        "2026-10-12": {
+          "fleje": 2889.0,
+          "ptc": 2889.0,
+          "dinamica": 0.0
         }
       }
     },
@@ -31114,6 +31619,11 @@
           "dinamica": 0.35
         },
         "2026-10-11": {
+          "fleje": 3189.0,
+          "ptc": 2391.75,
+          "dinamica": 0.25
+        },
+        "2026-10-12": {
           "fleje": 3189.0,
           "ptc": 2391.75,
           "dinamica": 0.25
@@ -31137,6 +31647,11 @@
           "fleje": 2839.0,
           "ptc": 2129.25,
           "dinamica": 0.25
+        },
+        "2026-10-12": {
+          "fleje": 2839.0,
+          "ptc": 2129.25,
+          "dinamica": 0.25
         }
       }
     },
@@ -31154,6 +31669,11 @@
           "dinamica": 0.25
         },
         "2026-10-11": {
+          "fleje": 2839.0,
+          "ptc": 2129.25,
+          "dinamica": 0.25
+        },
+        "2026-10-12": {
           "fleje": 2839.0,
           "ptc": 2129.25,
           "dinamica": 0.25
@@ -31225,258 +31745,259 @@
     "2026-10-08",
     "2026-10-09",
     "2026-10-10",
-    "2026-10-11"
+    "2026-10-11",
+    "2026-10-12"
   ],
   "stats": [
     {
       "marca": "Estrella Galicia",
       "grupo": "Competencia",
       "segmento": "Super Premium",
-      "dias": 60,
-      "dias_dinamica": 5,
+      "dias": 61,
+      "dias_dinamica": 6,
       "max_dinamica": 0.5,
-      "avg_dinamica": 0.01919191919191919,
-      "avg_ptc": 3678.827272727273
+      "avg_dinamica": 0.0225,
+      "avg_ptc": 3664.1975
     },
     {
       "marca": "Andes Origen",
       "grupo": "CMQ",
       "segmento": "Core+",
-      "dias": 64,
-      "dias_dinamica": 64,
+      "dias": 65,
+      "dias_dinamica": 65,
       "max_dinamica": 0.6,
-      "avg_dinamica": 0.27773851590106,
-      "avg_ptc": 2710.166431095406
+      "avg_dinamica": 0.27725694444444443,
+      "avg_ptc": 2714.456076388889
     },
     {
       "marca": "Corona",
       "grupo": "CMQ",
       "segmento": "Super Premium",
-      "dias": 64,
-      "dias_dinamica": 64,
+      "dias": 65,
+      "dias_dinamica": 65,
       "max_dinamica": 0.45,
-      "avg_dinamica": 0.2317596566523605,
-      "avg_ptc": 4490.347424892704
+      "avg_dinamica": 0.23122362869198312,
+      "avg_ptc": 4494.015822784811
     },
     {
       "marca": "Miller",
       "grupo": "Competencia",
       "segmento": "Core+",
-      "dias": 61,
-      "dias_dinamica": 55,
+      "dias": 62,
+      "dias_dinamica": 56,
       "max_dinamica": 0.45,
-      "avg_dinamica": 0.15272727272727274,
-      "avg_ptc": 4398.225318181818
+      "avg_dinamica": 0.15200892857142856,
+      "avg_ptc": 4404.623928571428
     },
     {
       "marca": "Heineken",
       "grupo": "Competencia",
       "segmento": "Premium",
-      "dias": 64,
-      "dias_dinamica": 57,
+      "dias": 65,
+      "dias_dinamica": 58,
       "max_dinamica": 0.4,
-      "avg_dinamica": 0.13140350877192983,
-      "avg_ptc": 4172.275263157894
+      "avg_dinamica": 0.13120689655172413,
+      "avg_ptc": 4171.384655172414
     },
     {
       "marca": "Imperial",
       "grupo": "Competencia",
       "segmento": "Core+",
-      "dias": 64,
+      "dias": 65,
       "dias_dinamica": 58,
       "max_dinamica": 0.45,
-      "avg_dinamica": 0.11166394779771616,
-      "avg_ptc": 3246.622267536705
+      "avg_dinamica": 0.10969551282051282,
+      "avg_ptc": 3254.5648237179485
     },
     {
       "marca": "Rabieta",
       "grupo": "Competencia",
       "segmento": "Super Premium",
-      "dias": 64,
-      "dias_dinamica": 64,
+      "dias": 65,
+      "dias_dinamica": 65,
       "max_dinamica": 0.6,
-      "avg_dinamica": 0.2882845188284519,
-      "avg_ptc": 2985.7087866108786
+      "avg_dinamica": 0.2872427983539095,
+      "avg_ptc": 2992.095884773663
     },
     {
       "marca": "Pampa",
       "grupo": "Competencia",
       "segmento": "Premium",
-      "dias": 64,
-      "dias_dinamica": 64,
+      "dias": 65,
+      "dias_dinamica": 65,
       "max_dinamica": 0.6,
-      "avg_dinamica": 0.23369905956112852,
-      "avg_ptc": 2511.6365203761757
+      "avg_dinamica": 0.2362654320987654,
+      "avg_ptc": 2503.478549382716
     },
     {
       "marca": "Michelob Ultra",
       "grupo": "CMQ",
       "segmento": "Core+",
-      "dias": 62,
-      "dias_dinamica": 62,
+      "dias": 63,
+      "dias_dinamica": 63,
       "max_dinamica": 0.4,
-      "avg_dinamica": 0.24474747474747474,
-      "avg_ptc": 2525.632626262626
+      "avg_dinamica": 0.24386138613861386,
+      "avg_ptc": 2528.3567326732673
     },
     {
       "marca": "Budweiser",
       "grupo": "CMQ",
       "segmento": "Core",
-      "dias": 48,
-      "dias_dinamica": 47,
+      "dias": 49,
+      "dias_dinamica": 48,
       "max_dinamica": 0.35,
-      "avg_dinamica": 0.25625000000000003,
-      "avg_ptc": 2935.8585227272724
+      "avg_dinamica": 0.2566666666666667,
+      "avg_ptc": 2933.523333333333
     },
     {
       "marca": "Schneider",
       "grupo": "Competencia",
       "segmento": "Core",
-      "dias": 64,
+      "dias": 65,
       "dias_dinamica": 36,
       "max_dinamica": 0.4,
-      "avg_dinamica": 0.09085714285714286,
-      "avg_ptc": 3199.088
+      "avg_dinamica": 0.08932584269662922,
+      "avg_ptc": 3203.5808988764047
     },
     {
       "marca": "1890",
       "grupo": "CMQ",
       "segmento": "Value",
-      "dias": 64,
+      "dias": 65,
       "dias_dinamica": 14,
       "max_dinamica": 0.15,
-      "avg_dinamica": 0.0265625,
-      "avg_ptc": 2400.409375
+      "avg_dinamica": 0.026153846153846153,
+      "avg_ptc": 2402.233846153846
     },
     {
       "marca": "Andes",
       "grupo": "CMQ",
       "segmento": "Sin clasificar",
-      "dias": 42,
-      "dias_dinamica": 39,
+      "dias": 43,
+      "dias_dinamica": 40,
       "max_dinamica": 0.5,
-      "avg_dinamica": 0.29047619047619044,
-      "avg_ptc": 3662.6833333333334
+      "avg_dinamica": 0.29186046511627906,
+      "avg_ptc": 3657.152325581395
     },
     {
       "marca": "Quilmes",
       "grupo": "CMQ",
       "segmento": "Core",
-      "dias": 64,
-      "dias_dinamica": 64,
+      "dias": 65,
+      "dias_dinamica": 65,
       "max_dinamica": 0.4,
-      "avg_dinamica": 0.17884615384615385,
-      "avg_ptc": 2318.6355769230768
+      "avg_dinamica": 0.17900943396226415,
+      "avg_ptc": 2318.987971698113
     },
     {
       "marca": "Antares",
       "grupo": "Competencia",
       "segmento": "Super Premium",
-      "dias": 64,
-      "dias_dinamica": 53,
+      "dias": 65,
+      "dias_dinamica": 54,
       "max_dinamica": 0.3,
-      "avg_dinamica": 0.25445544554455446,
-      "avg_ptc": 3656.218151815182
+      "avg_dinamica": 0.25548387096774194,
+      "avg_ptc": 3651.952258064516
     },
     {
       "marca": "Brahma",
       "grupo": "CMQ",
       "segmento": "Core",
-      "dias": 57,
-      "dias_dinamica": 56,
+      "dias": 58,
+      "dias_dinamica": 57,
       "max_dinamica": 0.35,
-      "avg_dinamica": 0.15462184873949578,
-      "avg_ptc": 2405.268067226891
+      "avg_dinamica": 0.15413223140495866,
+      "avg_ptc": 2402.955785123967
     },
     {
       "marca": "Stella Artois",
       "grupo": "CMQ",
       "segmento": "Premium",
-      "dias": 64,
-      "dias_dinamica": 64,
+      "dias": 65,
+      "dias_dinamica": 65,
       "max_dinamica": 0.5,
-      "avg_dinamica": 0.27920962199312716,
-      "avg_ptc": 3661.048625429553
+      "avg_dinamica": 0.27915254237288134,
+      "avg_ptc": 3661.272033898305
     },
     {
       "marca": "Blue Moon",
       "grupo": "Competencia",
       "segmento": "Super Premium",
-      "dias": 61,
+      "dias": 62,
       "dias_dinamica": 21,
       "max_dinamica": 0.45,
-      "avg_dinamica": 0.09901960784313725,
-      "avg_ptc": 4998.726470588235
+      "avg_dinamica": 0.09805825242718447,
+      "avg_ptc": 5001.641747572815
     },
     {
       "marca": "Quilmes 0",
       "grupo": "CMQ",
       "segmento": "Sin clasificar",
-      "dias": 59,
-      "dias_dinamica": 59,
+      "dias": 60,
+      "dias_dinamica": 60,
       "max_dinamica": 0.45,
-      "avg_dinamica": 0.3508474576271186,
-      "avg_ptc": 1540.9016949152542
+      "avg_dinamica": 0.35,
+      "avg_ptc": 1542.7416666666666
     },
     {
       "marca": "Amstel",
       "grupo": "Competencia",
       "segmento": "Core",
-      "dias": 62,
-      "dias_dinamica": 18,
+      "dias": 63,
+      "dias_dinamica": 19,
       "max_dinamica": 0.4,
-      "avg_dinamica": 0.08547008547008547,
-      "avg_ptc": 3439.0897435897436
+      "avg_dinamica": 0.08739495798319329,
+      "avg_ptc": 3432.6000000000004
     },
     {
       "marca": "Patagonia",
       "grupo": "CMQ",
       "segmento": "Super Premium",
-      "dias": 64,
-      "dias_dinamica": 64,
+      "dias": 65,
+      "dias_dinamica": 65,
       "max_dinamica": 0.95,
-      "avg_dinamica": 0.2831905781584582,
-      "avg_ptc": 4765.0829764453965
+      "avg_dinamica": 0.28270042194092826,
+      "avg_ptc": 4770.460970464135
     },
     {
       "marca": "Stella Artois 0",
       "grupo": "CMQ",
       "segmento": "Sin clasificar",
-      "dias": 59,
-      "dias_dinamica": 59,
+      "dias": 60,
+      "dias_dinamica": 60,
       "max_dinamica": 0.45,
-      "avg_dinamica": 0.315,
-      "avg_ptc": 2578.315
+      "avg_dinamica": 0.3138888888888889,
+      "avg_ptc": 2581.5847222222224
     },
     {
       "marca": "Salta",
       "grupo": "Competencia",
       "segmento": "Core",
-      "dias": 64,
-      "dias_dinamica": 22,
+      "dias": 65,
+      "dias_dinamica": 23,
       "max_dinamica": 0.35,
-      "avg_dinamica": 0.054132231404958674,
-      "avg_ptc": 3355.975619834711
+      "avg_dinamica": 0.054878048780487805,
+      "avg_ptc": 3353.441056910569
     },
     {
       "marca": "Salta Cautiva",
       "grupo": "Competencia",
       "segmento": "Sin clasificar",
-      "dias": 52,
+      "dias": 53,
       "dias_dinamica": 29,
       "max_dinamica": 0.4,
-      "avg_dinamica": 0.13425925925925927,
-      "avg_ptc": 3074.384259259259
+      "avg_dinamica": 0.1318181818181818,
+      "avg_ptc": 3083.3772727272726
     },
     {
       "marca": "Grolsch",
       "grupo": "Competencia",
       "segmento": "Premium",
-      "dias": 61,
+      "dias": 62,
       "dias_dinamica": 48,
       "max_dinamica": 0.4,
-      "avg_dinamica": 0.14144144144144144,
-      "avg_ptc": 3959.4612612612614
+      "avg_dinamica": 0.14017857142857143,
+      "avg_ptc": 3966.6892857142857
     },
     {
       "marca": "Estrella Damm",
@@ -31492,21 +32013,21 @@
       "marca": "Guinness",
       "grupo": "Competencia",
       "segmento": "Sin clasificar",
-      "dias": 56,
-      "dias_dinamica": 53,
+      "dias": 57,
+      "dias_dinamica": 54,
       "max_dinamica": 0.5,
-      "avg_dinamica": 0.27053571428571427,
-      "avg_ptc": 2996.199107142857
+      "avg_dinamica": 0.27280701754385966,
+      "avg_ptc": 2987.8342105263155
     },
     {
       "marca": "Corona 0",
       "grupo": "CMQ",
       "segmento": "Sin clasificar",
-      "dias": 58,
-      "dias_dinamica": 58,
+      "dias": 59,
+      "dias_dinamica": 59,
       "max_dinamica": 0.45,
-      "avg_dinamica": 0.35258620689655173,
-      "avg_ptc": 2493.8439655172415
+      "avg_dinamica": 0.3516949152542373,
+      "avg_ptc": 2498.427966101695
     },
     {
       "marca": "Santa Fe",
@@ -31542,31 +32063,31 @@
       "marca": "Asahi",
       "grupo": "Competencia",
       "segmento": "Sin clasificar",
-      "dias": 46,
-      "dias_dinamica": 18,
+      "dias": 47,
+      "dias_dinamica": 19,
       "max_dinamica": 0.25,
-      "avg_dinamica": 0.09021739130434783,
-      "avg_ptc": 5531.296739130435
+      "avg_dinamica": 0.09148936170212765,
+      "avg_ptc": 5524.091489361702
     },
     {
       "marca": "Kunstmann",
       "grupo": "Competencia",
       "segmento": "Sin clasificar",
-      "dias": 62,
+      "dias": 63,
       "dias_dinamica": 1,
       "max_dinamica": 0.25,
-      "avg_dinamica": 0.0020325203252032522,
-      "avg_ptc": 5098.45325203252
+      "avg_dinamica": 0.002,
+      "avg_ptc": 5098.622
     },
     {
       "marca": "Bitburger",
       "grupo": "Competencia",
       "segmento": "Sin clasificar",
-      "dias": 57,
+      "dias": 58,
       "dias_dinamica": 8,
       "max_dinamica": 0.5,
-      "avg_dinamica": 0.03333333333333333,
-      "avg_ptc": 5141.25
+      "avg_dinamica": 0.03278688524590164,
+      "avg_ptc": 5152.524590163935
     },
     {
       "marca": "Kostritzer",
@@ -31582,57 +32103,57 @@
       "marca": "Peroni",
       "grupo": "Competencia",
       "segmento": "Premium",
-      "dias": 35,
-      "dias_dinamica": 13,
+      "dias": 36,
+      "dias_dinamica": 14,
       "max_dinamica": 0.5,
-      "avg_dinamica": 0.08571428571428572,
-      "avg_ptc": 4675.114285714286
+      "avg_dinamica": 0.0875,
+      "avg_ptc": 4669.656944444444
     },
     {
       "marca": "Blonde",
       "grupo": "Competencia",
       "segmento": "Sin clasificar",
-      "dias": 51,
-      "dias_dinamica": 8,
+      "dias": 52,
+      "dias_dinamica": 9,
       "max_dinamica": 0.6,
-      "avg_dinamica": 0.05294117647058823,
-      "avg_ptc": 2808.1705882352944
+      "avg_dinamica": 0.057692307692307696,
+      "avg_ptc": 2791.7115384615386
     },
     {
       "marca": "Sol",
       "grupo": "Competencia",
       "segmento": "Sin clasificar",
-      "dias": 54,
-      "dias_dinamica": 23,
+      "dias": 55,
+      "dias_dinamica": 24,
       "max_dinamica": 0.4,
-      "avg_dinamica": 0.0555,
-      "avg_ptc": 2438.1655
+      "avg_dinamica": 0.05588235294117647,
+      "avg_ptc": 2436.8401960784313
     },
     {
       "marca": "Temple",
       "grupo": "Competencia",
       "segmento": "Super Premium",
-      "dias": 54,
-      "dias_dinamica": 54,
+      "dias": 55,
+      "dias_dinamica": 55,
       "max_dinamica": 0.4,
-      "avg_dinamica": 0.26481481481481484,
-      "avg_ptc": 4253.014814814815
+      "avg_dinamica": 0.2645454545454546,
+      "avg_ptc": 4252.4463636363635
     },
     {
       "marca": "Goose Island",
       "grupo": "Competencia",
       "segmento": "Sin clasificar",
-      "dias": 54,
+      "dias": 55,
       "dias_dinamica": 16,
       "max_dinamica": 0.35,
-      "avg_dinamica": 0.07592592592592592,
-      "avg_ptc": 3850.168518518519
+      "avg_dinamica": 0.07454545454545454,
+      "avg_ptc": 3858.8745454545456
     },
     {
       "marca": "Heineken Cero",
       "grupo": "Competencia",
       "segmento": "Sin clasificar",
-      "dias": 57,
+      "dias": 58,
       "dias_dinamica": 0,
       "max_dinamica": 0.0,
       "avg_dinamica": 0.0,
@@ -31642,47 +32163,47 @@
       "marca": "Guinnes",
       "grupo": "Sin clasificar",
       "segmento": "Sin clasificar",
-      "dias": 41,
-      "dias_dinamica": 41,
+      "dias": 42,
+      "dias_dinamica": 42,
       "max_dinamica": 0.4,
-      "avg_dinamica": 0.1573170731707317,
-      "avg_ptc": 3956.754878048781
+      "avg_dinamica": 0.1630952380952381,
+      "avg_ptc": 3929.389285714286
     },
     {
       "marca": "Corona",
       "grupo": "Sin clasificar",
       "segmento": "Sin clasificar",
-      "dias": 52,
-      "dias_dinamica": 52,
+      "dias": 53,
+      "dias_dinamica": 53,
       "max_dinamica": 0.5,
-      "avg_dinamica": 0.26634615384615384,
-      "avg_ptc": 3717.304807692308
+      "avg_dinamica": 0.2660377358490566,
+      "avg_ptc": 3720.0301886792454
     },
     {
       "marca": "Pilsener Konign",
       "grupo": "Sin clasificar",
       "segmento": "Sin clasificar",
-      "dias": 36,
+      "dias": 37,
       "dias_dinamica": 7,
       "max_dinamica": 0.3,
-      "avg_dinamica": 0.041666666666666664,
-      "avg_ptc": 4915.291666666667
+      "avg_dinamica": 0.04054054054054054,
+      "avg_ptc": 4921.0675675675675
     },
     {
       "marca": "Brahma",
       "grupo": "Sin clasificar",
       "segmento": "Sin clasificar",
-      "dias": 26,
-      "dias_dinamica": 26,
+      "dias": 27,
+      "dias_dinamica": 27,
       "max_dinamica": 0.3,
-      "avg_dinamica": 0.2714285714285714,
-      "avg_ptc": 3083.8250000000003
+      "avg_dinamica": 0.26999999999999996,
+      "avg_ptc": 3020.186666666667
     },
     {
       "marca": "Estrella del Sur",
       "grupo": "Sin clasificar",
       "segmento": "Sin clasificar",
-      "dias": 17,
+      "dias": 18,
       "dias_dinamica": 0,
       "max_dinamica": 0.0,
       "avg_dinamica": 0.0,
@@ -31692,21 +32213,21 @@
       "marca": "Stones",
       "grupo": "Sin clasificar",
       "segmento": "Sin clasificar",
-      "dias": 17,
+      "dias": 18,
       "dias_dinamica": 9,
       "max_dinamica": 0.9997,
-      "avg_dinamica": 0.34368437500000004,
-      "avg_ptc": 1896.125
+      "avg_dinamica": 0.3234676470588236,
+      "avg_ptc": 1954.5294117647059
     },
     {
       "marca": "Flying Fish",
       "grupo": "Sin clasificar",
       "segmento": "Sin clasificar",
-      "dias": 2,
-      "dias_dinamica": 2,
+      "dias": 3,
+      "dias_dinamica": 3,
       "max_dinamica": 0.35,
-      "avg_dinamica": 0.3,
-      "avg_ptc": 2232.3
+      "avg_dinamica": 0.2833333333333333,
+      "avg_ptc": 2285.4500000000003
     }
   ],
   "fights": [
@@ -31799,10 +32320,10 @@
     }
   ],
   "meta": {
-    "generado": "2026-10-11 18:10:48",
+    "generado": "2026-10-12 21:47:23",
     "sku_rows": 209,
-    "registros_validos": 5814,
-    "dias": 64,
+    "registros_validos": 5918,
+    "dias": 65,
     "plataforma": "Rappi Turbo",
     "tienda": "Nunez"
   }
