@@ -2630,5 +2630,29 @@
     "calibre": "473",
     "grupo": "Sin clasificar",
     "segmento": "Sin clasificar"
+  },
+  {
+    "id": "miller-miller-genuine-draft-473ml",
+    "marca": "Miller",
+    "sku": "Miller Genuine Draft 473ml",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "imperial-cerveza-imperial-ipa-lata-x473ml",
+    "marca": "Imperial",
+    "sku": "cerveza imperial ipa lata x473ml",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "grolsch-cerveza-grolsch-lata-x473ml",
+    "marca": "Grolsch",
+    "sku": "cerveza grolsch lata x473ml",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
   }
 ]

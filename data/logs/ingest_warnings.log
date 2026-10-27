@@ -155,3 +155,6 @@
 2026-10-21.csv: SKU nuevo sin catalogo -> 'Schneider | Cerveza Schneider Remix Pomelo 473 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-10-23.csv: SKU nuevo sin catalogo -> 'Estrella Galicia | Cerveza Lager Estrella Galicia Porrón' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-10-26.csv: SKU nuevo sin catalogo -> 'Rabieta | Rabieta cerveza zero 473 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-10-27.csv: SKU nuevo sin catalogo -> 'Miller | Miller Genuine Draft 473ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-10-27.csv: SKU nuevo sin catalogo -> 'Imperial | cerveza imperial ipa lata x473ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-10-27.csv: SKU nuevo sin catalogo -> 'Grolsch | cerveza grolsch lata x473ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
