@@ -160,3 +160,5 @@
 2026-10-27.csv: SKU nuevo sin catalogo -> 'Grolsch | cerveza grolsch lata x473ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-10-28.csv: SKU nuevo sin catalogo -> 'Guinnes | cerveza extra stout guinness lat 473 ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
 2026-11-02.csv: SKU nuevo sin catalogo -> 'Estrella Damm | cerveza estrella damm lata 500ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-11-06.csv: SKU nuevo sin catalogo -> 'Peroni | cerveza peroni 330ml' (agregado como 'Sin clasificar', revisar data/catalog.json)
+2026-11-06.csv: SKU nuevo sin catalogo -> 'Heineken | cerveza heineken cero x473ml' (agregado como 'Sin clasificar', revisar data/catalog.json)

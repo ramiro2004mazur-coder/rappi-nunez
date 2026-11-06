@@ -2670,5 +2670,21 @@
     "calibre": "600",
     "grupo": "Sin clasificar",
     "segmento": "Sin clasificar"
+  },
+  {
+    "id": "peroni-cerveza-peroni-330ml",
+    "marca": "Peroni",
+    "sku": "cerveza peroni 330ml",
+    "calibre": "330/355",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "heineken-cerveza-heineken-cero-x473ml",
+    "marca": "Heineken",
+    "sku": "cerveza heineken cero x473ml",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
   }
 ]
