@@ -2686,5 +2686,109 @@
     "calibre": "473",
     "grupo": "Sin clasificar",
     "segmento": "Sin clasificar"
+  },
+  {
+    "id": "heineken-cerveza-heineken-lata-x710ml",
+    "marca": "Heineken",
+    "sku": "cerveza heineken lata x710ml",
+    "calibre": "710/730",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "michelob-ultra-cerveza-michelob-ultra-glut-free-x473ml",
+    "marca": "Michelob Ultra",
+    "sku": "cerveza michelob ultra glut. free x473ml",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "budweiser-cerveza-budweiser-lata-x473cc",
+    "marca": "Budweiser",
+    "sku": "cerveza budweiser lata x473cc",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "budweiser-cerveza-budweiser-lata-x710ml",
+    "marca": "Budweiser",
+    "sku": "cerveza budweiser lata x710ml",
+    "calibre": "710/730",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "stella-artois-cerveza-stella-artois-x710cc-lata",
+    "marca": "Stella Artois",
+    "sku": "cerveza stella artois x710cc lata",
+    "calibre": "710/730",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "schneider-cerveza-schneider-lager-lata-x473ml",
+    "marca": "Schneider",
+    "sku": "cerveza schneider lager lata x473ml",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "brahma-cerveza-brahma-laton-x710ml",
+    "marca": "Brahma",
+    "sku": "cerveza brahma laton x710ml",
+    "calibre": "710/730",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "corona-cerveza-corona-lata-x473ml",
+    "marca": "Corona",
+    "sku": "cerveza corona lata x473ml",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "corona-cerveza-lager-sin-alcohol-473-cc-corona",
+    "marca": "Corona",
+    "sku": "cerveza lager sin alcohol 473 cc corona",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "miller-cerveza-miller-rubia-lata-x710ml",
+    "marca": "Miller",
+    "sku": "cerveza miller rubia lata x710ml",
+    "calibre": "710/730",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "heineken-cerveza-heineken-lata-x473cc",
+    "marca": "Heineken",
+    "sku": "cerveza heineken lata x473cc",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "stella-artois-cerveza-stella-artois-lata-x473ml",
+    "marca": "Stella Artois",
+    "sku": "cerveza stella artois lata x473ml",
+    "calibre": "473",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
+  },
+  {
+    "id": "schneider-cerveza-schneider-lager-lata-x710ml",
+    "marca": "Schneider",
+    "sku": "cerveza schneider lager lata x710ml",
+    "calibre": "710/730",
+    "grupo": "Sin clasificar",
+    "segmento": "Sin clasificar"
   }
 ]
